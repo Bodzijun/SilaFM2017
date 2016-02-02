@@ -394,6 +394,7 @@ body {
 
 .h1block {
 	color: #fff;
+	display: block;
 	font-family: "RobotoLight", sans-serif;
 	font-size: 36px;
 	display: block;
