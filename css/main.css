@@ -285,22 +285,18 @@ body {
 
 .top_img {
 	background-color: #385aa6;
-	background-image: url(../images/top_bg_blur.jpg);
+	background-image: url(../img/top_bg_blur.jpg);
 	background-size: cover;
 	display: block;
-	height: 420px;
+	height: 480px;
 	text-align: center;
 	width: 100%;
 	z-index: 0;
 }
 
 .top_img:hover {
-	background-image: url(../images/top_bg.jpg);
-	-webkit-transition: background-image 2s ease-out 0.5s;
-	-moz-transition: background-image 2s ease-out 0.5s;
-	-ms-transition: background-image 2s ease-out 0.5s;
-	-o-transition: background-image 2s ease-out 0.5s;
-	transition: background-image 2s ease-out 0.5s;
+	background-image: url(../img/top_bg.jpg);
+	transition: background-image 2s ease-out 0.3s;
 }
 
 .top_img>p {
@@ -338,10 +334,6 @@ body {
 .zakaz_btn:hover {
 	background: #599931;
 	text-decoration: none;
-	-webkit-transition: background-color .6s ease;
-	-moz-transition: background-color .6s ease;
-	-ms-transition: background-color .6s ease;
-	-o-transition: background-color .6s ease;
 	transition: background-color .6s ease;
 }
 
@@ -367,6 +359,7 @@ body {
 	background: #f0ad39;
 	border: 6px double #f4c26d;
 	border-radius: 50%;
+	box-sizing: border-box;
 	color: #fff;
 	display: block;
 	font-family: "RobotoLight",sans-serif;
@@ -376,10 +369,8 @@ body {
 	margin: auto;
 	text-align: center;
 	text-decoration: none;
+	transition: all 0.3s ease-out;
 	width: 200px;
-	-moz-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	-webkit-transition: all 0.3s ease-out;
 }
 
 .btn_circle:hover {
@@ -387,9 +378,7 @@ body {
 	border: 6px double #f0ad39;
 	color: #f0ad39;
 	text-decoration: none;
-	-webkit-transform: scale(0.9);
-	-moz-transform: scale(0.9);
-	-o-transform: scale(0.9);
+	transform: scale(0.9);
 }
 
 .h1block {
@@ -397,7 +386,6 @@ body {
 	display: block;
 	font-family: "RobotoLight", sans-serif;
 	font-size: 36px;
-	display: block;
 }
 .h2block {
 	color: #fff;
@@ -408,41 +396,38 @@ body {
 
 .sign {
 	display:inline-block;
-	padding: 20px; /* Поля внутри блока */
 	margin: 10px 0 10px 5px; /* Отступы вокруг */
+	padding: 20px; /* Поля внутри блока */
 }
 .sign figcaption {
-	margin: 0 auto; /* Отступы вокруг абзаца */
 	color: #fff;
 	font-family: "RobotoLight", sans-serif;
 	font-size: 20px;
+	margin: 0 auto; /* Отступы вокруг абзаца */
 }
 .incircle {
+	behavior: url(border-radius.htc); /*IE */
+	border: 3px solid #fff;
 	-webkit-border-radius: 200px; /* Safari, Chrome */
 	-moz-border-radius: 200px; /* Firefox */
 	-o-border-radius: 200px; /* Safari, Chrome */
 	border-radius: 200px;
-	border: 3px solid #fff;
-	behavior: url(border-radius.htc); /*IE */
-	padding: 20px;
 	cursor: pointer;
+	padding: 20px;
+	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
 	-o-transition: all 0.3s ease-out;
-	-webkit-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
 }
 .incircle:hover {
-	-webkit-transform: scale(0.9);
-	-moz-transform: scale(0.9);
-	-o-transform: scale(0.9);
+	transform: scale(0.9);
 }
 .moveone {
 	display: block;
-	position: relative;
-	-webkit-transition: all .3s ease-in-out;
-	-mos-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
 	margin-bottom:  20px;
+	position: relative;
 	top: 0;
+	transition: all .6s ease-in-out;
 }
 .moveone:hover {
 	top: 20px;
@@ -463,11 +448,11 @@ body {
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
 	border-top: 20px solid #385aa6;
+	bottom: 1;
 	content: "";
 	height: 0;
 	position: absolute;
 	right: 49%;
-	bottom: 1;
 	width: 0;
 	z-index: 12;
 }
@@ -484,12 +469,12 @@ body {
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
 	border-top: 20px solid #e6e7e8;
-	top: 0;
 	content: "";
 	height: 0;
-	position: absolute;
 	margin: 0;
+	position: absolute;
 	right: 49%;
+	top: 0;
 	width: 0;
 	z-index: 10;
 }
@@ -512,8 +497,8 @@ body {
 	border-top: 20px solid #a41734;
 	content: "";
 	height: 0;
-	position: absolute;
 	left: 23%;
+	position: absolute;
 	top: 100%;
 	width: 0;
 	z-index: 10;
@@ -549,8 +534,8 @@ body {
 	border-top: 20px solid #75b94c;
 	content: "";
 	height: 0;
-	right: 46%;
 	position: absolute;
+	right: 46%;
 	top: 100%;
 	width: 0;
 	z-index: 10;
@@ -561,8 +546,8 @@ body {
 	border-top: 20px solid #f0ad39;
 	content: "";
 	height: 0;
-	position: absolute;
 	left: 46%;
+	position: absolute;
 	top: 100%;
 	width: 0;
 	z-index: 10;
@@ -606,8 +591,8 @@ body {
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
 	border-top: 20px solid #e6e7e8;
-	position: absolute;
 	left: 23%;
+	position: absolute;
 	top: 0;
 	width: 0;
 	z-index: 9;
