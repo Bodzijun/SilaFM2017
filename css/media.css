@@ -1,0 +1,141 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.cbp-hsmenu-wrapper {
+		font-size: 80%;
+	}
+
+	/*блоки цветные*/
+.h1block {
+
+	font-size: 28px;
+
+	}
+.h2block {
+	font-size: 16px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+.cbp-hsmenu-wrapper {
+		font-size: 100%;
+	}
+
+	.cbp-hsmenu-wrapper .cbp-hsmenu {
+		max-width: none;
+		padding: 0;
+		width: 100%;
+	}
+
+	.cbp-hsmenu > li {
+		border-top: 1px solid rgba(255,255,255,0.5);
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.cbp-hsmenu > li:first-child {
+		border-top: none;
+	}
+
+	.cbp-hsmenu > li > a {
+		display: block;
+	}
+
+	.cbp-hsmenu > li > a:not(:only-child):before {
+		font-size: 200%;
+		line-height: 1.8;
+		position: absolute;
+		right: 0;
+	}
+
+	.cbp-hsmenubg {
+		display: none;
+	}
+
+	.cbp-hssubmenu {
+		background: #f7f7f7;
+		height: 0;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.cbp-hsmenu > li.cbp-hsitem-open .cbp-hssubmenu {
+		height: auto;
+	}
+
+	/* Let's only allow 3 item in a row now */
+	.cbp-hssubmenu > li {
+		width: 30%;
+	}
+
+	/* Reset box shadows for the 6 items in row case */
+	.cbp-hssubmenu > li:nth-child(-n+6),
+	.cbp-hssubmenu > li:nth-child(6n+1) {
+		box-shadow: -28px 0 0 -27px #ddd, 0 -28px 0 -27px #ddd;
+	}
+
+	/* First 4 items don't have upper box shadow */
+	.cbp-hssubmenu > li:nth-child(-n+3) {
+		box-shadow: -28px 0 0 -27px #ddd;
+	}
+
+	/* Every 5th item does not have a left box shadow */
+	.cbp-hssubmenu > li:nth-child(3n+1) {
+		box-shadow:  0 -28px 0 -27px #ddd;
+	}
+
+	.top_img p {
+	color: #ffffff;
+	font-family:"RobotoLight", sans-serif;
+	font-size: 24px;
+	padding: 80px 20px 0 20px;
+	}
+
+	/*блоки цветные*/
+.h1block {
+
+	font-size: 20px;
+
+	}
+.h2block {
+	font-size: 14px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	/* Let's only allow 1 item in a row now */
+	.cbp-hssubmenu > li {
+		display: block;
+		width: 100%;
+	}
+
+	.cbp-hsmenu-wrapper .cbp-hssubmenu > li {
+		box-shadow: 0 1px #cecece;
+		text-align: left;
+	}
+
+	.cbp-hssubmenu > li a {
+		line-height: 50px;
+		padding: 0.4em 1em;
+		text-align: left;
+	}
+
+	.cbp-hssubmenu > li a img {
+		float: left;
+		max-height: 50px;
+	}
+
+	.cbp-hssubmenu > li a span {
+		margin: 0;
+		min-height: 0;
+	}
+/*==========  end ==========*/
