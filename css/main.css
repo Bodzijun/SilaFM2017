@@ -347,9 +347,9 @@ body {
 }
 
 .basictext {
-	text-align: justify;
 	font-family: "RobotoLight" sans-serif;
 	padding: 20px 0;
+	text-align: justify;
 }
 
 .circle_wrap {
@@ -630,15 +630,16 @@ body {
 }
 
  .round {
+	border: 0; /* Параметры рамки */
     border-radius: 100px; /* Радиус скругления */
-    border: 0; /* Параметры рамки */
     box-shadow: 0 0 4px #666; /* Параметры тени */
-	margin-top: 40px;
 	margin-left: 50px;
+	margin-top: 40px;
+
    }
 hr {
-	border: 0;
 	background-color: #cecece;
+	border: 0;
 	height: 2px;
 	margin: 10px 0;
 }
