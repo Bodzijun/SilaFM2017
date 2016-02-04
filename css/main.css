@@ -347,8 +347,9 @@ body {
 }
 
 .basictext {
-	padding: 30px 0;
 	text-align: justify;
+	font-family: "RobotoLight" sans-serif;
+	padding: 20px 0;
 }
 
 .circle_wrap {
@@ -359,7 +360,6 @@ body {
 	background: #f0ad39;
 	border: 6px double #f4c26d;
 	border-radius: 50%;
-	box-sizing: border-box;
 	color: #fff;
 	display: block;
 	font-family: "RobotoLight",sans-serif;
@@ -627,4 +627,22 @@ body {
 	background-color: #adadad;
 	margin-top: 20px;
 	width: 100%;
+}
+
+ .round {
+    border-radius: 100px; /* Радиус скругления */
+    border: 0; /* Параметры рамки */
+    box-shadow: 0 0 4px #666; /* Параметры тени */
+	margin-top: 40px;
+	margin-left: 50px;
+   }
+hr {
+	border: 0;
+	background-color: #cecece;
+	height: 2px;
+	margin: 10px 0;
+}
+.feedback {
+	font-family: "RobotoLight", sans-serif;
+	font-style: italic;
 }
