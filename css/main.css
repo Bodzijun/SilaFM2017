@@ -181,6 +181,7 @@ body {
 	display: inline-block;
 	opacity: 0;
 	-webkit-transition: opacity 0.1s 0s;
+	-moz-transition: opacity 0.1s 0s;
 	transition: opacity 0.1s 0s;
 	vertical-align: top;
 	width: 16.2%;
@@ -226,7 +227,6 @@ body {
 	max-width: 100%;
 	-webkit-transition: opacity 0.2s;
 	transition: opacity 0.2s;
-
 }
 
 .no-touch .cbp-hssubmenu > li a:hover img {
@@ -630,4 +630,8 @@ hr {
 .feedback {
 	font-family: "RobotoLight", sans-serif;
 	font-style: italic;
+}
+#footer {
+	margin-top: 40px;
+	background-color: #a41734;
 }
