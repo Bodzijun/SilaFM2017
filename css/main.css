@@ -1,5 +1,5 @@
 body {
-	background-color: #e5e5e5;
+	background-color: #fff;
 	font-family: "RobotoRegular", sans-serif;
 	font-size: 14pt;
 }
@@ -8,7 +8,7 @@ body {
 }
 
 .header_topline {
-	background-color: #e5e5e5;
+	background-color: #f0f0f0;
 	color: #676767;
 	font-size: 12pt;
 	padding: 8px 0;
@@ -95,7 +95,7 @@ body {
 	color: #fff;
 	display: inline-block;
 	font-size: 1.2em;
-	line-height: 3em;
+	line-height: 4em;
 	position: relative;
 	z-index: 10000;
 }
