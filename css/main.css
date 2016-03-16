@@ -453,7 +453,7 @@ body {
 .rect_red {
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-top: 20px solid #e6e7e8;
+	border-top: 20px solid #fff;
 	content: "";
 	height: 0;
 	margin: 0;
@@ -491,7 +491,7 @@ body {
 .rect_r {
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-top: 20px solid #e6e7e8;
+	border-top: 20px solid #fff;
 	content: "";
 	position: absolute;
 	right: 47%;
@@ -552,7 +552,7 @@ body {
 .rect_l {
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-top: 20px solid #e6e7e8;
+	border-top: 20px solid #fff;
 	content: "";
 	left: 47%;
 	position: absolute;
@@ -564,7 +564,7 @@ body {
 .rectend_r {
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-top: 20px solid #e6e7e8;
+	border-top: 20px solid #fff;
 	content: "";
 	position: absolute;
 	right: 23%;
@@ -575,7 +575,7 @@ body {
 .rectend_l {
 	border-left: 15px solid transparent;
 	border-right: 15px solid transparent;
-	border-top: 20px solid #e6e7e8;
+	border-top: 20px solid #fff;
 	left: 23%;
 	position: absolute;
 	top: 0;
