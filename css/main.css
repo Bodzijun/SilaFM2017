@@ -95,7 +95,7 @@ body {
 	color: #fff;
 	display: inline-block;
 	font-size: 1.2em;
-	line-height: 4em;
+	line-height: 3em;
 	position: relative;
 	z-index: 10000;
 }
@@ -269,7 +269,6 @@ body {
 
 
 /* Top IMG*/
-
 .top_img {
 	background-color: #385aa6;
 	background-image: url(../img/top_bg_blur.jpg);
