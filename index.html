@@ -13,9 +13,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="favicon.png" />
-	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
-<!--	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css" />-->
-	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.css"/>
+	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
 	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css" />
 	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
@@ -134,13 +133,69 @@
 		</script>
 	</div>
 
-<div class="top_img clearfix">
+<section>
+<div class="container-fluid">
+<div id="carousel" class="carousel slide" data-ride="carousel">
+		<!--- Индикаторы слайдов--->
+	    <ol class="carousel-indicators">
+		<li class="active" data-target="#carousel" data-slide-to="0"></li>
+		<li data-target="#carousel" data-slide-to="1"></li>
+		<li data-target="#carousel" data-slide-to="2"></li>
+	    </ol>
+		<!--- Слайди--->
+	<div class="carousel-inner">
+	<div class="item active">
+		<img src="img/top_bg.jpg" alt="">
+		<div class="carousel-caption">
+					<p>АУДИОРОЛИКИ, ОЗВУЧКА ВИДЕО,<br> ЗАПИСТЬ ГОЛОСОВ, ВИДЕОРОЛИКИ</p>
+					<div class="center_btn">
+						<button type="button" class="zakaz_btn">СДЕЛАТЬ ЗАКАЗ</button>
+					</div>
+		</div>
+	</div>
+	<div class="item">
+				<img src="img/top2_bg.jpg" alt="">
+		<div class="carousel-caption">
+					<p>АУДИОРОЛИКИ, ОЗВУЧКА ВИДЕО,<br> ЗАПИСТЬ ГОЛОСОВ, ВИДЕОРОЛИКИ</p>
+					<div class="center_btn">
+						<button type="button" class="zakaz_btn">СДЕЛАТЬ ЗАКАЗ</button>
+					</div>
+		</div>
+	</div>
+	<div class="item">
+				<img src="img/top3_bg.jpg" alt="">
+		<div class="carousel-caption">
+					<p>АУДИОРОЛИКИ, ОЗВУЧКА ВИДЕО,<br> ЗАПИСТЬ ГОЛОСОВ, ВИДЕОРОЛИКИ</p>
+					<div class="center_btn">
+						<button type="button" class="zakaz_btn">СДЕЛАТЬ ЗАКАЗ</button>
+					</div>
+		</div>
+	</div>
+
+	</div>
+	<!--- Стрелики переключения слайдами--->
+		<a href="#carousel" class="left carousel-control" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+		<a href="#carousel" class="right carousel-control" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+</div>
+
+</section>
+</div>
+
+
+
+
+
+<!--<div class="top_img clearfix">
 		<p>АУДИОРОЛИКИ, ОЗВУЧКА ВИДЕО,
-			<br> ЗАПИСТЬ ГОЛОСОВ, ВИДЕОРОЛИКИ</p>
+		<br> ЗАПИСТЬ ГОЛОСОВ, ВИДЕОРОЛИКИ</p>
 		<div class="center_btn">
 			<button type="button" class="zakaz_btn">СДЕЛАТЬ ЗАКАЗ</button>
 		</div>
-	</div>
+</div>-->
 	<section>
 		<div class="container">
 			<div class="row">

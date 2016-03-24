@@ -266,7 +266,11 @@ body {
 	-webkit-transition: height 0.3s;
 	transition: height 0.3s;
 }
-
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  min-height: 480px;    /* Set slide height here */
+width: 100% !important;
+}
 
 /* Top IMG*/
 .top_img {
