@@ -15,8 +15,6 @@
 	<link rel="shortcut icon" href="favicon.png" />
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.css"/>
 	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
-	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css" />
 	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/main.css" />
@@ -31,12 +29,10 @@
 <script src="libs/respond/respond.min.js"></script>
 <![endif]-->
 	<script src="libs/jquery/jquery-2.2.1.js"></script>
-<!--	<script src="libs/bootstrap/bootstrap.min.js"></script>-->
+<script src="libs/bootstrap/bootstrap.min.js"></script>
 	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
 	<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
-	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
 	<script src="libs/countdown/jquery.plugin.js"></script>
 	<script src="libs/countdown/jquery.countdown.min.js"></script>
 	<script src="libs/countdown/jquery.countdown-ru.js"></script>
@@ -47,6 +43,35 @@
 	<!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter -->
 	<!-- /Google Analytics counter -->
+<header>
+    	<!--left Navigators-->
+    <div class="leftnavbar">
+				<ul id="navigationMenu">
+    				<li><a class="cabinet" href="#"><span>ONLINE ЗАКАЗ</span></a></li>
+
+    				<li><a class="online_zakaz" href="#"><span>ЛИЧНЫЙ КАБИНЕТ</span></a></li>
+
+    				<li><a class="hronomer" href="#"><span>ХРОНОМЕР</span></a></li>
+
+    				<li><a class="pagemeter" href="#"><span>СТРАНИЦЕМЕР</span></a></li>
+
+   					<li><a class="contact" href="#"><span>КОНТАКТЫ</span></a></li>
+
+				</ul>
+<!--появление меню после прокрутки 900 пикселей вниз с фейдом в 400мс -->
+<script>
+jQuery(function(f){
+    var element = f('#navigationMenu');
+    f(window).scroll(function(){
+        element['fade'+ (f(this).scrollTop() > 900 ? 'In': 'Out')](400);
+    });
+    <script type="javascript" src="Untitled-1.js" />
+});
+</script>
+
+
+	</div>
+
 	<div class="top_header">
 		<div class="header_topline">
 			<div class="container">
@@ -132,7 +157,7 @@
 			var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
 		</script>
 	</div>
-
+</header>
 <section>
 <div class="container-fluid">
 <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -181,9 +206,10 @@
 			<span class="glyphicon glyphicon-chevron-right"></span>
 		</a>
 </div>
+</div>
 
 </section>
-</div>
+
 
 
 
@@ -196,6 +222,10 @@
 			<button type="button" class="zakaz_btn">СДЕЛАТЬ ЗАКАЗ</button>
 		</div>
 </div>-->
+
+
+
+
 	<section>
 		<div class="container">
 			<div class="row">
@@ -331,7 +361,7 @@
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row"   style="margin-top:40px">
 				<div class="col-md-2">
 					<img src="images/user_1.jpg" alt="feedback" class="round">
 				</div>
@@ -341,7 +371,7 @@
 					<p class="feedback">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis qui, dicta, libero pariatur amet error adipisci autem magnam ea, explicabo ipsa quasi porro aspernatur nam dolorum sapiente voluptas eaque deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellendus amet alias."</p><hr>
 				</div>
 			</div>
-						<div class="row">
+						<div class="row"   style="margin-top:40px">
 				<div class="col-md-2">
 					<img src="images/user_1.jpg" alt="feedback" class="round">
 				</div>
