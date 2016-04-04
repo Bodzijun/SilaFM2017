@@ -322,23 +322,6 @@ body textarea:required:valid {
 }
 /* ------------- end --------------------------- */
 
-/* Top IMG
-.top_img {
-	background-color: #385aa6;
-	background-image: url(../img/top_bg_blur.jpg);
-	background-size: cover;
-	display: block;
-	height: 480px;
-	text-align: center;
-	width: 100%;
-	z-index: 0;
-}
-
-.top_img:hover {
-	background-image: url(../img/top_bg.jpg);
-	-webkit-transition: background-image 2s ease-out 0.3s;
-	transition: background-image 2s ease-out 0.3s;
-}*/
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -350,11 +333,11 @@ width: 100% !important;
     padding: 0;
 }
 
-.carousel-caption>p {
+.carousel-caption>h1 {
 	color: #ffffff;
 	font-family: "RobotoLight", sans-serif;
 	font-size: 36px;
-
+    text-shadow: 2px 2px 5px #343434;
 }
 
 .center_btn {
@@ -788,3 +771,16 @@ hr {
     text-transform: uppercase;
 }
 
+#scrollup {
+position: fixed; /* фиксированная позиция */
+opacity: 0.8; /* прозрачность */
+padding: 15px 10px 10px; /* отступы */
+background: #aaa;
+border-radius: 5px; /* скругление углов */
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+right: 15px; /* отступ слева */
+bottom: 10px; /* отступ снизу */
+display: none; /* спрятать блок */
+cursor: pointer;
+}

@@ -35,14 +35,24 @@ $(document).ready(function() {
 
 	//Кнопка "Наверх"
 	//Документация:
-	//http://api.jquery.com/scrolltop/
-	//http://api.jquery.com/animate/
-	$("#top").click(function () {
-		$("body, html").animate({
-			scrollTop: 0
-		}, 800);
+jQuery( document ).ready(function() {
+	jQuery('#scrollup img').mouseover( function(){
+		jQuery( this ).animate({opacity: 0.65},100);
+	}).mouseout( function(){
+		jQuery( this ).animate({opacity: 1},100);
+	}).click( function(){
+		window.scroll(0 ,0);
 		return false;
 	});
+
+	jQuery(window).scroll(function(){
+		if ( jQuery(document).scrollTop() > 0 ) {
+			jQuery('#scrollup').fadeIn('fast');
+		} else {
+			jQuery('#scrollup').fadeOut('fast');
+		}
+	});
+});
 
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
