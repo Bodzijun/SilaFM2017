@@ -82,6 +82,9 @@ body textarea:required:valid {
 	display: inline-block;
 	margin-left: 4em;
 }
+.cbp-hsmenu > li a {
+text-decoration: none;
+}
 .cbp-hsmenu > li:first-child {
 	margin-left: 0;
 }
@@ -325,7 +328,7 @@ body textarea:required:valid {
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-min-height: 200px;    /* Set slide height here */
+min-height: 150px;    /* Set slide height here */
 width: 100% !important;
 }
 
