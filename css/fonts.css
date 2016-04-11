@@ -38,6 +38,20 @@
 	font-style: normal;
 	font-weight: normal;
 }
+/* font-family: "RobotoItalic"; */
+@font-face {
+	font-family: "RobotoItalic";
+	src: url("../fonts/RobotoItalic/RobotoItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "RobotoItalic"; */
+@font-face {
+	font-family: "RobotoLightItalic";
+	src: url("../fonts/RobotoLightItalic/RobotoLightItalic.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
 
 
 /* font for main menu*/

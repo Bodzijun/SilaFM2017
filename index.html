@@ -7,431 +7,517 @@
 <!--<![endif]-->
 
 <head>
-	<meta charset="utf-8" />
-	<title>Sila.FM</title>
-	<meta name="description" content="" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="icon" type="image/png" href="img/favicon.png" />
-	<link rel="stylesheet" href="libs/bootstrap/bootstrap.css"/>
-	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
-	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/media.css" />
-	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+    <meta charset="utf-8" />
+    <title>Sila.FM</title>
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
 
 
 </head>
 
 <body>
-	<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 <script src="libs/html5shiv/es5-shim.min.js"></script>
 <script src="libs/html5shiv/html5shiv.min.js"></script>
 <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 <script src="libs/respond/respond.min.js"></script>
 <![endif]-->
-	<script src="libs/jquery/jquery-2.2.1.js"></script>
+    <script src="libs/jquery/jquery-2.2.1.js"></script>
     <script src="libs/bootstrap/bootstrap.min.js"></script>
-	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-	<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
-	<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
-	<script src="libs/countdown/jquery.plugin.js"></script>
-	<script src="libs/countdown/jquery.countdown.min.js"></script>
-	<script src="libs/countdown/jquery.countdown-ru.js"></script>
-	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
-	<!--<script src="libs/landing-nav/navigation.js"></script>-->
-	<!-- Add fancyBox -->
+    <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+    <script src="libs/scrollto/jquery.scrollTo.min.js"></script>
+    <script src="libs/countdown/jquery.plugin.js"></script>
+    <script src="libs/countdown/jquery.countdown.min.js"></script>
+    <script src="libs/countdown/jquery.countdown-ru.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+    <!--<script src="libs/landing-nav/navigation.js"></script>-->
+    <!-- Add fancyBox -->
 
-	<script src="js/common.js"></script>
-	<script src="js/modernizr.custom.js"></script>
-	<!-- Yandex.Metrika counter -->
-	<!-- /Yandex.Metrika counter -->
-	<!-- Google Analytics counter -->
-	<!-- /Google Analytics counter -->
-<header>
-    	<!--left Navigators-->
-    <div class="leftnavbar">
-				<ul id="navigationMenu">
-    				<li><a class="cabinet" href="#"><span>ONLINE ЗАКАЗ</span></a></li>
+    <script src="js/common.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <!-- /Yandex.Metrika counter -->
+    <!-- Google Analytics counter -->
+    <!-- /Google Analytics counter -->
+    <header>
+        <!--left Navigators-->
+        <div class="leftnavbar">
+            <ul id="navigationMenu">
+                <li><a class="cabinet" href="#"><span>ONLINE ЗАКАЗ</span></a></li>
 
-    				<li><a class="online_zakaz" href="#"><span>ЛИЧНЫЙ КАБИНЕТ</span></a></li>
+                <li><a class="online_zakaz" href="#"><span>ЛИЧНЫЙ КАБИНЕТ</span></a></li>
 
-    				<li><a class="hronomer" href="#"><span>ХРОНОМЕР</span></a></li>
+                <li><a class="hronomer" href="#"><span>ХРОНОМЕР</span></a></li>
 
-    				<li><a class="pagemeter" href="#"><span>СТРАНИЦЕМЕР</span></a></li>
+                <li><a class="pagemeter" href="#"><span>СТРАНИЦЕМЕР</span></a></li>
 
-   					<li><a class="contact" href="#"><span>КОНТАКТЫ</span></a></li>
+                <li><a class="contact" href="#"><span>КОНТАКТЫ</span></a></li>
 
-				</ul>
-<!--появление меню после прокрутки 700 пикселей вниз с фейдом в 400мс -->
-<script>
-jQuery(function(f){
-    var element = f('#navigationMenu');
-    f(window).scroll(function(){
-        element['fade'+ (f(this).scrollTop() > 700 ? 'In': 'Out')](400);
-    });
-});
-</script>
+            </ul>
+            <!--появление меню после прокрутки 300 пикселей вниз с фейдом в 400мс -->
+            <script>
+                jQuery(function (f) {
+                    var element = f('#navigationMenu');
+                    f(window).scroll(function () {
+                        element['fade' + (f(this).scrollTop() > 300 ? 'In' : 'Out')](400);
+                    });
+                });
+            </script>
 
 
-	</div>
+        </div>
 
-	<div class="top_header">
-		<div class="header_topline">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-2 col-sm-3 col-xs-4">
-						<div class="logo_wrap">
-							<a href="#"><img src="img/logo.png" alt="Sila.FM"></a>
-							креативное агентство звука
-						</div>
-					</div>
+        <div class="top_header">
+            <div class="header_topline">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3 col-xs-4">
+                            <div class="logo_wrap">
+                                <a href="#"><img src="img/logo.png" alt="Sila.FM"></a>
+                                креативное агентство звука
+                            </div>
+                        </div>
 
-					<div class="col-md-8 col-sm-7 hidden-xs">
-						<div class="top_contact">
-							<i class="fa fa-phone"></i> 8-800-200-20-20
-						</div>
-					</div>
-					<div class="col-md-2 col-sm-2 col-xs-8">
-						<div class="soc_buttons">
-							<a href="#"><i class="fa fa-vk"></i></a>
-							<a href="#"><i class="fa fa-facebook-square"></i></a>
-							<a href="#"><i class="fa fa-skype"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="mnu">
-			<nav class="cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
-				<div class="cbp-hsinner">
-					<ul class="cbp-hsmenu">
-						<li>
-							<a href="#">Главная</a>
-						</li>
-						<li>
-							<a href="#">Дикторы</a>
-							<ul class="cbp-hssubmenu">
-								<li>
-									<a href="#"><img src="img/ruman.png" alt="img07" /><span>Русские дикторы</span></a>
-								</li>
-								<li>
-									<a href="#"><img src="img/uaman.png" alt="img08" /><span>Украинские дикторы</span></a>
-								</li>
-								<li>
-									<a href="#"><img src="img/foreigner.png" alt="img09" /><span>Иностранные дикторы</span></a>
-								</li>
-								<li>
-									<a href="#"><img src="img/songer.png" alt="img10" /><span>Вокалисты</span></a>
-								</li>
-								<li>
-									<a href="#"><img src="img/parodies.png" alt="img01" /><span>Пародисты</span></a>
-								</li>
-								<li>
-									<a href="#"><img src="img/child.png" alt="img02" /><span>Детские голоса</span></a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="#">Услуги</a>
-							<ul class="cbp-hssubmenu">
-								<li>
-									<a href="#"><img src="img/radio_c.png" alt="img06" /><span>Аудиролики</span></a>
-								</li>
-								<li>
-									<a href="#"><img src="img/tv_c.png" alt="img06" /><span>Озвучивание видеороликов</span></a>
-								</li>
-								<li>
-									<a href="#"><img src="img/film_c.png" alt="img09" /><span>Создание видеороликов</span></a>
-								</li>
-								<li>
-									<a href="#"><img src="img/vinil.png" alt="img09" /><span>Музыкальные подложки</span></a>
-								</li>
-							</ul>
-						</li>
-						<li><a href="#">Оплата</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-				</div>
-			</nav>
-		</div>
-		<script src="js/cbpHorizontalSlideOutMenu.js"></script>
-		<script>
-			var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
-		</script>
-	</div>
-</header>
-<section>
-<div class="container-fluid">
-<div id="carousel" class="carousel slide" data-ride="carousel">
-		<!--- Индикаторы слайдов--->
-	    <ol class="carousel-indicators">
-		<li class="active" data-target="#carousel" data-slide-to="0"></li>
-		<li data-target="#carousel" data-slide-to="1"></li>
-		<li data-target="#carousel" data-slide-to="2"></li>
-	    </ol>
-		<!--- Слайди--->
-	<div class="carousel-inner">
-	<div class="item active">
-		<img src="img/img1.jpg" alt="">
-		<div class="carousel-caption">
-					<h1>АУДИОРОЛИКИ</h1>
+                        <div class="col-md-8 col-sm-7 hidden-xs">
+                            <div class="top_contact">
+                                <i class="fa fa-phone"></i> 8-800-200-20-20
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-8">
+                            <div class="soc_buttons">
+                                <a href="#"><i class="fa fa-vk"></i></a>
+                                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                                <a href="#"><i class="fa fa-skype"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mnu">
+                <nav class="cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
+                    <div class="cbp-hsinner">
+                        <ul class="cbp-hsmenu">
+                            <li>
+                                <a href="#">Главная</a>
+                            </li>
+                            <li>
+                                <a href="#">Дикторы</a>
+                                <ul class="cbp-hssubmenu">
+                                    <li>
+                                        <a href="#"><img src="img/ruman.png" alt="img07" /><span>Русские дикторы</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/uaman.png" alt="img08" /><span>Украинские дикторы</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/foreigner.png" alt="img09" /><span>Иностранные дикторы</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/songer.png" alt="img10" /><span>Вокалисты</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/parodies.png" alt="img01" /><span>Пародисты</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/child.png" alt="img02" /><span>Детские голоса</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Услуги</a>
+                                <ul class="cbp-hssubmenu">
+                                    <li>
+                                        <a href="#"><img src="img/radio_c.png" alt="img06" /><span>Аудиролики</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/tv_c.png" alt="img06" /><span>Озвучивание видеороликов</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/film_c.png" alt="img09" /><span>Создание видеороликов</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/vinil.png" alt="img09" /><span>Музыкальные подложки</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <script src="js/cbpHorizontalSlideOutMenu.js"></script>
+            <script>
+                var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
+            </script>
+        </div>
+    </header>
+    <section>
+        <div class="container-fluid">
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <!--- Индикаторы слайдов--->
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#carousel" data-slide-to="0"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                <!--- Слайди--->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/img1.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h3>АУДИОРОЛИКИ</h3>
 					<div class="center_btn">
 						<button type="button" class="zakaz_btn">СДЕЛАТЬ ЗАКАЗ</button>
 					</div>
-		</div>
-	</div>
-	<div class="item">
-				<img src="img/img2.jpg" alt="">
-		<div class="carousel-caption">
-					<h1>ОЗВУЧАНИЕ <br> ВИДЕРОЛИКОВ</h1>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/img2.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h3>ОЗВУЧАНИЕ ВИДЕРОЛИКОВ</h3>
 					<div class="center_btn">
 						<button type="button" class="zakaz_btn">СДЕЛАТЬ ЗАКАЗ</button>
 					</div>
-		</div>
-	</div>
-	<div class="item">
-				<img src="img/img3.jpg" alt="">
-		<div class="carousel-caption">
-
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/img3.jpg" alt="">
+                        <div class="carousel-caption">
 					<div class="center_btn">
 						<button type="button" class="zakaz_btn">СДЕЛАТЬ ЗАКАЗ</button>
 					</div>
-		</div>
-	</div>
+                        </div>
+                    </div>
 
-	</div>
-	<!--- Стрелики переключения слайдами--->
-		<a href="#carousel" class="left carousel-control" data-slide="prev">
-			<span class="glyphicon glyphicon-chevron-left"></span>
-		</a>
-		<a href="#carousel" class="right carousel-control" data-slide="next">
-			<span class="glyphicon glyphicon-chevron-right"></span>
-		</a>
-</div>
-</div>
+                </div>
+                <!--- Стрелики переключения слайдами--->
+                <a href="#carousel" class="left carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#carousel" class="right carousel-control" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
 
-</section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="miniblock">
+                        <div class="red">
+                        <h3>Услуги студии</h3></div>
+
+                        <ol class="quikblock">
+                        <li> &nbsp;Запись дикторов</li>
+                        <li> &nbsp;Изготовление аудиороликов</li>
+                        <li> &nbsp;Озвучание видео</li>
+                        <li> &nbsp;Создание сценариев</li>
+                        <li> &nbsp;Вокальные аудиоролики </li>
+                        <li> &nbsp;Джинглы</li>
+                        <li> &nbsp;Закадровый перевод</li>
+                        <li> &nbsp;Голосовое меню</li>
+                    </ol>
+                    <a href="index-2.html" class="link1">Узнать больше</a>
+                    <hr>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                <div class="miniblock">
+                <div class="blue">
+                        <h3>Новые работы</h3></div>
+                       <ol class="quikblock">
+                        <li> &nbsp;Осаго </li>
+                        <li> &nbsp;БукиВеди</li>
+                        <li> &nbsp;КулерКом</li>
+                        <li> &nbsp;СТК</li>
+                        <li> &nbsp;Звезда Столицы </li>
+                        <li> &nbsp;Ресэил Эксперт</li>
+                        <li> &nbsp;"Экран"</li>
+                        <li> &nbsp;Неотрак</li>
+                    </ol>
+                    <a href="index-2.html" class="link1">Узнать больше</a>
+                    <hr>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                 <div class="miniblock">
+                    <div class="yeelow">
+                        <h3>Новые дикторы</h3></div>
+                    <ol class="quikblock">
+                        <li> &nbsp;Bruce Jenkins (EN)</li>
+                        <li> &nbsp;Никитин Алексей (RU)</li>
+                        <li> &nbsp;Peter Jones (EN)</li>
+                        <li> &nbsp;Плёнкин Павел (RU)</li>
+                        <li> &nbsp;Никитин Алексей (RU) </li>
+                        <li> &nbsp;Ивасишина Елена (RU)</li>
+                        <li> &nbsp;Власов Ярослав (UA)</li>
+                        <li> &nbsp;Грицанюк Ольга (UA)</li>
+                    </ol>
+                    <a href="index-2.html" class="link1">Узнать больше</a>
+                  <hr>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="miniblock">
+                        <div class="green">
+                        <h3>Озвучание видео</h3></div>
+                       <ol class="quikblock">
+                        <li> &nbsp;Закадровый голос</li>
+                        <li> &nbsp;Дубляж</li>
+                        <li> &nbsp;Синхрон</li>
+                        <li> &nbsp;Липсинг</li>
+                        <li> &nbsp;Шумовое оформление</li>
+                        <li> &nbsp;Финальное сведение</li>
+                        <li> &nbsp;Озвучка маппингов</li>
+                        <br>
+                    </ol>
+                    <a href="index-2.html" class="link1">Узнать больше</a>
+                    <hr>
+                    </div>
+                </div>
+            </div>
+
+
+           <div class="fillcontainer">
+            <div class="row">
+                <div class="about">
+                    <div class="col-md-3 hidden-sm hidden-xs">
+                        <div class="circle_wrap">
+                            <a href="#" class="btn_circle">О нас</a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-12">
+                        <a class="palitra"><img src="images/palit.png" alt="silafm"> </a>
+                        <p class="basictext"><span style="font-family:'RobotoRegular'">Агентство Звука Сила.ФМ</span> оказывает услуги: изготовление аудиороликов и радиороликов, озвучивание видеороликов, озвучка фильмов, анимации, корпоративного видео, запись аудиорекламы, радиорекламы.
+                            <br> Принцип работы &mdash; удаленное on-line сотрудничество с заказчиками аудиорекламы, видеороликов и радиороликов. Отправка заказа по электронной почте или в ЛИЧНЫЙ КАБИНЕТ. Сроки исполнения &mdash; от 1 часа до 1 рабочего дня. Заказчики &mdash; рекламные и медиабаинговые агентства, радиостанции, торговые марки и бренды, телеканалы, рекламные компании, видеостудии, интернет-компании, продакшн-студии, звукорежиссеры, рекламные и маркетинговые отделы компаний, провайдеры, кинотеатры, супермаркеты.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
 
 
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="about">
-					<div class="col-md-3 hidden-sm hidden-xs">
-						<div class="circle_wrap">
-							<a href="#" class="btn_circle">О нас</a>
-						</div>
-					</div>
-					<div class="col-md-9 col-sm-12">
-						<a class="palitra"><img src="images/palit.png" alt="silafm"> </a>
-						<p class="basictext"><span style="font-family:'RobotoBold'">Агентство Звука Сила.ФМ</span> оказывает услуги: изготовление аудиороликов и радиороликов, озвучивание видеороликов, озвучка фильмов, анимации, корпоративного видео, запись аудиорекламы, радиорекламы.
-							<br> Принцип работы &mdash; удаленное on-line сотрудничество с заказчиками аудиорекламы, видеороликов и радиороликов. Отправка заказа по электронной почте или в ЛИЧНЫЙ КАБИНЕТ. Сроки исполнения &mdash; от 1 часа до 1 рабочего дня. Заказчики &mdash; рекламные и медиабаинговые агентства, радиостанции, торговые марки и бренды, телеканалы, рекламные компании, видеостудии, интернет-компании, продакшн-студии, звукорежиссеры, рекламные и маркетинговые отделы компаний, провайдеры, кинотеатры, супермаркеты.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</section>
-
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="moveone">
-						<div class="box_blue">
-							<a href="#" class="h1block">ИЗГОТОВЛЕНИЕ СЦЕНАРИЯ
-							<h2 class="h2block">для радио и видеорекламы, написание текстов песен,<br> переводы</h2></a>
-						</div>
-						<div class="rect_blue"></div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<div class="moveone">
-						<div class="box_red">
-							<a href="#" class="h1block">ЗАПИСЬ ДИКТОРА
+        <div class="progressboard">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="moveone">
+                            <div class="box_blue">
+                                <a href="#" class="h1block">ИЗГОТОВЛЕНИЕ СЦЕНАРИЯ
+							<h2 class="h2block">для радио и видеорекламы, написание текстов песен, переводы</h2></a>
+                            </div>
+                            <div class="rect_blue"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="moveone">
+                            <div class="box_red">
+                                <a href="#" class="h1block">ЗАПИСЬ ДИКТОРА
 								<h2 class="h2block">федеральные дикторы, актеры дубляжа, киноактеры,<br> пародисты, иностранные дикторы носители языка, вокалисты</h2></a>
-						</div>
-						<div class="rect_red"></div>
-						<div class="rectangle1"></div>
-						<div class="rectangle2"></div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-6 col-xs-6 clearfix">
-					<div class="moveone">
-						<div class="box_green">
-							<a href="#" class="h1block">ИЗГОТОВЛЕНИЕ АУДИОРОЛИКОВ
+                            </div>
+                            <div class="rect_red"></div>
+                            <div class="rectangle1"></div>
+                            <div class="rectangle2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6 clearfix">
+                        <div class="moveone">
+                            <div class="box_green">
+                                <a href="#" class="h1block">ИЗГОТОВЛЕНИЕ<br> АУДИОРОЛИКОВ
 							<h2 class="h2block">обработка голоса и сведение,<br> аудиоэффекты</h2></a>
-						</div>
-						<div class="rect_l"></div>
-						<div class="rect_gr_l"></div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6 col-xs-6">
-					<div class="moveone">
-						<div class="box_yellow">
-							<a href="#" class="h1block">ОЗВУЧАНИЕ<br> ВИДЕОРОЛИКОВ
-							<h2 class="h2block">cинхрон, липсинг, <br> закадровый голос, субтитры</h2></a>
-						</div>
-						<div class="rect_r"></div>
-						<div class="rect_yel_r"></div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-sm-6 col-xs-6">
-					<div class="moveone">
-						<div class="box_yellow">
-							<a href="#" class="h1block">ЛИЦЕНЗИОННАЯ И АВТОРСКАЯ МУЗЫКА
-							<h2 class="h2block">написание саундтрэков, джинглов,<br> корпоративной музыки</h2></a>
-						</div>
-						<div class="rect_l"></div>
-						<div class="rect_yel_l"></div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6 col-xs-6">
-					<div class="moveone">
-						<div class="box_green">
-							<a href="#" class="h1block">СОЗДАНИЕ<br> ВИДЕОРОЛИКОВ
+                            </div>
+                            <div class="rect_l"></div>
+                            <div class="rect_gr_l"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="moveone">
+                            <div class="box_yellow">
+                                <a href="#" class="h1block">ОЗВУЧАНИЕ<br> ВИДЕОРОЛИКОВ
+							<h2 class="h2block">cинхрон, липсинг, адаптация<br> закадровый голос, субтитры,</h2></a>
+                            </div>
+                            <div class="rect_r"></div>
+                            <div class="rect_yel_r"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="moveone">
+                            <div class="box_yellow">
+                                <a href="#" class="h1block">ЛИЦЕНЗИОННАЯ И АВТОРСКАЯ МУЗЫКА
+							<h2 class="h2block">саундтрэки, джинглы,<br> корпоративная музыка</h2></a>
+                            </div>
+                            <div class="rect_l"></div>
+                            <div class="rect_yel_l"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="moveone">
+                            <div class="box_green">
+                                <a href="#" class="h1block">СОЗДАНИЕ<br> ВИДЕОРОЛИКОВ
 							<h2 class="h2block">слайдшоу, 3D и моушн графика,<br> мультипликация</h2></a>
-						</div>
-						<div class="rect_r"></div>
-						<div class="rect_gr_r"></div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-sm-12 col-xs-12">
-					<div class="boxend_blue">
-						<h1 class="h1block"><i class="fa fa-check-square-o"></i> НАШИ ЦАРАПИНЫ</h1>
-						<div class="scratches clearfix">
-							<figure class="sign">
-								<p><img src="img/radio.png" alt="silafm" class="incircle"></p>
-								<figcaption>Аудиоролики</figcaption>
-							</figure>
-							<figure class="sign">
-								<p><img src="img/tv.png" alt="silafm" class="incircle"></p>
-								<figcaption>Озвучки</figcaption>
-							</figure>
-							<figure class="sign">
-								<p><img src="img/film.png" alt="silafm" class="incircle"></p>
-								<figcaption>Видеоролики</figcaption>
-							</figure>
-							<figure class="sign">
-								<p><img src="img/gramafon.png" alt="silafm" class="incircle"></p>
-								<figcaption>Музыка</figcaption>
-							</figure>
-						</div>
-					</div>
+                            </div>
+                            <div class="rect_r"></div>
+                            <div class="rect_gr_r"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="boxend_blue">
+                            <h1 class="h1block"><i class="fa fa-check-square-o"></i> НАШИ ЦАРАПИНЫ</h1>
+                            <div class="scratches clearfix">
+                                <figure class="sign">
+                                    <p><img src="img/radio.png" alt="silafm" class="incircle"></p>
+                                    <figcaption>Аудиоролики</figcaption>
+                                </figure>
+                                <figure class="sign">
+                                    <p><img src="img/tv.png" alt="silafm" class="incircle"></p>
+                                    <figcaption>Озвучки</figcaption>
+                                </figure>
+                                <figure class="sign">
+                                    <p><img src="img/film.png" alt="silafm" class="incircle"></p>
+                                    <figcaption>Видеоролики</figcaption>
+                                </figure>
+                                <figure class="sign">
+                                    <p><img src="img/gramafon.png" alt="silafm" class="incircle"></p>
+                                    <figcaption>Музыка</figcaption>
+                                </figure>
+                            </div>
+                        </div>
 
-					<div class="rectend_l"></div>
-					<div class="rectend_r"></div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-2">
-					<img src="images/user_1.jpg" alt="feedback" class="round">
-				</div>
-				<div class="col-md-9 col-md-offset-1">
-					<a class="palitra"><img src="images/palit.png" alt="silafm"> </a>
-					<h2>Директор АБН. Марк Иванович</h2>
-					<p class="feedback">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis qui, dicta, libero pariatur amet error adipisci autem magnam ea, exp licabo ipsa quasi porro aspernatur nam dolorum sapiente voluptas eaque deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellendus amet alias."</p>
-					<hr>
-				</div>
-			</div>
+                        <div class="rectend_l"></div>
+                        <div class="rectend_r"></div>
+                    </div>
+                </div>
+            </div>
 
-			<div class="row"   style="margin-top:40px">
-				<div class="col-md-2">
-					<img src="images/user_1.jpg" alt="feedback" class="round">
-				</div>
-				<div class="col-md-9 col-md-offset-1">
-					<a class="palitra"><img src="images/palit.png" alt="silafm"> </a>
-					<h2>Директор MANGO-OFFICE. Марк Иванович</h2>
-					<p class="feedback">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis qui, dicta, libero pariatur amet error adipisci autem magnam ea, explicabo ipsa quasi porro aspernatur nam dolorum sapiente voluptas eaque deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellendus amet alias."</p><hr>
-				</div>
-			</div>
-						<div class="row"   style="margin-top:40px">
-				<div class="col-md-2">
-					<img src="images/user_1.jpg" alt="feedback" class="round">
-				</div>
-				<div class="col-md-9 col-md-offset-1">
-					<a class="palitra"><img src="images/palit.png" alt="silafm"> </a>
-					<h2>Директор FBI. Марк Иванович</h2>
-					<p class="feedback">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis qui, dicta, libero pariatur amet error adipisci autem magnam ea, explicabo ipsa quasi porro aspernatur nam dolorum sapiente voluptas eaque deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellendus amet alias."</p><hr>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-5">
-					<h4>НАШИ ПРИНЦИПЫ:</h4><hr>
-					<p class="coment">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis qui, dicta, libero pariatur amet error adipisci autem magnam ea, explicabo ipsa quasi porro aspernatur nam dolorum sapiente voluptas eaque deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellendus amet alias."</p>
-				</div>
-				<div class="col-md-3  col-md-offset-1"><h4>ГРАФИК РАБОТЫ:</h4><hr>
-					По будним дням: 09:00 - 23:00
-					<br> По субботам: 10:00 - 15:00
-					<br> Выходные: воскресенье.
-					<h4>ПОЧТОВЫЙ АДРЕС:</h4><hr>
-					<p>г. Москва, пер. Электрический д.12 помещение ІІ, комн. 6</p>
-				</div>
-				<div class="col-md-3"><h4>КОНТАКТЫ:</h4>
-				<hr>
-					<p><b>e-mail:</b> info@sila.fm
-					<br><b>В России:</b> (495) 20-435-20
-					<br><b>В Украине:</b> (044) 545-77-13
-					<br><b>skype:</b> sila.fm
-					<br><b>ICQ:</b> 322-653-493</p>
-					<div class="callz">
-					<a href="#callback" class="callzakaz fancybox"> Заказать звонок</a>
-					</div>
-					</div>
-			</div>
-			<div class="row">
-			<div class="footer_mn">
-				<ul>
-						<li>
-							<a href="#">Главная</a>
-						</li>
-						<li>
-							<a href="#">Дикторы</a>
-						</li>
-						<li>
-							<a href="#">Услуги</a>
-						</li>
-						<li>
-							<a href="#">Оплата</a>
-						</li>
-						<li>
-							<a href="#">Контакты</a>
-						</li>
-				</ul>
-				</div>
-			</div>
-		</div>
-	<div id="scrollup"><img alt="Прокрутить вверх" src="/img/up.svg"></div>
-	</footer>
-<div class="hidden">
-    <form id="callback" class="pop_form">
-        <h4>Заказать обратный звонок</h4>
-        <input type="text" name="name"  placeholder="Ваше имя..." required /><br>
-        <input type="text" name="phone"  placeholder="Ваш телефон..." required/><br>
-        <input type="text" name="text" size="40" placeholder="Коментарии..."/><br>
-        <button class="callzakaz" type="submit">Заказать</button>
-    </form>
-</div>
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="images/user_1.jpg" alt="feedback" class="round">
+                </div>
+                <div class="col-md-9 col-md-offset-1">
+                    <a class="palitra"><img src="images/palit.png" alt="silafm"> </a>
+                    <h2>Директор АБН. Марк Иванович</h2>
+                    <p class="feedback">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis qui, dicta, libero pariatur amet error adipisci autem magnam ea, exp licabo ipsa quasi porro aspernatur nam dolorum sapiente voluptas eaque deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellendus amet alias."</p>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:40px">
+                <div class="col-md-2">
+                    <img src="images/user_1.jpg" alt="feedback" class="round">
+                </div>
+                <div class="col-md-9 col-md-offset-1">
+                    <a class="palitra"><img src="images/palit.png" alt="silafm"> </a>
+                    <h2>Директор MANGO-OFFICE. Марк Иванович</h2>
+                    <p class="feedback">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis qui, dicta, libero pariatur amet error adipisci autem magnam ea, explicabo ipsa quasi porro aspernatur nam dolorum sapiente voluptas eaque deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellendus amet alias."</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="row" style="margin-top:40px">
+                <div class="col-md-2">
+                    <img src="images/user_1.jpg" alt="feedback" class="round">
+                </div>
+                <div class="col-md-9 col-md-offset-1">
+                    <a class="palitra"><img src="images/palit.png" alt="silafm"> </a>
+                    <h2>Директор FBI. Марк Иванович</h2>
+                    <p class="feedback">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis qui, dicta, libero pariatur amet error adipisci autem magnam ea, explicabo ipsa quasi porro aspernatur nam dolorum sapiente voluptas eaque deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellendus amet alias."</p>
+                    <hr>
+                </div>
+                <div class="row">
+                   <div class="col-md-12"><h2>Наши клиенты</h2></div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h4>НАШИ ПРИНЦИПЫ:</h4>
+                    <hr>
+                    <p class="coment">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis qui, dicta, libero pariatur amet error adipisci autem magnam ea, explicabo ipsa quasi porro aspernatur nam dolorum sapiente voluptas eaque deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellendus amet alias."</p>
+                                   <br>
+                                   <br>
+                                   <hr>
+                    <div class="footer_mn">
+
+                    <ul>
+                        <li>
+                            <a href="#">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#">Дикторы</a>
+                        </li>
+                        <li>
+                            <a href="#">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#">Оплата</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                <div class="col-md-3  col-md-offset-1">
+                    <h4>ГРАФИК РАБОТЫ:</h4>
+                    <hr> По будним дням: 09:00 - 23:00
+                    <br> По субботам: 10:00 - 15:00
+                    <br> Выходные: воскресенье.
+                    <h4>ПОЧТОВЫЙ АДРЕС:</h4>
+                    <hr>
+                    <p>г. Москва, пер. Электрический д.12 помещение ІІ, комн. 6</p>
+                     <p>г. Киев, пер. Электрический д.12 помещение ІІ, комн. 6</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>КОНТАКТЫ:</h4>
+                    <hr>
+                    <p><b>e-mail:</b> info@sila.fm
+                        <br><b>В России:</b> (495) 20-435-20
+                        <br><b>В Украине:</b> (044) 545-77-13
+                        <br><b>skype:</b> sila.fm
+                        <br><b>ICQ:</b> 322-653-493</p>
+                    <div class="callz">
+                        <a href="#callback" class="callzakaz fancybox"> Заказать звонок</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="scrollup"><img alt="Прокрутить вверх" src="/img/up.svg"></div>
+
+    <div class="hidden">
+        <form id="callback" class="pop_form">
+            <h4>Заказать обратный звонок</h4>
+            <input type="text" name="name" placeholder="Ваше имя..." required />
+            <br>
+            <input type="text" name="phone" placeholder="Ваш телефон..." required/>
+            <br>
+            <input type="text" name="text" size="40" placeholder="Коментарии..." />
+            <br>
+            <button class="callzakaz" type="submit">Заказать</button>
+        </form>
+    </div>
+</footer>
 </body>
-
 </html>

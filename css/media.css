@@ -14,13 +14,14 @@
 	/*блоки цветные*/
 .h1block {
 
-	font-size: 28px;
+	font-size: 18pt;
 
 	}
 .h2block {
-	font-size: 16px;
+	font-size: 12pt;
 	}
 }
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
@@ -101,14 +102,21 @@
 
 	/*блоки цветные*/
 .h1block {
-
-	font-size: 20px;
-
+	font-size: 14pt;
 	}
+
 .h2block {
-	font-size: 14px;
-	}
+    font-size: 10pt;
 }
+    .sign {
+    padding: 10px;
+}
+.sign img {
+    width: 60%;
+}
+    .leftnavbar {
+        display: none;
+    }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
@@ -138,4 +146,8 @@
 		margin: 0;
 		min-height: 0;
 	}
+
+    .progressboard {
+        display: none;
+    }
 /*==========  end ==========*/
