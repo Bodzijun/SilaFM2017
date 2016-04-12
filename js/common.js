@@ -54,7 +54,7 @@ jQuery( document ).ready(function() {
 	});
 });
 
-	//Аякс отправка форм
+	//Аякс отправка форм ОБРАТНЫЙ ЗВОНОК
 	//Документация: http://api.jquery.com/jquery.ajax/
 	$("#callback").submit(function() {
 		$.ajax({
@@ -69,5 +69,36 @@ jQuery( document ).ready(function() {
 		});
 		return false;
 	});
+	//Аякс отправка форм АНКЕТА ДИКТОРА
+	//Документация: http://api.jquery.com/jquery.ajax/
+	$("#anketa").submit(function() {
+		$.ajax({
+			type: "GET",
+			url: "mail_anketa.php",
+			data: $("#anketa").serialize()
+		}).done(function() {
+			alert("Спасибо за анкету!");
+			setTimeout(function() {
+				$.fancybox.close();
+			}, 1000);
+		});
+		return false;
+	});
 
 });
+
+
+	//скрытая таблица дикторов и кнопка открыть
+$(document).ready(function() {
+	$('.title').append('<span></span>');
+	$('.post span').each(function() {
+		var trigger = $(this), state = false, el = trigger.parent().next('.entry');
+		trigger.click(function(){
+			state = !state;
+			el.slideToggle();
+			trigger.parent().parent().toggleClass('inactive');
+		});
+	});
+});
+
+

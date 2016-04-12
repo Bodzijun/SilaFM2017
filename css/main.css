@@ -15,17 +15,20 @@ body textarea:required:valid {
     border: green 2px solid;
 }
 
-.header_topline {
-    color: #676767;
-    font-size: 12pt;
-    padding: 8px 0;
-}
-
 h2 {
     padding-left: 20px;
 }
 p {
     font-family: 'RobotoLight', sans-serif;
+}
+.header_topline {
+    background-color: #ffffff;
+    color: #676767;
+    font-size: 12pt;
+    padding: 8px 0;
+    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow:  0 0 40px rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3) inset;
 }
 
 .header_topline a {
@@ -37,7 +40,7 @@ p {
     background-color: #ffffff;
     width: 100%;
     padding: 1em;
-    margin-top: 20px;
+    margin-top: 30px;
     border-radius: 8px;
     -moz-border-radius: 4px;
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -95,6 +98,7 @@ p {
 .soc_buttons {
     float: right;
     padding-top: 80px;
+    padding-right: 15px;
 }
 
 .soc_buttons a {
@@ -590,19 +594,19 @@ p {
     list-style-type: disc;
 }
 
-.green {
+.grn {
     background: #75b94c;
     margin: 30px 0 5px 0;
     text-align: center;
     display: block;
     line-height: 60px;
     border-radius: 8px 8px 0 0;
-    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
 }
 
-.green h3 {
+.grn h3 {
     color: #fff;
     font-family: "RobotoLight", sans-serif;
 }
@@ -614,9 +618,9 @@ p {
     display: block;
     line-height: 60px;
     border-radius: 8px 8px 0 0;
-    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
 }
 
 .red h3 {
@@ -631,9 +635,9 @@ p {
     display: block;
     line-height: 60px;
     border-radius: 8px 8px 0 0;
-    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
 }
 
 .blue h3 {
@@ -648,9 +652,9 @@ p {
     display: block;
     line-height: 60px;
     border-radius: 8px 8px 0 0;
-    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
 }
 
 .yeelow h3 {
@@ -679,7 +683,7 @@ p {
 .basictext {
     color: #404040;
     font-family: "RobotoLight", sans-serif;
-    font-size: 14pt;
+    font-size: 12pt;
     padding: 20px 10px;
     text-align: justify;
 }
@@ -689,7 +693,7 @@ p {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    height: 280px;
+    height: 200px;
 }
 
 .btn_circle {
@@ -1065,9 +1069,9 @@ hr {
 .footer_mn>ul>li>a:focus {
     text-decoration: underline;
 }
-
+/*=====================кнопка обратный звонок и анкета==========================*/
 .callz {
-    padding-top: 10px;
+    padding: 15px 0;
 }
 
 .callzakaz {
@@ -1075,7 +1079,6 @@ hr {
     border-color: transparent;
     border-radius: 6px;
     color: #333;
-    font-family: Arial;
     font-size: 16px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
@@ -1089,10 +1092,36 @@ hr {
     transition: background-color .6s ease;
 }
 
+
+.anketa_btn {
+    background: #75b94c;
+    border-color: transparent;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3)
+}
+
+.anketa_btn:hover {
+    background: #599931;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: background-color .6s ease;
+    transition: background-color .6s ease;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3)
+}
+
+
 .hidden {
     display: none;
 }
-
+.pop_form {
+    padding: 15px;
+    text-align: right;
+}
 .pop_form input [type=text] {
     display: block;
     line-height: 24px;
@@ -1101,9 +1130,13 @@ hr {
 }
 
 .pop_form input {
-    margin: 5px 5px;
+    margin: 6px;
+    font-size: 12pt;
 }
-
+.pop_form textarea {
+    margin: 6px;
+    font-size: 12pt;
+}
 .pop_form button {
     margin: 5px;
 }
@@ -1114,8 +1147,17 @@ hr {
     font-weight: normal;
     font-family: "RobotoBold";
     text-transform: uppercase;
-}
 
+}
+.pop_form p {
+    margin: 10px auto 15px;
+    text-align: center;
+    font-weight: normal;
+    font-family: "RobotoLight";
+    font-size: 12pt;
+
+}
+/*=====================table==========================*/
 #scrollup {
     position: fixed;
     opacity: 0.8;
@@ -1128,4 +1170,130 @@ hr {
     bottom: 10px;
     display: none;
     cursor: pointer;
+}
+/*=====================table==========================*/
+
+
+.features-table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-shadow: 0 1px 0 #fff;
+  color: #2a2a2a;
+  background: #fafafa;
+  background-image: -moz-linear-gradient(top, #fff, #eaeaea, #fff); /* Firefox 3.6 */
+  background-image: -webkit-gradient(linear,center bottom,center top,from(#fff),color-stop(0.5, #eaeaea),to(#fff));
+  margin-top:8px;
+  margin-bottom:8px;
+  font-size: 11pt;
+  font-family: 'RobotoRegular', sans-serif;
+  }
+
+.features-table td
+{
+  height: 35px;
+  padding: 3px 3px 3px 3px;
+  border-bottom: 1px solid #cdcdcd;
+  box-shadow: 0 1px 0 white;
+  -moz-box-shadow: 0 1px 0 white;
+  -webkit-box-shadow: 0 1px 0 white;
+
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.features-table tbody td{ text-align: center;}
+
+.features-table td.grey {
+	background: #efefef;
+	background: rgba(144,144,144,0.15);
+	border-right: 1px solid white;
+	text-align: center;
+}
+
+.features-table td.green {background: #d2f7bf;}
+
+.features-table td:nowrap {white-space: nowrap;}
+
+.features-table thead td
+{
+  font-size: 100%;
+  font-weight: bold;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top: 1px solid #eaeaea;
+}
+.features-table tfoot td
+{
+  font-size: 80%;
+  font-weight: bold;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom: 1px solid #dadada;
+}
+
+
+/*-----------------------hidden table------------------------ */
+.post {
+	padding: 8px 8px;
+	position: relative;
+	background: #fff;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #CCCCCC;
+
+	}
+.inactive {
+	color: #797979;
+	}
+.post .title {
+	position: relative;
+	height: 1%;
+	}
+
+.post .title h2 {
+	font-size: 18pt;
+	font-weight: bold;
+	margin: 0;
+	}
+.post .title span {
+	position: absolute;
+	right: 0;
+	top: 30%;
+	cursor: pointer;
+	width: 14px;
+	height: 14px;
+	background: url(../img/trigger.gif) no-repeat left bottom;
+	display: block;
+	font-size: 0;
+	}
+#content .inactive .title span {
+    background: url(../img/trigger.gif) no-repeat left bottom;
+	display: block;
+	background-position: left top;
+	}
+#content .post .entry {
+	padding: 10px 0;
+	}
+
+/*-----------------------hidden table end------------------------ */
+
+.leftbar {
+    padding: 0 15px;
+    text-align: right;
+}
+.leftbar .basictext  {
+        font-size: 12pt;
+}
+.leftbar h4 {
+    margin: 15px;
+}
+.rightbar {
+    text-align: right;
+    padding: 15px;
 }
