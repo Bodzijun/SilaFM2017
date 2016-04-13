@@ -117,6 +117,13 @@
     .leftnavbar {
         display: none;
     }
+    .leftbar {
+        height: 350px;
+    }
+    .anketa_btn {
+        margin-left: 30px;
+        float: right;
+    }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {

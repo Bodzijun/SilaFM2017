@@ -88,17 +88,19 @@ jQuery( document ).ready(function() {
 });
 
 
-	//скрытая таблица дикторов и кнопка открыть
-$(document).ready(function() {
-	$('.title').append('<span></span>');
-	$('.post span').each(function() {
-		var trigger = $(this), state = false, el = trigger.parent().next('.entry');
-		trigger.click(function(){
-			state = !state;
-			el.slideToggle();
-			trigger.parent().parent().toggleClass('inactive');
-		});
+//плавное листание до  шапки дикторов
+$(document).ready(function(){
+	$("#choose").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 1500);
 	});
 });
-
-

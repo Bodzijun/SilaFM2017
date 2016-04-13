@@ -159,7 +159,7 @@ p {
 .cbp-hsmenu > li > a {
     color: #fff;
     display: inline-block;
-    font-size: 1.2em;
+    font-size: 14pt;
     font-family: "RobotoRegular", sans-serif;
     line-height: 2.8em;
     position: relative;
@@ -1097,11 +1097,15 @@ hr {
     background: #75b94c;
     border-color: transparent;
     border-radius: 6px;
+    display: block;
+    text-align: center;
+    width: 150px;
     color: #fff;
     font-size: 14px;
     padding: 10px;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 20px auto;
+
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3)
 }
 
@@ -1239,61 +1243,71 @@ hr {
 }
 
 
-/*-----------------------hidden table------------------------ */
-.post {
-	padding: 8px 8px;
-	position: relative;
-	background: #fff;
-	margin: 0px 0px 10px 0px;
-	border: 1px solid #CCCCCC;
-
-	}
-.inactive {
-	color: #797979;
-	}
-.post .title {
-	position: relative;
-	height: 1%;
-	}
-
-.post .title h2 {
-	font-size: 18pt;
-	font-weight: bold;
-	margin: 0;
-	}
-.post .title span {
-	position: absolute;
-	right: 0;
-	top: 30%;
-	cursor: pointer;
-	width: 14px;
-	height: 14px;
-	background: url(../img/trigger.gif) no-repeat left bottom;
-	display: block;
-	font-size: 0;
-	}
-#content .inactive .title span {
-    background: url(../img/trigger.gif) no-repeat left bottom;
-	display: block;
-	background-position: left top;
-	}
-#content .post .entry {
-	padding: 10px 0;
-	}
 
 /*-----------------------hidden table end------------------------ */
 
 .leftbar {
-    padding: 0 15px;
+    padding: 0 10px;
     text-align: right;
+    height: 495px;
 }
 .leftbar .basictext  {
-        font-size: 12pt;
+    font-size: 12pt;
 }
 .leftbar h4 {
-    margin: 15px;
+    margin: 30px 10px 10px 0;
 }
+/*-----------------------вкладки------------------------ */
+.leftbar > input {
+    display: none;
+}
+.leftbar > input:checked + label{
+    text-decoration: underline;
+    color: #404040;
+    font-weight: bold;
+}
+.leftbar > label {
+    cursor: pointer;
+    display: block;
+    float:left;
+    padding: 5px; 10px;
+    color: #5a5a5a;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 12pt;
+
+}
+#vkladki {
+    clear:both;
+    position: relative;
+}
+#vkladki > div {
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.6s, visibility 0.6s;
+}
+
+#n1:checked ~ #vkladki > div:nth-of-type(1),
+#n2:checked ~ #vkladki > div:nth-of-type(2),
+#n3:checked ~ #vkladki > div:nth-of-type(3) {visibility: visible; opacity: 1;}
+
 .rightbar {
-    text-align: right;
+    text-align: left;
     padding: 15px;
+}
+.rightbar>.basictext {
+    margin-bottom: 0;
+}
+.rightbar>h4 {
+    margin-top: 0;
+    margin-left: 10px;
+}
+#choose >ul>li {
+    font-size: 11pt;
+}
+#choose >ul {
+    margin: 0;
 }
