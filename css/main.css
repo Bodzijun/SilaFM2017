@@ -606,11 +606,6 @@ p {
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
 }
 
-.grn h3 {
-    color: #fff;
-    font-family: "RobotoLight", sans-serif;
-}
-
 .red {
     background: #a41734;
     margin: 30px 0 5px 0;
@@ -621,11 +616,6 @@ p {
     -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
     -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
-}
-
-.red h3 {
-    color: #fff;
-    font-family: "RobotoLight", sans-serif;
 }
 
 .blue {
@@ -640,11 +630,6 @@ p {
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
 }
 
-.blue h3 {
-    color: #fff;
-    font-family: "RobotoLight", sans-serif;
-}
-
 .yeelow {
     background: #f0ad39;
     margin: 30px 0 5px 0;
@@ -657,10 +642,24 @@ p {
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
 }
 
-.yeelow h3 {
+.serij {
+    background: #353535;
+    margin: 30px 0 5px 0;
+    text-align: center;
+    display: block;
+    line-height: 60px;
+    border-radius: 8px 8px 0 0;
+    -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
+}
+
+.grn, .yeelow, .blue, .red,
+.serij h3 {
     color: #fff;
     font-family: "RobotoLight", sans-serif;
 }
+
 
 .link1 {
     font-size: 10pt;
@@ -684,10 +683,11 @@ p {
     color: #404040;
     font-family: "RobotoLight", sans-serif;
     font-size: 12pt;
-    padding: 20px 10px;
+    padding: 15px 10px;
     text-align: justify;
-}
 
+}
+.basictext:first-letter { margin-left: 40px; },
 .circle_wrap {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1099,12 +1099,12 @@ hr {
     border-radius: 6px;
     display: block;
     text-align: center;
-    width: 150px;
+    width: 120px;
     color: #fff;
     font-size: 14px;
     padding: 10px;
     text-decoration: none;
-    margin: 20px auto;
+    margin: 10px auto;
 
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3)
 }
@@ -1216,6 +1216,11 @@ hr {
 	border-right: 1px solid white;
 	text-align: center;
 }
+.features-table td .white {
+    cursor:pointer;
+    text-decoration:none;
+    border-bottom:1px dashed;
+}
 
 .features-table td.green {background: #d2f7bf;}
 
@@ -1244,29 +1249,16 @@ hr {
 
 
 
-/*-----------------------hidden table end------------------------ */
-
-tbody span {
-    margin-right: 5px;
-    font-size: 14pt;
-    cursor: pointer;
-}
-tbody span:visited {
-    color: aquamarine;
-}
-
 /* ------------- player_end --------------------------- */
 .leftbar {
-    padding: 0 10px;
-    text-align: right;
-    height: 495px;
+    padding: 0 5px 0 20px;
+    margin-top: 20px;
 }
 .leftbar .basictext  {
     font-size: 12pt;
+    padding-top: 0;
 }
-.leftbar h4 {
-    margin: 30px 10px 10px 0;
-}
+
 /*-----------------------вкладки------------------------ */
 .leftbar > input {
     display: none;
@@ -1285,7 +1277,6 @@ tbody span:visited {
     text-decoration: none;
     margin-right: 5px;
     font-size: 12pt;
-
 }
 #vkladki {
     clear:both;
@@ -1305,11 +1296,17 @@ tbody span:visited {
 #n3:checked ~ #vkladki > div:nth-of-type(3) {visibility: visible; opacity: 1;}
 
 .rightbar {
-    text-align: left;
-    padding: 0 15px 30px 15px;
+    padding-right: 20px;
 }
 .rightbar>.basictext {
-    margin-bottom: 0;
+    margin: 0;
+    padding-bottom: 0px;
+
+}
+.rightbar>h2 {
+    text-align: right;
+    margin: 0 20px 22px 10px;
+
 }
 .rightbar>h4 {
     margin-top: 0;
@@ -1321,3 +1318,4 @@ tbody span:visited {
 #choose >ul {
     margin: 0;
 }
+
