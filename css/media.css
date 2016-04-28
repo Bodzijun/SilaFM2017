@@ -118,13 +118,11 @@
         display: none;
     }
     .leftbar {
-        height: 350px;
+        height: 250px;
     }
-    .anketa_btn {
-        margin-left: 30px;
-        float: right;
+    .masonry[data-columns]:before {
+        content: '1 .col-xs-12';
     }
-
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	/* Let's only allow 1 item in a row now */

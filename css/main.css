@@ -17,6 +17,7 @@ body textarea:required:valid {
 
 p {
     font-family: 'RobotoLight', sans-serif;
+    font-size: 12pt;
 }
 .header_topline {
     background-color: #ffffff;
@@ -1331,4 +1332,37 @@ hr {
 .inside {
     padding: 20px 20px 0 20px;
     margin-top: 20px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+
+}
+.modal-content {
+    padding: 10px 30px 0 40px;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background-color: #385aa6;
+    cursor: inherit;
+    display: block;
+}
+.nav-pills>li>a {
+    font-size: 12pt;
+}
+.nav-pills {
+    padding: 0 15px;
 }

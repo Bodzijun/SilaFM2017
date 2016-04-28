@@ -173,9 +173,9 @@
                         <hr>
                         <h4>Оформление заказа</h4>
                         <p class="basictext">Чтобы заказать начитку диктора, достаточно воспользоваться формой <a href="#"> онлайн-заказа</a>, либо выслать текст на электронный адрес: <a href="mailto: info@sila.fm?subject=Заказ голоса">info@sila.fm </a></p>
-                        <a href="#" class="anketa_btn">Онлайн-заказ</a>
-                        <a href="#" class="anketa_btn">Хрономер</a>
-                        <a href="#" class="anketa_btn">Страницемер</a>
+                        <a href="#" class="btn btn-success">Онлайн-заказ</a>
+                        <a href="#" class="btn btn-success">Хрономер</a>
+                        <a href="#" class="btn btn-success">Страницемер</a>
                     </div>
                     <div>
                         <hr>
@@ -190,8 +190,7 @@
                         <hr>
                         <h4>Сотрудничество</h4>
                         <p class="basictext">Приглашаем для работы опытных дикторов со стажем работы не менее 3-х лет и талантливых актеров театра (русский и/или украинский язык)</p>
-                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-1">Анкета</button>
-                        <a href="#anketa" class="anketa_btn fancybox"> Заполнить анкету </a>
+                        <a href="#anketa" class="btn btn-success" data-toggle="modal" data-target="#modal-1"> Заполнить анкету </a>
                     </div>
                 </div>
             </div>
@@ -4825,29 +4824,72 @@
              <div class="modal-content">
                  <div class="modal-header">
                     <button class="close" type="button" data-dismiss="modal">&times;</button>
-                     <h2>Агентство Sila.FM. Online анкета</h2>
+                    <h2>Агентство Sila.FM. Online анкета</h2>
+                    <p>Заполните, пожалуйста, все поля формы:</p>
                  </div>
                  <div class="modal-body">
 
-                <p>Заполните, пожалуйста, все поля формы:</p>
-                Фамилия, имя, отчество:<input type="text" name="name" placeholder="ФИО..." required/>
-                 <br>
-                Мобильный телефон:<input type="text" name="phone" placeholder="номер..." required/><br>
-                E-mail:<input type="text" name="email" placeholder="электронная почта..."/>
-                <br>
-                Место проживания:<input type="text" name="text" placeholder="Страна, годод..."/> <br>            Возвраст:<input type="text" name="age" placeholder="мои года, мое..."/>
-                <br>
-                Опыт работы:<input type="text" name="stage" placeholder="дан пояса..."/>    <br>
-                Место работы:<input type="text" name="work" placeholder="организация..."/>
-                   <hr>
-                График работы:<input type="text" name="oclock" placeholder="когда беспокоить..."/><br>
-                Какими языками владеете:<input type="text" name="langvage" placeholder="озвучиваете..."/>   <br>
-                Возможность записи начиток на работе или дома:
-                <input type="checkbox" name="athome" value="CheckBox">дома
-                <input type="checkbox" name="atwork" value="CheckBox">на работе <br>
-                Стоимость начитки рекламного текста до 30 сек: <input type="text" name="cost1" placeholder="укажите валюту..." /> <br>
-                Стоимость начитки 1 страницы печатного текста: <input type="text" name="cost2" placeholder="укажите валюту..." /> <hr>
-                Вложить портфолио:<input type="file" name="filefield">
+                <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                <input type="text" class="form-control" name="name" placeholder="Фамилия Имя Отчество" aria-describedby="basic-addon1" required/>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon2"><i class="fa fa-phone"></i></span>
+                    <input type="text" class="form-control" name="phone" placeholder="Мобильный телефон" aria-describedby="basic-addon2"/>
+                </div>
+
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon3"><i class="fa fa-envelope"></i></span>
+                  <input type="text" class="form-control" placeholder="e-mail" aria-describedby="basic-addon3">
+                </div>
+
+                 <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon4"><i class="fa fa-book"></i></span>
+                 <input type="number" class="form-control" placeholder="Возвраст"  aria-describedby="basic-addon4"></div>
+
+                 <div class="input-group">
+                   <span class="input-group-addon" id="basic-addon5"><i class="fa fa-home"></i></span>
+                  <input type="text" class="form-control" placeholder="Место проживания (страна, город)..."  aria-describedby="basic-addon5"></div>
+
+                 <div class="input-group">
+                 <span class="input-group-addon" id="basic-addon6"><i class="fa fa-language"></i></span>
+                  <input type="text" class="form-control" id="yazik" placeholder="Какими языками владеете?"  aria-describedby="basic-addon6"></div>
+
+                  <div class="input-group">
+                   <span class="input-group-addon" id="basic-addon7"><i class="fa fa-briefcase"></i></span>
+                  <input type="text" class="form-control" placeholder="Место работы"  aria-describedby="basic-addon7"></div>
+
+                  <form class="form-inline">
+                  <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Опыт работы"></div>
+                  <div class="input-group">
+                  <input type="text" class="form-control" placeholder="График работы">
+                      </div>
+
+                   </form>
+                 <div class="input-group">
+                <span class="input-group-btn">
+                <span class="btn btn-primary btn-file">
+                Обзор&hellip; <input type="file" multiple>
+                </span>
+                </span>
+                <input type="text" class="form-control" placeholder="Прикрепить порфолио..." readonly>
+                </div>
+
+                  <h3>Возможность записи начиток:</h3>
+                  <label class="checkbox-inline">
+                  <input type="checkbox" value=""><p>На работе</p></label>
+                  <label class="checkbox-inline">
+                  <input type="checkbox" value=""><p>Дома</p></label>
+
+
+                 <div class="input-group">
+                 <span class="input-group-addon" id="basic-addon7"><i class="fa fa-money"></i></span>
+                  <input type="text" class="form-control" id="yazik" placeholder="Стоимость начитки рекламного текста до 30 сек..."  aria-describedby="basic-addon7"></div>
+
+                 <div class="input-group">
+                 <span class="input-group-addon" id="basic-addon8"><i class="fa fa-money"></i></span>
+                  <input type="text" class="form-control" id="yazik" placeholder="Стоимость начитки 1 страницы печатного текста..."  aria-describedby="basic-addon8"></div>
 
                  </div>
                  <div class="modal-footer">
