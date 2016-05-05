@@ -38,13 +38,13 @@
     <script src="libs/countdown/jquery.countdown.min.js"></script>
     <script src="libs/countdown/jquery.countdown-ru.js"></script>
     <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
-
+<script src="js/masonry.pkgd.min.js"></script>
     <!--<script src="libs/landing-nav/navigation.js"></script>-->
     <!-- Add fancyBox -->
     <script type="text/javascript" src="js/sorttable.js"></script>
     <script src="js/common.js"></script>
     <script src="js/modernizr.custom.js"></script>
-    <script src="js/salvattore.min.js"></script>
+
 
     <header>
         <!--left Navigators-->
@@ -104,10 +104,10 @@
                                 <a href="#">Услуги</a>
                                 <ul class="cbp-hssubmenu">
                                     <li>
-                                        <a href="#"><img src="img/radio_c.png" alt="img06" /><span>Аудиролики</span></a>
+                                        <a href="index_02.html"><img src="img/radio_c.png" alt="img06" /><span>Аудиролики</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><img src="img/tv_c.png" alt="img06" /><span>Озвучивание видеороликов</span></a>
+                                        <a href="index_03.html"><img src="img/tv_c.png" alt="img06" /><span>Озвучивание видеороликов</span></a>
                                     </li>
                                     <li>
                                         <a href="#"><img src="img/film_c.png" alt="img09" /><span>Создание видеороликов</span></a>
@@ -134,75 +134,150 @@
     <section id="content">
         <div class="container">
             <div class="fillcontainer">
-<div class="row">
-    <ul class="nav nav-pills">
+<div class="tabpanel">
 
-           <li class="active"><a href="">Озвучка видео<span class="badge">18</span></a> </li>
-           <li> <a href="">Дубляж<span class="badge">4</span></a> </li>
-           <li> <a href="">Видеопрезентации<span class="badge">6</span></a> </li>
-           <li> <a href="">Мультипликации<span class="badge">9</span></a> </li>
-           <li> <a href="">Док. фильмы<span class="badge">3</span></a> </li>
-           <li> <a href="">Копроративные фильмы<span class="badge">3</span></a> </li>
+    <ul class="nav nav-pills nav-justified" role="tablist">
+
+           <li class="active"><a data-toggle="tab" href="#tab1">Озвучка видео</a></li>
+           <li> <a role="tab" data-toggle="tab" href="#tab2" aria-controls="tab2">Дубляж</a> </li>
+           <li> <a role="tab" data-toggle="tab" href="#tab3" aria-controls="tab3">Видеопрезентации</a></li>
+           <li> <a role="tab" data-toggle="tab" href="#tab4" aria-controls="tab4">Мультипликации</a></li>
+           <li> <a role="tab" data-toggle="tab" href="#tab5" aria-controls="tab5">Док. фильмы</a></li>
+           <li> <a role="tab" data-toggle="tab" href="#tab6" aria-controls="tab6">Копроративные</a></li>
     </ul>
-  </div>
-   <br>
-    <div class="row masonry" data-columns>
-           <div>
-            <div class="thumbnail">
-                <img src="http://placehold.it/350x230" alt="">
-                <div class="caption">
-                <h4>Видео ролик: Cinemapark 4DX</h4>
-                 <p>Озвучка: Дикторы Андреев Е., Володькин Р., Лаупер А.<br>Комментарии: озвучивание видеорекламы</p>
-                </div>
-            </div>
-           </div>
-           <div>
-            <div class="thumbnail">
-                <img src="http://placehold.it/350x230" alt="">
-                <div class="caption">
-                <h4>Видео ролик: Молния - Так Просто!</h4>
-                 <p>Диктор: Чонишвили С.<br>Комментарии: озвучивание видеорекламы</p>
-                </div>
-            </div>
-           </div>
-          <div>
-            <div class="thumbnail">
-                <img src="http://placehold.it/350x230" alt="">
-                <div class="caption">
-                <h4>Видео ролик: Castrol Edge - Максимальная эффективность</h4>
-                 <p>Диктор: Марьин А.<br>Комментарии: озвучивание видеорекламы</p>
-                </div>
-            </div>
-           </div>
-          <div>
-            <div class="thumbnail">
-                <img src="http://placehold.it/350x230" alt="">
-                <div class="caption">
-                <h4>Видео ролик: Microsoft Office New</h4>
-                 <p>Диктор Власова А.<br>Комментарии: озвучивание видеорекламы</p>
-                </div>
-            </div>
-           </div>
-          <div>
-            <div class="thumbnail">
-                <img src="http://placehold.it/350x230" alt="">
-                <div class="caption">
-                <h4>Видео ролик: Baxter - игрушечная собачка</h4>
-                 <p>Озвучка: Диктор Андреев Е.<br>Комментарии: озвучивание телевизионной рекламы</p>
-                </div>
-            </div>
-           </div>
-          <div>
-            <div class="thumbnail">
-                <img src="http://placehold.it/350x230" alt="">
-                <div class="caption">
-                <h4>Видео ролик: V-Transport.ru - На расстоянии Клика</h4>
-                 <p>Диктор: Диктор Суворов А.<br>Комментарии: озвучка рекламного видеоролика</p>
-                </div>
-            </div>
-           </div>
-    </div>
 
+ <div class="tab-content">
+    <div id="tab1" class="tab-pane fade in active" role="tabpanel">
+        <div class="grid">
+           <div class="grid-sizer col-xs-8"></div>
+            <div class="grid-item">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x230" alt="">
+                    <div class="caption">
+                        <h4>Видео ролик: Cinemapark 4DX</h4>
+                        <p>Озвучка: Дикторы Андреев Е., Володькин Р., Лаупер А.
+                            <br>Комментарии: озвучивание видеорекламы</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x230" alt="">
+                    <div class="caption">
+                        <h4>Видео ролик: Молния - Так Просто!</h4>
+                        <p>Диктор: Чонишвили С.
+                            <br>Комментарии: озвучивание видеорекламы</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x230" alt="">
+                    <div class="caption">
+                        <h4>Видео ролик: Castrol Edge - Максимальная эффективность</h4>
+                        <p>Диктор: Марьин А.
+                            <br>Комментарии: озвучивание видеорекламы</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x230" alt="">
+                    <div class="caption">
+                        <h4>Видео ролик: Microsoft Office New</h4>
+                        <p>Диктор Власова А.
+                            <br>Комментарии: озвучивание видеорекламы</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x230" alt="">
+                    <div class="caption">
+                        <h4>Видео ролик: Baxter - игрушечная собачка</h4>
+                        <p>Озвучка: Диктор Андреев Е.
+                            <br>Комментарии: озвучивание телевизионной рекламы</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x230" alt="">
+                    <div class="caption">
+                        <h4>Видео ролик: V-Transport.ru - На расстоянии Клика</h4>
+                        <p>Диктор: Диктор Суворов А.
+                            <br>Комментарии: озвучка рекламного видеоролика</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div id="tab2" class="tab-pane fade" role="tabpanel">
+        <div class="grid">
+            <div class="grid-item">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x230" alt="">
+                    <div class="caption">
+                        <h4>Видео ролик: Cinemapark 4DX</h4>
+                        <p>Озвучка: Дикторы Андреев Е., Володькин Р., Лаупер А.
+                            <br>Комментарии: озвучивание видеорекламы</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x230" alt="">
+                    <div class="caption">
+                        <h4>Видео ролик: Молния - Так Просто!</h4>
+                        <p>Диктор: Чонишвили С.
+                            <br>Комментарии: озвучивание видеорекламы</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x230" alt="">
+                    <div class="caption">
+                        <h4>Видео ролик: Castrol Edge - Максимальная эффективность</h4>
+                        <p>Диктор: Марьин А.
+                            <br>Комментарии: озвучивание видеорекламы</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x230" alt="">
+                    <div class="caption">
+                        <h4>Видео ролик: Microsoft Office New</h4>
+                        <p>Диктор Власова А.
+                            <br>Комментарии: озвучивание видеорекламы</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x230" alt="">
+                    <div class="caption">
+                        <h4>Видео ролик: Baxter - игрушечная собачка</h4>
+                        <p>Озвучка: Диктор Андреев Е.
+                            <br>Комментарии: озвучивание телевизионной рекламы</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/350x230" alt="">
+                    <div class="caption">
+                        <h4>Видео ролик: V-Transport.ru - На расстоянии Клика</h4>
+                        <p>Диктор: Диктор Суворов А.
+                            <br>Комментарии: озвучка рекламного видеоролика</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
 
 <div class="row"></div>
@@ -286,5 +361,4 @@
         </div>
     </footer>
 </body>
-
 </html>

@@ -489,7 +489,7 @@ p {
 
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-    min-height: 220px;
+    min-height: 230px;
     /* Set slide height here */
     width: 100% !important;
 }
@@ -1366,3 +1366,5 @@ hr {
 .nav-pills {
     padding: 0 15px;
 }
+.grid-item { width: 300px; float: left; }
+.grid-item--width2 { width: 400px; }
