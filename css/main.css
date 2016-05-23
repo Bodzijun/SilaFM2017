@@ -1029,14 +1029,14 @@ hr {
     background-color: #333333;
     font-family: "RobotoLight", sans-serif;
     font-style:normal;
-    font-size: 14px;
+    font-size: 12px;
     color: #fff;
     padding: 20px 0 20px 0;
 }
 
 .coment {
     font-family: "RobotoLightItalic", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: #e5e5e5;
     text-align: justify;
 }
@@ -1360,11 +1360,10 @@ hr {
     cursor: inherit;
     display: block;
 }
+/*----tab for video----*/
 .nav-pills>li>a {
     font-size: 12pt;
 }
 .nav-pills {
-    padding: 0 15px;
+    padding: 0 3px 10px 3px;
 }
-.grid-item { width: 300px; float: left; }
-.grid-item--width2 { width: 400px; }
