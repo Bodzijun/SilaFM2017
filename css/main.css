@@ -689,7 +689,15 @@ p {
     text-align: justify;
 
 }
-.basictext:first-letter { margin-left: 40px; },
+.basictext:first-letter { margin-left: 40px; }
+
+.righttext {
+    float:left;
+    margin-top:10px;
+    text-align:justify;
+    text-indent: 40px;
+    padding-right:10px;
+}
 .circle_wrap {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1366,4 +1374,16 @@ hr {
 }
 .nav-pills {
     padding: 0 3px 10px 3px;
+}
+.costimg {
+    padding-right: 10px;
+    padding-top: 10px;
+}
+/*----форма опроса----*/
+
+.oprosnik {
+    margin: 48px 20px 0 30px;
+    padding: 30px 30px;
+    border: 1px dashed grey;
+    border-radius: 8px;
 }
