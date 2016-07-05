@@ -43,7 +43,7 @@
     <script type="text/javascript" src="js/sorttable.js"></script>
     <script src="js/common.js"></script>
     <script src="js/modernizr.custom.js"></script>
-
+    <script src="js/jquery.placeholder.min.js"></script>
     <!-- Yandex.Metrika counter -->
     <!-- /Yandex.Metrika counter -->
     <!-- Google Analytics counter -->
@@ -126,16 +126,19 @@
                                 <a href="#">Услуги</a>
                                 <ul class="cbp-hssubmenu">
                                     <li>
+                                        <a href="index_08.html"><img src="img/print.png" alt="img06" /><span>Сценарии</span></a>
+                                    </li>
+                                    <li>
                                         <a href="index_02.html"><img src="img/radio_c.png" alt="img06" /><span>Аудиролики</span></a>
                                     </li>
                                     <li>
                                         <a href="index_03.html"><img src="img/tv_c.png" alt="img06" /><span>Озвучивание видеороликов</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><img src="img/film_c.png" alt="img09" /><span>Создание видеороликов</span></a>
+                                        <a href="index_04.html"><img src="img/film_c.png" alt="img09" /><span>Создание видеороликов</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><img src="img/vinil.png" alt="img09" /><span>Музыкальные подложки</span></a>
+                                        <a href="index_05.html"><img src="img/vinil.png" alt="img09" /><span>Музыкальные подложки</span></a>
                                     </li>
                                 </ul>
                             </li>
@@ -156,10 +159,9 @@
 <section id="content">
 <div class="container">
 <div class="miniblock">
-   <div class="serij"><h3>Дикторы</h3></div>
+   <div class="serij"><h3>Дикторы</h3> </div>
     <div class="row">
         <div class="col-md-4 col-sm-5">
-
                 <div class="leftbar">
                 <input type="radio" name="table" id="n1" checked/>
                 <label for="n1">Заказ</label>
@@ -200,7 +202,10 @@
                   <h2>Услуги</h2>
                     <p class="basictext">Агентство Звука «СилаФМ» предлагает услуги по оперативной удаленной записи голосов профессиональных дикторов для аудиороликов, аудиорекламы, радиороликов, рекламных песен, выполняет озвучивание видеороликов, синхронное озвучание видео, оформление эфира, озвучение закадровых текстов и другие виды работы со звуком.</p>
                     <p class="basictext">Мы также осуществляем запись дикторов-носителей американского английского, британского английского, немецкого, итальянского, французского, испанского и других языков для аудиорекламы, радиороликов, рекламных песен, озвучивания видеороликов. </p><br>
-                    <h4>Выберете необходимый Вам голос:</h4>
+
+         <div class="row">
+             <div class="col-md-6">
+                <h4>Выберете необходимый Вам голос:</h4>
                     <nav id="choose">
                         <ul>
                             <li><a href="#ex1">Мужские Голоса. Дикторы России</a></li>
@@ -211,9 +216,28 @@
                             <li><a href="#ex6">Женские Голоса. Дикторы Украины</a></li>
                             <li><a href="#ex7">Детские голоса от 5-ти до 14 лет</a></li>
                             <li><a href="#ex8">Пародисты и актеры</a></li>
-                             <li><a href="#ex9">Вокалисты</a></li>
+                            <li><a href="#ex9">Вокалисты</a></li>
                         </ul>
                     </nav>
+             </div>
+             <div class="col-md-6">
+                <h4>Или воспользуйтесь формой поиска:</h4>
+                <form action="" method="post" id="search-block-form">
+                    <div class="form-item">
+                        <input type="text" name="" value="" size="15" maxlength="128" placeholder="Найти...">
+                    </div>
+                    <div class="form-actions">
+                        <input type="submit" id="edit-submit" name="op" value="Поиск" class="form-submit">
+                    </div>
+                </form>
+             </div>
+         </div>
+
+
+
+
+
+
                 </div>
 
         </div>
@@ -222,7 +246,7 @@
                  <div class="row">
                      <div class="col-md-12">
                         <!--Мужские голоса. Россия-->
-                        <div class="fillcontainer">
+                         <div class="fillcontainer">
                         <section id="ex1">
                             <div class="title">
                             <a class="palitra"><img src="images/palit.png" alt="silafm"> </a>
@@ -237,12 +261,13 @@
                      <a class="sort_link_0" id="sortlink_au0" onclick="sort('a0', 'down'); sortlink('sortlink_au', '0')" style="cursor:pointer;">возр</a>), статусу (
                      <a class="sort_link_0" id="sortlink_cd0" onclick="sort('c0', 'up'); sortlink('sortlink_cd', '0')" style="cursor:pointer;">убыв</a> |
                      <a class="sort_link_0" id="sortlink_cu0" onclick="sort('c0', 'down'); sortlink('sortlink_cu', '0')" style="cursor:pointer;">возр</a>)
-                     </h5>
-                                <table class="features-table">
+                                </h5></div>
+                               <div class="table-responsive">
+                                <table class="features-table table-hover">
                                     <thead>
                                         <tr style="height:70px;">
-                                            <td class="grey  players">Слушать</td>
-                                            <td width="200px">Фамилия, имя диктора</td>
+                                            <td class="grey players" >Слушать</td>
+                                            <td>Фамилия, имя диктора</td>
                                             <td class="grey">Статус</td>
                                             <td class="grey">Цена до 30 слов,<br> руб.</td>
                                             <td class="grey">Цена до 90 слов,<br>  руб.</td>
@@ -308,9 +333,10 @@
                                             </td>
                                         </tr>
 
-                                        <tr>
-                                            <td class="grey">
-                                                <a id="voicesaravushkinsashamp3" onclick="player_play('voicesaravushkinsashamp3', 'voices/aravushkin_sasha.mp3')" class="player player_play"></a>
+                                        <tr>                                              <td class="grey">
+                                           <audio controls>
+                                           <source src="voices/aravushkin_sasha.mp3" type="audio/mpeg">
+                                           </audio>
                                             </td>
                                             <td><a class="white" title="заказать: Аравушкин Александр" onclick="open_popup('#modal_window')('Аравушкин Александр')">Аравушкин Александр</a></td>
                                             <td class="grey"><img src="img/grey.png" alt="off-line" title="off-line" style="width:30px;"></td>
@@ -1014,8 +1040,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-
-                            </div>
+                                </div>
                         </section>
                         </div>
                         <!--Женские голоса. Россия-->
