@@ -61,8 +61,16 @@
                 <li><a class="pagemeter" href="#"><span>СТРАНИЦЕМЕР</span></a></li>
 
                 <li><a class="contact" href="#"><span>КОНТАКТЫ</span></a></li>
-
             </ul>
+       <!--появление меню после прокрутки 300 пикселей вниз с фейдом в 400мс -->
+            <script>
+                jQuery(function (f) {
+                    var element = f('#navigationMenu');
+                    f(window).scroll(function () {
+                        element['fade' + (f(this).scrollTop() > 300 ? 'In' : 'Out')](400);
+                    });
+                });
+            </script>
         </div>
 
         <div class="top_header">
