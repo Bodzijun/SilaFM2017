@@ -1,0 +1,490 @@
+/* CSS Document */
+body {
+    background-color: #362f2d;
+    background-image: url('../img/carbon_fibre.png');
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 14pt;
+}
+.wglogo {
+	position: absolute;
+	top: 60px;
+	left: 5%;
+	height: 130px;
+}
+.silalogo {
+	position: absolute;
+	top: 90px;
+	left: 75%;
+	height: 100px;
+}
+.topcontainer {
+	position: relative;
+    background-color: #493E39;
+    width: 100%;
+	border-radius: 8px 8px 0 0 ;
+	text-align: center;
+}
+.fillcontainer {
+    position: relative;
+    background-color: #534741;
+    width: 100%;
+    margin-top: 30px;
+    -moz-border-radius: 8px;
+	border-radius: 8px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.fillcontainer:before,
+.fillcontainer:after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    height: 10%;
+    max-width: 300px;
+    -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+.fillcontainer:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+.textzone {
+	font-family: "RobotoLight", sans-serif;
+	color: #E1DED0;
+	padding: 25px;
+
+}
+.linkvoice {
+	font-family: "RobotoLight", sans-serif;
+	font-size: 12pt;
+	color: #DBD9CB;
+}
+.cursivtext {
+	font-family: "RobotoLightItalic", sans-serif;
+	font-size: 11pt;
+}
+
+.smalltext {
+	font-family:  "RobotoLight", sans-serif;
+	font-size: 12pt;
+}
+.vcenter {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}
+.anketa {
+	font-family: "RobotoLight", sans-serif;
+	color: #DBD9CB;
+	font-size: 14pt;
+	text-align: center;
+	padding: 15px 100px;
+
+
+}
+.lightbig {
+	font-family: "RobotoRegular", sans-serif;
+	color: #E1DED0;
+	padding: 16px;
+}
+/*----------табы-------*/
+
+nav-tabs {
+	border: 0;
+}
+
+.nav-tabs.nav-justified  > li.active > a, .nav-tabs.nav-justified  > li.active > a:focus {
+    color: #DBD9CB;
+    background-color: #493E39;
+	border-color: #493E39;
+}
+.nav-tabs.nav-justified>li.active > a:hover {
+    background-color: #493E39;
+    color: #DBD9CB;	border-color: #493E39;
+	}
+.nav-tabs>li>a {
+    color: #B6B0A5;
+	border: 0;
+	}
+.nav-tabs>li>a:focus, .nav-tabs>li>a:hover {
+    text-decoration: none;
+    background-color: #675A54;
+}
+/*----------таблица-------*/
+.headtab {
+	background-color: #493e39;
+	height: 60px;
+	vertical-align: middle;
+	}
+tbody tr:nth-child(even) {
+	 background: #514540;
+}
+tbody tr:nth-child(odd) {
+	 background: #675A54;
+}
+
+tbody tr {
+	font-family: "RobotoLight" sans-serif;
+	font-size: 12pt;
+}
+
+
+
+/*--таймлайн стили--*/
+.cd-horizontal-timeline .events-content {
+  position: relative;
+}
+.cd-horizontal-timeline .events-content li {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+  opacity: 0;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+}
+.cd-horizontal-timeline .events-content li.selected {
+  /* visible event content */
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  transform: translateX(0);
+}
+.cd-horizontal-timeline .events-content li.enter-right,
+.cd-horizontal-timeline .events-content li.leave-right {
+  animation-name: cd-enter-right;
+}
+.cd-horizontal-timeline .events-content li.enter-left,
+.cd-horizontal-timeline .events-content li.leave-left {
+  animation-name: cd-enter-left;
+}
+.cd-horizontal-timeline .events-content li.leave-right,
+.cd-horizontal-timeline .events-content li.leave-left {
+  animation-direction: reverse;
+}
+@keyframes cd-enter-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes cd-enter-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+/* ----------Main menu wrapper------- */
+
+.cbp-hsmenu-wrapper {
+    position: relative;
+}
+
+
+/* Common style for all lists */
+
+.cbp-hsmenu-wrapper ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/* 100% width bar for menu */
+
+.cbp-hsinner {
+	background: #2f2826;
+	position: relative;
+	z-index: 50;
+	-webkit-box-shadow: 2px 2px 4px 0 #0E0D0C;
+	box-shadow: 2px 2px 4px 0 #0E0D0C;
+}
+
+
+/* Main menu style */
+
+.cbp-hsmenu-wrapper .cbp-hsmenu {
+    margin: 0 auto;
+    max-width: 64em;
+    padding: 0 1.5em;
+}
+
+.cbp-hsmenu > li {
+    display: inline-block;
+    margin-left: 4em;
+}
+
+.cbp-hsmenu > li a {
+    text-decoration: none;
+}
+
+.cbp-hsmenu > li:first-child {
+    margin-left: 0;
+}
+
+
+/* Main menu link style */
+
+.cbp-hsmenu > li > a {
+    color: #fff;
+    display: inline-block;
+    font-size: 14pt;
+    font-family: "RobotoRegular", sans-serif;
+    line-height: 3em;
+    position: relative;
+    z-index: 10000;
+}
+
+.no-touch .cbp-hsmenu > li > a:hover,
+.no-touch .cbp-hsmenu > li > a:focus,
+.cbp-hsmenu > li.cbp-hsitem-open > a {
+    color: #fbfce4;
+}
+
+
+/* Add an arrow to the main menu link if it has a submenu (not the only child) */
+
+.cbp-hsmenu > li > a:not(:only-child):before {
+    content: "\f107";
+    display: inline-block;
+    font-family: 'bpmenu';
+    font-size: 80%;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    margin-right: 0.3em;
+    opacity: 0.4;
+    speak: none;
+    text-transform: none;
+    vertical-align: middle;
+}
+
+.cbp-hsmenu > li.cbp-hsitem-open > a:not(:only-child):before {
+    content: "\f106";
+}
+
+
+/* Add a triangle to currently open menu item link */
+
+.cbp-hsmenu > li.cbp-hsitem-open > a:after {
+    border: solid transparent;
+    border-color: transparent;
+    border-top-color: #362f2d;
+    border-width: 10px;
+    content: " ";
+    height: 0;
+    left: 50%;
+    margin-left: -10px;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    width: 0;
+}
+
+
+/* Submenu style */
+
+.cbp-hssubmenu {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    visibility: hidden;
+    width: 100%;
+    z-index: 0;
+}
+
+.cbp-hssubmenu:before,
+.cbp-hssubmenu:after {
+    content: " ";
+    display: table;
+}
+
+.cbp-hssubmenu:after {
+    clear: both;
+}
+
+
+/* Let's allow 6 item in a row */
+
+.cbp-hssubmenu > li {
+    box-shadow: -28px 0 0 -27px #ddd, 0 -28px 0 -27px #ddd;
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: opacity 0.1s 0s;
+    -moz-transition: opacity 0.1s 0s;
+    transition: opacity 0.1s 0s;
+    vertical-align: top;
+    width: 16.2%;
+}
+
+
+/* First 6 items don't have upper box shadow */
+
+.cbp-hssubmenu > li:nth-child(-n+6) {
+    box-shadow: -28px 0 0 -27px #ddd;
+}
+
+
+/* Every 7th item does not have a left box shadow */
+
+.cbp-hssubmenu > li:nth-child(6n+1) {
+    box-shadow: 0 -28px 0 -27px #ddd;
+}
+
+
+/* The first one does not have any box shadow */
+
+.cbp-hssubmenu > li:first-child {
+    box-shadow: none;
+}
+
+.cbp-hssubmenu > li a {
+    color: #A59985;
+    display: block;
+    padding: 2em 1em 1em 1em;
+    text-align: center;
+}
+
+.no-touch .cbp-hssubmenu > li a:hover,
+.no-touch .cbp-hssubmenu > li a:focus {
+    color: #e8e8e8;
+}
+
+.cbp-hssubmenu > li a img {
+    border: none;
+    display: inline-block;
+    margin: 0;
+    max-width: 100%;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+
+.no-touch .cbp-hssubmenu > li a:hover img {
+    opacity: 0.5;
+}
+
+.cbp-hssubmenu > li a span {
+    display: block;
+    margin-top: 0.4em;
+    min-height: 3em;
+}
+
+.cbp-hsmenu > li.cbp-hsitem-open .cbp-hssubmenu {
+    visibility: visible;
+    z-index: 1000;
+}
+
+.cbp-hsmenu > li.cbp-hsitem-open .cbp-hssubmenu > li {
+    opacity: 1;
+    -webkit-transition: opacity 0.5s 0.1s;
+    transition: opacity 0.5s 0.1s;
+}
+
+
+/* Helper div for animating the background */
+
+.cbp-hsmenubg {
+    background: #DBD7C8;
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 20;
+}
+
+.no-touch .cbp-hsmenubg {
+    -webkit-transition: height 0.3s;
+    transition: height 0.3s;
+}
+/* waveform */
+#waveform {
+	border:solid 1px;
+	border-radius: 8px;
+	margin-top: 10px;
+	padding: 8px;
+	background-color: #675A54;
+}
+/* search */
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #4F4A4A;
+    border-radius: 6px;
+    background-color: #2F2826;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+	background-color: #6F645E;
+	color: aliceblue;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 5px 0 10px;
+    border-left: solid 1px #1F1B1A;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 14px;
+}
+
+/*--ratins--*/
+.star-ratings-sprite {
+  background: url('../img/star-rating-sprite.png') repeat-x;
+  font-size: 0;
+  height: 21px;
+  line-height: 0;
+  overflow: hidden;
+  text-indent: -999em;
+  width: 110px;
+  margin: 0 auto;
+}
+.star-ratings-sprite-rating {
+  background: url('../img/star-rating-sprite.png') repeat-x;
+  background-position: 0 100%;
+  float: left;
+  height: 21px;
+  display: block;
+}

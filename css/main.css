@@ -38,6 +38,7 @@ p {
     background-color: #ffffff;
     width: 100%;
     padding: 1em;
+	margin-bottom: 20px;
     margin-top: 30px;
     border-radius: 8px;
     -moz-border-radius: 4px;
@@ -539,15 +540,14 @@ p {
 /* ------------- 4блока--------------------------- */
 
 .miniblock {
-    box-shadow: 1px 1px 5px #b9b9b9;
+
     background-color: #fff;
     border-radius: 8px 8px 0 0;
     position: relative;
     width: 100%;
     margin: 0;
     padding-bottom: 15px;
-    border-radius: 8px;
-    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-border-radius: 8px;
@@ -1051,7 +1051,6 @@ hr {
 /*------------------footer ----------------------- */
 
 #footer {
-    margin-top: 40px;
     background-color: #333333;
     font-family: "RobotoLight", sans-serif;
     font-style:normal;
@@ -1098,27 +1097,6 @@ hr {
     text-decoration: underline;
 }
 /*=====================кнопка обратный звонок и анкета==========================*/
-.callz {
-    padding: 15px 0;
-}
-
-.callzakaz {
-    background: #e5e5e5;
-    border-color: transparent;
-    border-radius: 6px;
-    color: #333;
-    font-size: 16px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    margin-top: 10px;
-}
-
-.callzakaz:hover {
-    background: #afafaf;
-    text-decoration: none;
-    -webkit-transition: background-color .6s ease;
-    transition: background-color .6s ease;
-}
 
 
 .anketa_btn {
@@ -1226,16 +1204,16 @@ hr {
 
 .features-table td
 {
-  height: 35px;
-  padding: 3px 3px 3px 3px;
-  border-bottom: 1px solid #cdcdcd;
-  box-shadow: 0 1px 0 white;
+
   -moz-box-shadow: 0 1px 0 white;
   -webkit-box-shadow: 0 1px 0 white;
-
+  border-bottom: 1px solid #cdcdcd;
+  box-shadow: 0 1px 0 white;
+  display: table-cell;
+  height: 35px;
+  padding: 3px 3px 3px 3px;
   text-align: center;
   vertical-align: middle;
-  display: table-cell;
 }
 
 .features-table tbody td{ text-align: center;}
@@ -1280,7 +1258,7 @@ hr {
 
 
 
-/* ------------- player_end --------------------------- */
+/* -------------  --------------------------- */
 .leftbar {
     padding: 0 5px 0 20px;
     margin-top: 20px;
@@ -1303,7 +1281,7 @@ hr {
     cursor: pointer;
     display: block;
     float:left;
-    padding: 5px; 10px;
+    padding: 5px, 10px;
     color: #5a5a5a;
     text-decoration: none;
     margin-right: 5px;
@@ -1460,3 +1438,133 @@ hr {
 .placeholder{color:#cbcbcb !important;}
 
 /* Конец */
+.whitetext {
+	font-family: RobotoLight, sans-serif;
+	font-size: 12pt;
+	color: white;
+	padding-bottom: 10px;
+	margin: 0;
+}
+.hronodiv {
+	margin: 20px;
+}
+.linerow {
+	margin: 30 auto;
+
+}
+.centrik {
+	padding: 5px;
+	align-content: center;
+}
+/*помощник*/
+#panelr {
+    position: fixed; /* положение */
+    top: 40%; /* отступ сверху */
+    right: 0; /* отступ слева */
+    background: #A41735; /* цвет фона */
+    width: 30px; /* ширина блока */
+    height: 40px; /* высота блока */
+    font: 14px; /* размер и тип шрифта */
+    color: white; /* цвет текста */
+    text-align: center; /* выравнивание текста по центру */
+    padding: 5px; /* отступы от границ внутри блока */
+	z-index: 100;
+
+    -webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+    -webkit-border-radius: 5px 0 0 5px ; /* закругление границ для всех браузеров*/
+    -moz-border-radius: 5px 0 0 5px ;
+    border-radius: 5px 0 0 5px;
+    }
+
+	#helpform {
+		position: fixed;
+		top: 40%;
+		right: -210px;
+		z-index: 100;
+		width: 210px;
+		height: 420px;
+		margin: 0;
+		padding: 5px;
+		background-color: white;
+		-webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+    	-moz-transition-duration: 0.3s;
+    	-o-transition-duration: 0.3s;
+    	transition-duration: 0.3s;
+		-webkit-border-radius: 0 0 0 5px; /* закругление границ для всех браузеров*/
+		-moz-border-radius: 0 0 0 5px;
+		border-radius:  0 0 0 5px;
+    }
+#panelr:hover {
+	right: 210px; /* при наведении выдвигается на скрытые 200px + 20px отступы */
+}
+#panelr:hover #helpform {
+	right: 0; /* при наведении выдвигается на скрытые 200px + 20px отступы */
+}
+	.kate {
+		display: block;
+		z-index: 101;
+
+	}
+	.kateoff {
+		display: none;
+		z-index: 102;
+	}
+
+#katetext {
+	color: black;
+	font-family: "RobotoLight", sans-serif;
+	font-size: 10pt;
+}
+
+#waveform {
+	border-radius: 6px;
+	margin-top: 10px;
+	padding: 8px;
+	background-color: #EDEDED;
+}
+.anketa {
+	padding: 10px;
+
+}
+
+/* */
+.it_circle {
+	background: rgba(255, 255, 255, 1);
+    border-radius: 100%;
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+    margin: 20px 20px;
+    padding: 10px;
+    color: #848484;
+	font-family: 'RobotoRegular', sans-serif;
+	font-size: 16px;
+	text-align: center;
+}
+.it_circle span {
+  font-family: 'RobotoRegular', sans-serif;
+  color: #3A5CA4;
+  display: block;
+  font-size: 44px;
+  line-height: 58px;
+  padding-top: 30px;
+  font-weight: 100;
+}
+.it_circle span i {
+  font-style: normal;
+}
+
+#counts {
+
+	background-image: url('../img/top_bg_blur.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 55px 0 0 0;
+	padding: 30px 0;
+	box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.4);
+
+}
