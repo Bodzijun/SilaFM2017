@@ -19,13 +19,14 @@ p {
     font-family: 'RobotoLight', sans-serif;
     font-size: 12pt;
 }
+
 .header_topline {
     background-color: #ffffff;
     color: #676767;
     font-size: 12pt;
     padding: 8px 0;
     -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.3) inset;
-    -moz-box-shadow:  0 0 40px rgba(0, 0, 0, 0.3) inset;
+    -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.3) inset;
 }
 
@@ -38,7 +39,7 @@ p {
     background-color: #ffffff;
     width: 100%;
     padding: 1em;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
     margin-top: 30px;
     border-radius: 8px;
     -moz-border-radius: 4px;
@@ -253,14 +254,14 @@ p {
 
 /* First 6 items don't have upper box shadow */
 
-.cbp-hssubmenu > li:nth-child(-n+6) {
+.cbp-hssubmenu > li:nth-child(-n + 6) {
     box-shadow: -28px 0 0 -27px #ddd;
 }
 
 
 /* Every 7th item does not have a left box shadow */
 
-.cbp-hssubmenu > li:nth-child(6n+1) {
+.cbp-hssubmenu > li:nth-child(6n + 1) {
     box-shadow: 0 -28px 0 -27px #ddd;
 }
 
@@ -499,7 +500,7 @@ p {
     padding: 0;
 }
 
-.carousel-caption>h3 {
+.carousel-caption > h3 {
     color: #ffffff;
     font-family: "RobotoLight", sans-serif;
     font-size: 30px;
@@ -545,9 +546,9 @@ p {
     border-radius: 8px 8px 0 0;
     position: relative;
     width: 100%;
-    margin: 0;
+    margin: 0 0 15px 0;
     padding-bottom: 15px;
-     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
     -moz-border-radius: 8px;
@@ -585,7 +586,7 @@ p {
 
 .quikblock {
     color: #404040;
-    font-family: "RobotoLightItalic", sans-serif;
+    font-family: "RobotoLight", sans-serif;
     font-size: 12pt;
     text-align: left;
     line-height: 23px;
@@ -652,13 +653,17 @@ p {
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
 }
 
-.grn, .yeelow, .blue, .red,
+.grn,
+.yeelow,
+.blue,
+.red,
 .serij h3 {
     color: #fff;
     font-family: "RobotoLight", sans-serif;
     padding: 10px 0;
 }
-.rightbar>h2 {
+
+.rightbar > h2 {
     padding: 15px 0 0 0;
     margin: 0;
 }
@@ -689,24 +694,31 @@ p {
     text-align: justify;
 
 }
-.basictext:first-letter { margin-left: 40px; }
+
+.basictext:first-letter {
+    margin-left: 40px;
+}
+
 .nospace {
     margin: 12px 0 2px 0;
 
 }
+
 .righttext {
-    float:left;
-    margin-top:10px;
-    text-align:justify;
+    float: left;
+    margin-top: 10px;
+    text-align: justify;
     text-indent: 40px;
-    padding-right:10px;
+    padding-right: 10px;
 }
+
 .littext {
-    text-align:justify;
+    text-align: justify;
     font-family: "RobotoLight", sans-serif;
     font-size: 14px;
     margin: 0;
 }
+
 .cursive {
     font-family: "RobotoLightItalic", sans-serif;
     font-size: 14px;
@@ -731,10 +743,11 @@ p {
     color: #fff;
     display: block;
     font-family: "RobotoLight", sans-serif;
-    font-size: 32px;
+    font-size: 24px;
     height: 200px;
-    line-height: 185px;
+    line-height: 29px;
     margin: auto;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     -webkit-transition: all 0.3s ease-out;
@@ -743,6 +756,7 @@ p {
     box-shadow: 1px 1px 3px #b9b9b9;
 }
 
+
 .btn_circle:hover {
     background: #ffdb9c;
     border: 6px double #f0ad39;
@@ -750,6 +764,7 @@ p {
     text-decoration: none;
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
+    cursor: pointer;
 }
 
 .h1block {
@@ -818,7 +833,7 @@ p {
     top: 15px;
 }
 
-.moveone>div>a {
+.moveone > div > a {
     text-decoration: none;
     color: #fefefe;
 }
@@ -1053,7 +1068,7 @@ hr {
 #footer {
     background-color: #333333;
     font-family: "RobotoLight", sans-serif;
-    font-style:normal;
+    font-style: normal;
     font-size: 12px;
     color: #fff;
     padding: 20px 0 20px 0;
@@ -1071,18 +1086,18 @@ hr {
     font-size: 12pt;
 }
 
-.footer_mn >ul {
+.footer_mn > ul {
     list-style: none;
     padding: 0;
 
 }
 
-.footer_mn >ul>li {
+.footer_mn > ul > li {
     display: inline-block;
     position: relative;
 }
 
-.footer_mn >ul>li> a {
+.footer_mn > ul > li > a {
     color: #e5e5e5;
     font-style: normal;
     font-variant: normal;
@@ -1092,12 +1107,23 @@ hr {
     text-decoration: none;
 }
 
-.footer_mn>ul>li>a:hover,
-.footer_mn>ul>li>a:focus {
+.footer_mn > ul > li > a:hover,
+.footer_mn > ul > li > a:focus {
     text-decoration: underline;
 }
-/*=====================кнопка обратный звонок и анкета==========================*/
 
+footer a {
+    color: #f0ad39;
+}
+
+footer a:hover,
+footer a:focus,
+footer a:active {
+    color: #f0ad39;
+    text-decoration: none;
+}
+
+/*============кнопка обратный звонок и анкета=================*/
 
 .anketa_btn {
     background: #75b94c;
@@ -1128,10 +1154,12 @@ hr {
 .hidden {
     display: none;
 }
+
 .pop_form {
     padding: 15px;
     text-align: right;
 }
+
 .pop_form input [type=text] {
     display: block;
     line-height: 24px;
@@ -1143,10 +1171,12 @@ hr {
     margin: 6px;
     font-size: 12pt;
 }
+
 .pop_form textarea {
     margin: 6px;
     font-size: 12pt;
 }
+
 .pop_form button {
     margin: 5px;
 }
@@ -1159,6 +1189,7 @@ hr {
     text-transform: uppercase;
 
 }
+
 .pop_form p {
     margin: 10px auto 15px;
     text-align: center;
@@ -1167,7 +1198,9 @@ hr {
     font-size: 12pt;
 
 }
+
 /*=====================table==========================*/
+
 #scrollup {
     position: fixed;
     opacity: 0.8;
@@ -1181,116 +1214,131 @@ hr {
     display: none;
     cursor: pointer;
 }
+
 /*=====================table==========================*/
+
 .table-responsive {
     margin-top: 50px;
 }
 
 .features-table {
-  width: 100%;
-  margin: 0 auto;
-  border-collapse: separate;
-  border-spacing: 0;
-  text-shadow: 0 1px 0 #fff;
-  color: #2a2a2a;
-  background: #fafafa;
-  background-image: -moz-linear-gradient(top, #fff, #eaeaea, #fff); /* Firefox 3.6 */
-  background-image: -webkit-gradient(linear,center bottom,center top,from(#fff),color-stop(0.5, #eaeaea),to(#fff));
-  margin-top:8px;
-  margin-bottom:8px;
-  font-size: 11pt;
-  font-family: 'RobotoRegular', sans-serif;
-  }
-
-.features-table td
-{
-
-  -moz-box-shadow: 0 1px 0 white;
-  -webkit-box-shadow: 0 1px 0 white;
-  border-bottom: 1px solid #cdcdcd;
-  box-shadow: 0 1px 0 white;
-  display: table-cell;
-  height: 35px;
-  padding: 3px 3px 3px 3px;
-  text-align: center;
-  vertical-align: middle;
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    text-shadow: 0 1px 0 #fff;
+    color: #2a2a2a;
+    background: #fafafa;
+    background-image: -moz-linear-gradient(top, #fff, #eaeaea, #fff);
+    /* Firefox 3.6 */
+    background-image: -webkit-gradient(linear, center bottom, center top, from(#fff), color-stop(0.5, #eaeaea), to(#fff));
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 11pt;
+    font-family: 'RobotoRegular', sans-serif;
 }
 
-.features-table tbody td{ text-align: center;}
+.features-table td {
+
+    -moz-box-shadow: 0 1px 0 white;
+    -webkit-box-shadow: 0 1px 0 white;
+    border-bottom: 1px solid #cdcdcd;
+    box-shadow: 0 1px 0 white;
+    display: table-cell;
+    height: 35px;
+    padding: 3px 3px 3px 3px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.features-table tbody td {
+    text-align: center;
+}
 
 .features-table td.grey {
-	background: #efefef;
-	background: rgba(144,144,144,0.15);
-	border-right: 1px solid white;
-	text-align: center;
+    background: #efefef;
+    background: rgba(144, 144, 144, 0.15);
+    border-right: 1px solid white;
+    text-align: center;
     padding: 5px 5px;
 }
+
 .features-table td .white {
-    cursor:pointer;
-    text-decoration:none;
-    border-bottom:1px dashed;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px dashed;
 }
 
-.features-table td.green {background: #d2f7bf;}
-
-.features-table td:nowrap {white-space: nowrap;}
-
-.features-table thead td
-{
-  font-size: 100%;
-  font-weight: bold;
-  -moz-border-radius-topright: 10px;
-  -moz-border-radius-topleft: 10px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-top: 1px solid #eaeaea;
+.features-table td.green {
+    background: #d2f7bf;
 }
-.features-table tfoot td
-{
-  font-size: 80%;
-  font-weight: bold;
-  -moz-border-radius-bottomright: 10px;
-  -moz-border-radius-bottomleft: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom: 1px solid #dadada;
+
+.features-table td:nowrap {
+    white-space: nowrap;
+}
+
+.features-table thead td {
+    font-size: 100%;
+    font-weight: bold;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-topleft: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top: 1px solid #eaeaea;
+}
+
+.features-table tfoot td {
+    font-size: 80%;
+    font-weight: bold;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom: 1px solid #dadada;
 }
 
 
 
 /* -------------  --------------------------- */
+
 .leftbar {
     padding: 0 5px 0 20px;
     margin-top: 20px;
 }
-.leftbar .basictext  {
+
+.leftbar .basictext {
     font-size: 12pt;
     padding-top: 0;
 }
 
 /*-----------------------вкладки------------------------ */
+
 .leftbar > input {
     display: none;
 }
-.leftbar > input:checked + label{
+
+.leftbar > input:checked + label {
     text-decoration: underline;
     color: #404040;
     font-weight: bold;
 }
+
 .leftbar > label {
     cursor: pointer;
     display: block;
-    float:left;
+    float: left;
     padding: 5px, 10px;
     color: #5a5a5a;
     text-decoration: none;
     margin-right: 5px;
     font-size: 12pt;
 }
+
 #vkladki {
-    clear:both;
+    clear: both;
     position: relative;
 }
+
 #vkladki > div {
     position: absolute;
     visibility: hidden;
@@ -1302,40 +1350,50 @@ hr {
 
 #n1:checked ~ #vkladki > div:nth-of-type(1),
 #n2:checked ~ #vkladki > div:nth-of-type(2),
-#n3:checked ~ #vkladki > div:nth-of-type(3) {visibility: visible; opacity: 1;}
+#n3:checked ~ #vkladki > div:nth-of-type(3) {
+    visibility: visible;
+    opacity: 1;
+}
 
 .rightbar {
     padding-right: 20px;
 }
-.rightbar>.basictext {
+
+.rightbar > .basictext {
     margin: 0;
     padding-bottom: 0px;
 
 }
-.rightbar>h2 {
+
+.rightbar > h2 {
     text-align: right;
     margin: 0 20px 22px 10px;
 
 }
-.rightbar>h4 {
+
+.rightbar > h4 {
     margin-top: 0;
     margin-left: 10px;
 }
-#choose >ul>li {
+
+#choose > ul > li {
     font-size: 12pt;
 }
-#choose >ul {
+
+#choose > ul {
     margin: 0;
 }
 
 .players {
-   tab-size: 50px;
+    tab-size: 50px;
 }
+
 .left_img {
     margin: 10px;
     float: left;
 
 }
+
 .inside {
     padding: 20px 20px 0 20px;
     margin-top: 20px;
@@ -1345,13 +1403,16 @@ hr {
     margin-bottom: 10px;
 
 }
+
 .modal-content {
     padding: 10px 30px 0 40px;
 }
+
 .btn-file {
     position: relative;
     overflow: hidden;
 }
+
 .btn-file input[type=file] {
     position: absolute;
     top: 0;
@@ -1367,17 +1428,22 @@ hr {
     cursor: inherit;
     display: block;
 }
+
 /*----tab for video----*/
-.nav-pills>li>a {
+
+.nav-pills > li > a {
     font-size: 12pt;
 }
+
 .nav-pills {
     padding: 0 3px 10px 3px;
 }
+
 .costimg {
     padding-right: 10px;
     padding-top: 10px;
 }
+
 /*----форма опроса----*/
 
 .oprosnik {
@@ -1386,154 +1452,193 @@ hr {
     border: 1px dashed grey;
     border-radius: 8px;
 }
+
 /*  Скопируйте код ниже в ваш файл стилей (CSS файл)  */
 
-#search-block-form{
-	width:248px;
-	height:28px;
-	border-radius:6px;
-	border:#c9c9c9 solid 1px;
-	background:url('../images/searchBg.png') left top repeat-x;
+#search-block-form {
+    width: 248px;
+    height: 28px;
+    border-radius: 6px;
+    border: #c9c9c9 solid 1px;
+    background: url('../images/searchBg.png') left top repeat-x;
     margin: 20px;
-	}
-.focus-active{
-	border-color:#aaa !important;
-	background:#fff !important;
-	}
-#search-block-form input{
-	padding:0;
-	margin:0;
-	display:block;
-	border:none;
-	outline:none;
-	background:none;
-	width:100%;
-	height:100%;
-	}
-#search-block-form .form-actions{
-	width:28px;
-	height:28px;
-	float:left;
-	background:url('../images/searchIcon.png') 5px 2px no-repeat;
-	}
-#search-block-form .form-actions input:hover{
-	cursor:pointer;
-	}
-#search-block-form .form-actions input{
-	overflow:hidden;
-	text-indent:-9999px;
-	}
-#search-block-form .form-item{
-	width:210px;
-	padding:0px 5px;
-	float:right;
-	height:28px;
-	}
-#search-block-form .form-item input{
-	font:13px/16px "Trebuchet MS", Arial, Helvetica, sans-serif;
-	color:#222;
-	height:auto !important;
-	padding:6px 0;
-	}
-.placeholder{color:#cbcbcb !important;}
+}
+
+.focus-active {
+    border-color: #aaa !important;
+    background: #fff !important;
+}
+
+#search-block-form input {
+    padding: 0;
+    margin: 0;
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+}
+
+#search-block-form .form-actions {
+    width: 28px;
+    height: 28px;
+    float: left;
+    background: url('../images/searchIcon.png') 5px 2px no-repeat;
+}
+
+#search-block-form .form-actions input:hover {
+    cursor: pointer;
+}
+
+#search-block-form .form-actions input {
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+#search-block-form .form-item {
+    width: 210px;
+    padding: 0px 5px;
+    float: right;
+    height: 28px;
+}
+
+#search-block-form .form-item input {
+    font: 13px/16px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    color: #222;
+    height: auto !important;
+    padding: 6px 0;
+}
+
+.placeholder {
+    color: #cbcbcb !important;
+}
 
 /* Конец */
+
 .whitetext {
-	font-family: RobotoLight, sans-serif;
-	font-size: 12pt;
-	color: white;
-	padding-bottom: 10px;
-	margin: 0;
+    font-family: "RobotoLight", sans-serif;
+    font-size: 12pt;
+    color: white;
+    padding-bottom: 10px;
+    margin: 0;
 }
+
 .hronodiv {
-	margin: 20px;
+    margin: 20px;
 }
+
 .linerow {
-	margin: 30 auto;
+    margin: 30 auto;
 
 }
+
 .centrik {
-	padding: 5px;
-	align-content: center;
+    padding: 5px;
+    align-content: center;
 }
-/*помощник*/
-#panelr {
-    position: fixed; /* положение */
-    top: 40%; /* отступ сверху */
-    right: 0; /* отступ слева */
-    background: #A41735; /* цвет фона */
-    width: 30px; /* ширина блока */
-    height: 40px; /* высота блока */
-    font: 14px; /* размер и тип шрифта */
-    color: white; /* цвет текста */
-    text-align: center; /* выравнивание текста по центру */
-    padding: 5px; /* отступы от границ внутри блока */
-	z-index: 100;
 
-    -webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
+/*помощник*/
+
+#panelr {
+    position: fixed;
+    /* положение */
+    top: 40%;
+    /* отступ сверху */
+    right: 0;
+    /* отступ слева */
+    background: #A41735;
+    /* цвет фона */
+    width: 30px;
+    /* ширина блока */
+    height: 40px;
+    /* высота блока */
+    font: 14px;
+    /* размер и тип шрифта */
+    color: white;
+    /* цвет текста */
+    text-align: center;
+    /* выравнивание текста по центру */
+    padding: 5px;
+    /* отступы от границ внутри блока */
+    z-index: 100;
+
+    -webkit-transition-duration: 0.3s;
+    /* анимационное выдвижение для всех браузеров*/
     -moz-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
     transition-duration: 0.3s;
 
-    -webkit-border-radius: 5px 0 0 5px ; /* закругление границ для всех браузеров*/
-    -moz-border-radius: 5px 0 0 5px ;
+    -webkit-border-radius: 5px 0 0 5px;
+    /* закругление границ для всех браузеров*/
+    -moz-border-radius: 5px 0 0 5px;
     border-radius: 5px 0 0 5px;
-    }
+}
 
-	#helpform {
-		position: fixed;
-		top: 40%;
-		right: -210px;
-		z-index: 100;
-		width: 210px;
-		height: 420px;
-		margin: 0;
-		padding: 5px;
-		background-color: white;
-		-webkit-transition-duration: 0.3s; /* анимационное выдвижение для всех браузеров*/
-    	-moz-transition-duration: 0.3s;
-    	-o-transition-duration: 0.3s;
-    	transition-duration: 0.3s;
-		-webkit-border-radius: 0 0 0 5px; /* закругление границ для всех браузеров*/
-		-moz-border-radius: 0 0 0 5px;
-		border-radius:  0 0 0 5px;
-    }
+#helpform {
+    position: fixed;
+    top: 40%;
+    right: -210px;
+    z-index: 100;
+    width: 210px;
+    height: 420px;
+    margin: 0;
+    padding: 5px;
+    background-color: white;
+    -webkit-transition-duration: 0.3s;
+    /* анимационное выдвижение для всех браузеров*/
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-border-radius: 0 0 0 5px;
+    /* закругление границ для всех браузеров*/
+    -moz-border-radius: 0 0 0 5px;
+    border-radius: 0 0 0 5px;
+}
+
 #panelr:hover {
-	right: 210px; /* при наведении выдвигается на скрытые 200px + 20px отступы */
+    right: 210px;
+    /* при наведении выдвигается на скрытые 200px + 20px отступы */
 }
-#panelr:hover #helpform {
-	right: 0; /* при наведении выдвигается на скрытые 200px + 20px отступы */
-}
-	.kate {
-		display: block;
-		z-index: 101;
 
-	}
-	.kateoff {
-		display: none;
-		z-index: 102;
-	}
+#panelr:hover #helpform {
+    right: 0;
+    /* при наведении выдвигается на скрытые 200px + 20px отступы */
+}
+
+.kate {
+    display: block;
+    z-index: 101;
+
+}
+
+.kateoff {
+    display: none;
+    z-index: 102;
+}
 
 #katetext {
-	color: black;
-	font-family: "RobotoLight", sans-serif;
-	font-size: 10pt;
+    color: black;
+    font-family: "RobotoLight", sans-serif;
+    font-size: 10pt;
 }
 
 #waveform {
-	border-radius: 6px;
-	margin-top: 10px;
-	padding: 8px;
-	background-color: #EDEDED;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #EDEDED;
 }
+
 .anketa {
-	padding: 10px;
+    padding: 10px;
 
 }
 
 /* */
+
 .it_circle {
-	background: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 1);
     border-radius: 100%;
     width: 180px;
     height: 180px;
@@ -1541,30 +1646,92 @@ hr {
     margin: 20px 20px;
     padding: 10px;
     color: #848484;
-	font-family: 'RobotoRegular', sans-serif;
-	font-size: 16px;
-	text-align: center;
+    font-family: 'RobotoRegular', sans-serif;
+    font-size: 16px;
+    text-align: center;
 }
+
 .it_circle span {
-  font-family: 'RobotoRegular', sans-serif;
-  color: #3A5CA4;
-  display: block;
-  font-size: 44px;
-  line-height: 58px;
-  padding-top: 30px;
-  font-weight: 100;
+    font-family: 'RobotoRegular', sans-serif;
+    color: #3A5CA4;
+    display: block;
+    font-size: 44px;
+    line-height: 58px;
+    padding-top: 30px;
+    font-weight: 100;
 }
+
 .it_circle span i {
-  font-style: normal;
+    font-style: normal;
 }
 
 #counts {
 
-	background-image: url('../img/top_bg_blur.jpg');
-	background-attachment: fixed;
-	background-size: cover;
-	margin: 55px 0 0 0;
-	padding: 30px 0;
-	box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.4);
+    background-image: url('../img/top_bg_blur.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 55px 0 0 0;
+    padding: 30px 0;
+    box-shadow: -2px -2px 3px rgba(0, 0, 0, 0.4);
 
+}
+
+.tortila {
+    background: url('../img/tortila1.png') no-repeat 50% 50%;
+    background-size: 100%;
+    display: inline-block;
+    width: 240px;
+    height: 130px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.tortila:hover {
+    background: url('../img/tortila2.png') no-repeat 50% 50%;
+    background-size: 100%;
+}
+
+.ban01 {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+.ban_on {
+    text-transform: uppercase;
+    visibility: visible;
+    color: black;
+}
+
+.ban_off {
+    visibility: hidden;
+    color: white;
+    padding: 0 0 15px 0;
+    margin-bottom: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.tortila:hover ~ .ban_off {
+    visibility: visible;
+    color: black;
+}
+
+.mrg20 {
+    margin-top: 20px;
+}
+
+.font_sm {
+    font-family: "RobotoLight", sans-serif;
+    font-size: 14px;
+    color: #e5e5e5;
+    text-align: justify;
+}
+
+.font_bsm {
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 14px;
+    color: #e5e5e5;
+    text-align: justify;
 }

@@ -1,220 +1,229 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Wargaming SIlaFM</title>
-<meta charset="utf-8" />
-<title>Sila.FM</title>
-<meta name="description" content="" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" type="image/png" href="img/favicon.png" />
-<link rel="stylesheet" href="libs/bootstrap/bootstrap.css" />
-<link rel="stylesheet" href="css/fonts.css"/>
-<link rel="stylesheet" href="css/style.css"/>
-<link rel="stylesheet" href="css/media.css"/>
-<link rel="stylesheet" href="css/progress-wizard.min.css"/>
-<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
-<link rel="stylesheet" href="libs/BipolarChart/cssBipolarChart.css"/>
+    <meta charset="UTF-8">
+    <title>Wargaming SIlaFM</title>
+    <meta charset="utf-8" />
+    <title>Sila.FM</title>
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/progress-wizard.min.css" />
+    <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="libs/BipolarChart/cssBipolarChart.css" />
+    <script src="js/modernizr.custom.js"></script>
 </head>
+
 <body>
-<!--[if lt IE 9]>
+
+
+
+    <header>
+        <div> <img class="img-responsive" src="img/wargaming.jpg" alt=""> </div>
+        <img src="img/wg_logo.png" class="wglogo"> <a href="www.sila.fm"><img src="img/logo.png" alt="Sila.FM" class="silalogo"></a>
+        <div class="mnu">
+            <nav class="cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
+                <div class="cbp-hsinner">
+                    <ul class="cbp-hsmenu">
+                        <li> <a href="#">Дикторы России</a>
+                            <ul class="cbp-hssubmenu">
+                                <li> <a href="index_wg01.html#ex1"><img src="img/ruman.png" alt="img07"/><span>Федеральные дикторы</span></a> </li>
+                                <li> <a href="index_wg02.html#ex2"><img src="img/ruman.png" alt="img08" /><span>Бюджетные дикторы</span></a> </li>
+                            </ul>
+                        </li>
+                        <li> <a href="#">Дикторы Украины</a>
+                            <ul class="cbp-hssubmenu">
+                                <li> <a href="index_wg03.html#ex1"><img src="img/uaman.png" alt="img07"/> <span>Федеральные дикторы</span></a> </li>
+                                <li> <a href="index_wg04.html#ex2"><img src="img/uaman.png" alt="img08"/> <span>Бюджетные дикторы</span></a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="index_wg05.html">Иностранные дикторы</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <section>
+        <div class="container">
+            <div class="fillcontainer">
+                <div class="topcontainer">
+                    <p class="anketa"> Анкета</p>
+                </div>
+                <div class="row textzone">
+                    <div class="col-md-offset-1 col-md-6">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Имя, фамилия</td>
+                                    <td class="cursivtext">Сирко Степан Юхимович </td>
+                                </tr>
+                                <tr>
+                                    <td>Пол</td>
+                                    <td class="cursivtext">мужской</td>
+                                </tr>
+                                <tr>
+                                    <td>Возвраст</td>
+                                    <td class="cursivtext">35</td>
+                                </tr>
+                                <tr>
+                                    <td>Национальность</td>
+                                    <td class="cursivtext">украинец</td>
+                                </tr>
+                                <tr>
+                                    <td>Стоимость до 500 слов</td>
+                                    <td class="cursivtext">200 грн</td>
+                                </tr>
+                                <tr>
+                                    <td>Стоимость за 1 стр</td>
+                                    <td class="cursivtext">180 грн</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-offset-1 col-md-4">
+                        <div class="row">
+                            <img src="img/pihota.png" class="img-circle" height="220" widht="220" alt="" /></div>
+                    </div>
+                </div>
+                <div class="row anketa">
+                    <div style="text-align: center">
+                        <button class="btn btn-success" onclick="wavesurfer.playPause()">
+    <i class="glyphicon glyphicon-play"></i>Прослушать
+	</button></div>
+                    <div id="waveform"></div>
+                </div>
+                <div class="row anketa">
+                    <p>Характер голоса</p>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-12"> <br>
+                        <div id="voice">
+                            <script>
+                                var sampleData1 = [
+                                    ["Низкий темб", "Высокий тембр", 0.66],
+                                    ["Уверенный", "Мягкий", 0.47],
+                                    ["Богатый", "Сухой", 0.66],
+                                    ["Энергический", "Хладнокровный", 0.324],
+                                    ["Деловой", "Живой", 0.92],
+                                ]
+
+                                var sampleData2 = [
+                                    ["Psychology", 0.4022950506000479],
+                                    ["IT", 0.98803218276815504],
+                                ]
+
+                                $(document).ready(function() {
+                                    $("#voice").drawCSSBipolarChart({
+                                        data: sampleData1,
+                                        bipolar: true
+                                    })
+
+                                })
+
+                            </script>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12"> <br>
+                        </div>
+                    </div>
+                    <div class="textzone">
+                        <div class="row anketa">
+                            <p>График доступности диктора</p>
+                            <hr>
+                        </div>
+                        <div class="grafwork">
+                            <ul class="progress-indicator">
+                                <li> <span class="bubble"></span> 00:00 </li>
+                                <li> <span class="bubble"></span> 02:00 </li>
+                                <li> <span class="bubble"></span> 04:00 </li>
+                                <li> <span class="bubble"></span> 06:00 </li>
+                                <li class="completed"> <span class="bubble"></span> 08:00 </li>
+                                <li class="completed"> <span class="bubble"></span> 10:00 </li>
+                                <li class="completed"> <span class="bubble"></span> 12:00 </li>
+                                <li class="completed"> <span class="bubble"></span> 14:00 </li>
+                                <li class="completed"> <span class="bubble"></span> 16:00 </li>
+                                <li class="completed"> <span class="bubble"></span> 18:00 </li>
+                                <li class="completed"> <span class="bubble"></span> 20:00 </li>
+                                <li> <span class="bubble"></span> 22:00 </li>
+                                <li> <span class="bubble"></span> 24:00 </li>
+                            </ul>
+                            <br>
+                        </div>
+                        <div class="row anketa">
+                            <p>Примеры</p>
+                            <hr>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5">
+                                <p class="smalltext">Консалт груп</p>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="http://tv.adobe.com/embed/1221/24197/"></iframe>
+
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <p class="smalltext">Нефтегазуголь</p>
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="http://tv.adobe.com/embed/1221/24197/"></iframe>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <br>
+        <br>
+    </footer>
+    <!--[if lt IE 9]>
 <script src="libs/html5shiv/es5-shim.min.js"></script>
 <script src="libs/html5shiv/html5shiv.min.js"></script>
 <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 <script src="libs/respond/respond.min.js"></script>
 <![endif]-->
-<script src="libs/jquery/jquery-3.1.1.min.js"></script>
-<script src="libs/bootstrap/bootstrap.min.js"></script>
-<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-<!--Waypoints is the easiest way to trigger a function when you scroll to an element. -->
-<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
-<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
-<script src="js/common.js"></script>
-<script src="js/modernizr.custom.js"></script>
-<script src="libs/BipolarChart/cssBipolarChart.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.3.2/wavesurfer.min.js"></script>
-<!-- Yandex.Metrika counter -->
-<!-- /Yandex.Metrika counter -->
-<!-- Google Analytics counter -->
-<!-- /Google Analytics counter -->
+    <script src="libs/jquery/jquery-3.1.1.min.js"></script>
+    <script src="libs/bootstrap/bootstrap.min.js"></script>
+    <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <!--Waypoints is the easiest way to trigger a function when you scroll to an element. -->
+    <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="js/common.js"></script>
 
-<header>
-  <div> <img class="img-responsive" src="img/wargaming.jpg" alt=""> </div>
-  <img src="img/wg_logo.png" class="wglogo"> <a href="www.sila.fm"><img src="img/logo.png" alt="Sila.FM" class="silalogo"></a>
-  <div class="mnu">
-    <nav class="cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
-      <div class="cbp-hsinner">
-        <ul class="cbp-hsmenu">
-          <li> <a href="#">Дикторы России</a>
-            <ul class="cbp-hssubmenu">
-              <li> <a href="index_wg01.html#ex1"><img src="img/ruman.png" alt="img07"/><span>Федеральные дикторы</span></a> </li>
-              <li> <a href="index_wg02.html#ex2"><img src="img/ruman.png" alt="img08" /><span>Бюджетные дикторы</span></a> </li>
-            </ul>
-          </li>
-          <li> <a href="#">Дикторы Украины</a>
-            <ul class="cbp-hssubmenu">
-              <li> <a href="index_wg03.html#ex1"><img src="img/uaman.png" alt="img07"/> <span>Федеральные дикторы</span></a> </li>
-              <li> <a href="index_wg04.html#ex2"><img src="img/uaman.png" alt="img08"/> <span>Бюджетные дикторы</span></a> </li>
-            </ul>
-          </li>
-          <li><a href="index_wg05.html">Иностранные дикторы</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-  <script src="js/cbpHorizontalSlideOutMenu.js"></script>
-  <script>
-   var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
-   </script>
-</header>
-<section>
-<div class="container">
-<div class="fillcontainer">
-  <div class="topcontainer">
-    <p class="anketa"> Анкета</p>
-  </div>
-  <div class="row textzone">
-    <div class="col-md-offset-1 col-md-6">
-      <table class="table">
-        <tbody>
-         <tr>
-         	<td>Имя, фамилия</td>
-         	<td class="cursivtext">Сирко Степан Юхимович </td>
-         </tr>
-          <tr>
-            <td>Пол</td>
-            <td class="cursivtext">мужской</td>
-          </tr>
-          <tr>
-            <td>Возвраст</td>
-            <td class="cursivtext">35</td>
-          </tr>
-          <tr>
-            <td>Национальность</td>
-            <td class="cursivtext">украинец</td>
-          </tr>
-          <tr>
-            <td>Стоимость до 500 слов</td>
-            <td class="cursivtext">200 грн</td>
-          </tr>
-          <tr>
-            <td>Стоимость за 1 стр</td>
-            <td class="cursivtext">180 грн</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="col-md-offset-1 col-md-4">
-         <div class="row">
-     <img src="img/pihota.png" class="img-circle"  height="220" widht="220" alt=""/></div>
-     </div>
-  </div>
-  <div class="row anketa">
-    <div style="text-align: center">
-   <button class="btn btn-success" onclick="wavesurfer.playPause()">
-    <i class="glyphicon glyphicon-play"></i>Прослушать
-	</button></div>
-  <div id="waveform"></div>
-  </div>
-  <div class="row anketa">
-  	<p>Характер голоса</p>
-  	<hr>
-  </div>
-  <div class="row">
-    <div class="col-md-12"> <br>
-      <div id="voice">
-        <script>
-        var sampleData1 = [
-            ["Низкий темб", "Высокий тембр", 0.66],
-            ["Уверенный", "Мягкий", 0.47],
-            ["Богатый", "Сухой", 0.66],
-            ["Энергический", "Хладнокровный", 0.324],
-			["Деловой", "Живой", 0.92],
-        ]
+    <script src="libs/BipolarChart/cssBipolarChart.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.3.2/wavesurfer.min.js"></script>
+    <script>
+        var wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: '#BDAA89',
+            progressColor: '#9C8A6B',
+            scrollParent: true
+        });
 
-        var sampleData2 = [
-            ["Psychology", 0.4022950506000479],
-            ["IT", 0.98803218276815504],
-        ]
+        wavesurfer.load('audio/bel.mp3');
 
-        $(document).ready(function() {
-            $("#voice").drawCSSBipolarChart({
-                data: sampleData1,
-                bipolar: true
-            })
-
-        })
     </script>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12"> <br>
-      </div>
-    </div>
-    <div class="textzone">
-       <div class="row anketa">
-  	<p>График доступности диктора</p>
-  	<hr>
-  </div>
-  <div class="grafwork">
-  	<ul class="progress-indicator">
-  	<li> <span class="bubble"></span> 00:00 </li>
-  	<li> <span class="bubble"></span> 02:00 </li>
-  	<li> <span class="bubble"></span> 04:00 </li>
-  	<li> <span class="bubble"></span> 06:00 </li>
-  	<li class="completed"> <span class="bubble"></span> 08:00 </li>
-  	<li class="completed"> <span class="bubble"></span> 10:00 </li>
-  	<li class="completed"> <span class="bubble"></span> 12:00 </li>
- 	<li class="completed"> <span class="bubble"></span> 14:00 </li>
-  	<li class="completed"> <span class="bubble"></span> 16:00 </li>
- 	<li class="completed"> <span class="bubble"></span> 18:00 </li>
-  	<li class="completed"> <span class="bubble"></span> 20:00 </li>
- 	<li> <span class="bubble"></span> 22:00 </li>
-  	 <li> <span class="bubble"></span> 24:00 </li> </ul>
-	<br>
-  </div>
-  <div class="row anketa">
-  	<p>Примеры</p>
-  	<hr>
-  </div>
-      <div class="row">
-      <div class="col-md-1"></div>
-       <div class="col-md-5"><p class="smalltext">Консалт груп</p>
-       	        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="http://tv.adobe.com/embed/1221/24197/"></iframe>
+    <script src="js/cbpHorizontalSlideOutMenu.js"></script>
+    <script>
+        var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
 
-        </div>
-       </div>
-       <div class="col-md-5"><p class="smalltext">Нефтегазуголь</p>
-   	          <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="http://tv.adobe.com/embed/1221/24197/"></iframe>
-        </div>
-         <div class="col-md-1"></div>
-       </div>
-
-      </div>
-      <br>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<footer>
-  <br>
-  <br>
-</footer>
+    </script>
 </body>
-<script>
 
-var wavesurfer = WaveSurfer.create({
-    container: '#waveform',
-	waveColor: '#BDAA89',
-    progressColor: '#9C8A6B',
-    scrollParent: true
-});
 
-wavesurfer.load('audio/bel.mp3');
 
-</script>
 </html>

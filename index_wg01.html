@@ -1,0 +1,358 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wargaming SIlaFM</title>
+    <meta charset="utf-8" />
+    <title>Sila.FM</title>
+    <meta name="description" content="Изготовление аудиороликов и радиороликов, запись радиорекламы и аудиорекламы, запись дикторов. Озвучка видеороликов, озвучание анимации, квестов, озвучение корпоративных и презентационных фильмов. Голосовое приветствие" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="libs/dataTables/dataTables.bootstrap.min.css" />
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body>
+    <header>
+        <div> <img class="img-responsive" src="img/wargaming.jpg" alt=""> </div>
+        <img src="img/wg_logo.png" class="wglogo"> <a href="www.sila.fm"><img src="img/logo.png" alt="Sila.FM" class="silalogo"></a>
+        <div class="mnu">
+            <nav class="cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
+                <div class="cbp-hsinner">
+                    <ul class="cbp-hsmenu">
+                        <li> <a href="#">Дикторы России</a>
+                            <ul class="cbp-hssubmenu">
+                                <li> <a href="index_wg02.html#ex1"><img src="img/ruman.png" alt="img07"/><span>Федеральные дикторы</span></a> </li>
+                                <li> <a href="index_wg03.html#ex2"><img src="img/ruman.png" alt="img08" /><span>Бюджетные дикторы</span></a> </li>
+                            </ul>
+                        </li>
+                        <li> <a href="#">Дикторы Украины</a>
+                            <ul class="cbp-hssubmenu">
+                                <li> <a href="index_wg04.html#ex1"><img src="img/uaman.png" alt="img07"/> <span>Федеральные дикторы</span></a> </li>
+                                <li> <a href="index_wg05.html#ex2"><img src="img/uaman.png" alt="img08"/> <span>Бюджетные дикторы</span></a> </li>
+                            </ul>
+                        </li>
+                        <li><a href="index_wg05.html">Иностранные дикторы</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="fillcontainer">
+                <div class="topcontainer">
+                    <p class="lightbig"> Федеральные дикторы России </p>
+                </div>
+                <div class="textzone">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <p>Новые голоса</p>
+                            <li><a href="" class="linkvoice">Вася Петичкин (Париж)</a></li>
+                            <li><a href="" class="linkvoice">Вася Петичкин (Париж)</a></li>
+                            <li><a href="" class="linkvoice">Вася Петичкин (Париж)</a></li>
+                            <li><a href="" class="linkvoice">Вася Петичкин (Париж)</a></li>
+                            <br>
+                        </div>
+                        <div class="col-sm-7">
+                            <p>Поиск диктора</p>
+                            <div id="custom-search-input">
+                                <div class="input-group col-md-12">
+                                    <input type="text" class="form-control input-md" placeholder="Ведите фамилию или имя диктора" />
+                                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                                </div>
+                            </div>
+                            <p class="cursivtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, reprehenderit a sunt, rerum delectus eaque qui optio, aliquam similique officia ex labore animi, quia voluptas laudantium ut quis neque libero.</p>
+                            <br>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div role="tabpanel">
+                            <ul class="nav nav-tabs nav-justified" role="tablist">
+                                <li role="presentation" class="active"><a href="#home1" data-toggle="tab" role="tab" aria-controls="tab1">Мужские голоса</a></li>
+                                <li role="presentation"><a href="#paneTwo1" data-toggle="tab" role="tab" aria-controls="tab2">Женские голоса</a></li>
+                            </ul>
+                            <div id="tabContent1" class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active" id="home1">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="headtab">Имя, фамилия диктора</th>
+                                                <th class="headtab">Статус</th>
+                                                <th class="headtab">Стоимость</th>
+                                                <th class="headtab">Прослушать</th>
+                                                <th class="headtab">Рейтинг популярности</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a class="linkvoice" href="vo_01.html" target="_blank">John</a></td>
+                                                <td>Doe</td>
+                                                <td>john@example.com</td>
+                                                <td><audio controls>
+    <source src="audio/bel.mp3" type="audio/mpeg">
+    <a href="audio/bel.mp3">Скачайте музыку</a></audio></td>
+                                                <td>
+                                                    <div class="star-ratings-sprite"><span style="width:20%" class="star-ratings-sprite-rating"></span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mary</td>
+                                                <td>Moe</td>
+                                                <td>mary@example.com</td>
+                                                <td><audio controls>
+    <source src="audio/bel.mp3" type="audio/mpeg">
+    <a href="audio/bel.mp3">Скачайте музыку</a></audio></td>
+                                                <td>
+                                                    <div class="star-ratings-sprite"><span style="width:40%" class="star-ratings-sprite-rating"></span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>July</td>
+                                                <td>Dooley</td>
+                                                <td>john@example.com</td>
+                                                <td><audio controls>
+    <source src="audio/bel.mp3" type="audio/mpeg">
+    <a href="audio/bel.mp3">Скачайте музыку</a></audio></td>
+                                                <td>
+                                                    <div class="star-ratings-sprite"><span style="width:60%" class="star-ratings-sprite-rating"></span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>July</td>
+                                                <td>Dooley</td>
+                                                <td>john@example.com</td>
+                                                <td><audio controls>
+    <source src="audio/bel.mp3" type="audio/mpeg">
+    <a href="audio/bel.mp3">Скачайте музыку</a></audio></td>
+                                                <td>
+                                                    <div class="star-ratings-sprite"><span style="width:70%" class="star-ratings-sprite-rating"></span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>July</td>
+                                                <td>Dooley</td>
+                                                <td>john@example.com</td>
+                                                <td><audio controls>
+    <source src="audio/bel.mp3" type="audio/mpeg">
+    <a href="audio/bel.mp3">Скачайте музыку</a></audio></td>
+                                                <td>
+                                                    <div class="star-ratings-sprite"><span style="width:80%" class="star-ratings-sprite-rating"></span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>July</td>
+                                                <td>Dooley</td>
+                                                <td>john@example.com</td>
+                                                <td><audio controls>
+    <source src="audio/bel.mp3" type="audio/mpeg">
+						  <a href="audio/bel.mp3">Скачайте музыку</a></audio></td>
+                                                <td>
+                                                    <div class="star-ratings-sprite"><span style="width:52%" class="star-ratings-sprite-rating"></span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>July</td>
+                                                <td>Dooley</td>
+                                                <td>john@example.com</td>
+                                                <td><audio controls>
+    <source src="audio/bel.mp3" type="audio/mpeg">
+    <a href="audio/bel.mp3">Скачайте музыку</a></audio></td>
+                                                <td>
+                                                    <div class="star-ratings-sprite"><span style="width:15%" class="star-ratings-sprite-rating"></span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>July</td>
+                                                <td>Dooley</td>
+                                                <td>john@example.com</td>
+                                                <td><audio controls>
+    <source src="audio/bel.mp3" type="audio/mpeg">
+    <a href="audio/bel.mp3">Скачайте музыку</a></audio></td>
+                                                <td>
+                                                    <div class="star-ratings-sprite"><span style="width:52%" class="star-ratings-sprite-rating"></span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>July</td>
+                                                <td>Dooley</td>
+                                                <td>john@example.com</td>
+                                                <td><audio controls>
+    <source src="audio/bel.mp3" type="audio/mpeg">
+    <a href="audio/bel.mp3">Скачайте музыку</a></audio></td>
+                                                <td>
+                                                    <div class="star-ratings-sprite"><span style="width:52%" class="star-ratings-sprite-rating"></span></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="paneTwo1">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th class="headtab">Имя, фамилия диктора</th>
+                                                <th class="headtab">Статус</th>
+                                                <th class="headtab">Стоимость</th>
+                                                <th class="headtab">Прослушать</th>
+                                                <th class="headtab">Рейтинг популярности</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a class="linkvoice" href="vo_01.html" target="_blank">John</a></td>
+                                                <td>Doe</td>
+                                                <td>john@example.com</td>
+                                                <td><audio controls>
+    <source src="audio/bel.mp3" type="audio/mpeg">
+    <a href="audio/bel.mp3">Скачайте музыку</a></audio></td>
+                                                <td>
+                                                    <div class="star-ratings-sprite"><span style="width:52%" class="star-ratings-sprite-rating"></span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mary</td>
+                                                <td>Moe</td>
+                                                <td>mary@example.com</td>
+                                                <td><audio controls>
+    <source src="audio/bel.mp3" type="audio/mpeg">
+    <a href="audio/bel.mp3">Скачайте музыку</a></audio></td>
+                                                <td>
+                                                    <div class="star-ratings-sprite"><span style="width:52%" class="star-ratings-sprite-rating"></span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>July</td>
+                                                <td>Dooley</td>
+                                                <td>john@example.com</td>
+                                                <td><audio controls>
+    <source src="audio/bel.mp3" type="audio/mpeg">
+    <a href="audio/bel.mp3">Скачайте музыку</a></audio></td>
+                                                <td>
+                                                    <div class="star-ratings-sprite"><span style="width:52%" class="star-ratings-sprite-rating"></span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>July</td>
+                                                <td>Dooley</td>
+                                                <td>john@example.com</td>
+                                                <td><audio controls>
+    <source src="audio/bel.mp3" type="audio/mpeg">
+    <a href="audio/bel.mp3">Скачайте музыку</a></audio></td>
+                                                <td>
+                                                    <div class="star-ratings-sprite"><span style="width:52%" class="star-ratings-sprite-rating"></span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>July</td>
+                                                <td>Dooley</td>
+                                                <td>john@example.com</td>
+                                                <td><audio controls>
+    <source src="audio/bel.mp3" type="audio/mpeg">
+    <a href="audio/bel.mp3">Скачайте музыку</a></audio></td>
+                                                <td>
+                                                    <div class="star-ratings-sprite"><span style="width:52%" class="star-ratings-sprite-rating"></span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>July</td>
+                                                <td>Dooley</td>
+                                                <td>john@example.com</td>
+                                                <td><audio controls>
+    <source src="audio/bel.mp3" type="audio/mpeg">
+						  <a href="audio/bel.mp3">Скачайте музыку</a></audio></td>
+                                                <td>
+                                                    <div class="star-ratings-sprite"><span style="width:52%" class="star-ratings-sprite-rating"></span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>July</td>
+                                                <td>Dooley</td>
+                                                <td>john@example.com</td>
+                                                <td><audio controls>
+    <source src="audio/bel.mp3" type="audio/mpeg">
+    <a href="audio/bel.mp3">Скачайте музыку</a></audio></td>
+                                                <td>
+                                                    <div class="star-ratings-sprite"><span style="width:52%" class="star-ratings-sprite-rating"></span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>July</td>
+                                                <td>Dooley</td>
+                                                <td>john@example.com</td>
+                                                <td><audio controls>
+    <source src="audio/bel.mp3" type="audio/mpeg">
+    <a href="audio/bel.mp3">Скачайте музыку</a></audio></td>
+                                                <td>
+                                                    <div class="star-ratings-sprite"><span style="width:52%" class="star-ratings-sprite-rating"></span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>July</td>
+                                                <td>Dooley</td>
+                                                <td>john@example.com</td>
+                                                <td><audio controls>
+    <source src="audio/bel.mp3" type="audio/mpeg">
+    <a href="audio/bel.mp3">Скачайте музыку</a></audio></td>
+                                                <td>
+                                                    <div class="star-ratings-sprite"><span style="width:52%" class="star-ratings-sprite-rating"></span></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+    <script src="libs/jquery/jquery-3.1.1.min.js"></script>
+    <script src="libs/bootstrap/bootstrap.min.js"></script>
+    <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <!--Waypoints is the easiest way to trigger a function when you scroll to an element. -->
+    <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+    <script src="libs/scrollto/jquery.scrollTo.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+    <!--<script src="libs/landing-nav/navigation.js"></script>-->
+    <!-- Add fancyBox -->
+    <script type="text/javascript" src="js/sorttable.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+    <script src="libs/dataTables/dataTables.bootstrap.min.js"></script>
+    <script src="js/cbpHorizontalSlideOutMenu.js"></script>
+    <script>
+        var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('table.display').DataTable();
+        });
+
+    </script>
+</body>
+
+</html>

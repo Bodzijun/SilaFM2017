@@ -9,8 +9,9 @@
 <head>
     <meta charset="utf-8" />
     <title>Онлайн заказ Sila.FM</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Изготовление аудиороликов и радиороликов, запись радиорекламы и аудиорекламы, запись дикторов. Озвучка видеороликов, озвучание анимации, квестов, озвучение корпоративных и презентационных фильмов. Голосовое приветствие" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Аудиоролики, озвучка видео, радиоролики, озвучка текстов, квестов, иностранные дикторы, радиореклама, квесты, озвучка мультфильмов, аудиореклама, запись диктора, озвучка видеоролика, озвучание фильма, озвучка мультфильмов, голосовое приветствие, голосовое" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="libs/bootstrap/bootstrap.css" />
@@ -19,32 +20,11 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+    <script src="js/modernizr.custom.js"></script>
 </head>
 
 <body>
-    <!--[if lt IE 9]>
-<script src="libs/html5shiv/es5-shim.min.js"></script>
-<script src="libs/html5shiv/html5shiv.min.js"></script>
-<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-<script src="libs/respond/respond.min.js"></script>
-<![endif]-->
-    <script src="libs/jquery/jquery-3.1.1.min.js"></script>
-    <script src="libs/bootstrap/bootstrap.min.js"></script>
-    <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-    <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
-    <script src="libs/scrollto/jquery.scrollTo.min.js"></script>
-    <script src="libs/countdown/jquery.plugin.js"></script>
-    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
-    <!--<script src="libs/landing-nav/navigation.js"></script>-->
-    <!-- Add fancyBox -->
-    <script type="text/javascript" src="js/sorttable.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/modernizr.custom.js"></script>
-    <script src="js/jquery.placeholder.min.js"></script>
-    <!-- Yandex.Metrika counter -->
-    <!-- /Yandex.Metrika counter -->
-    <!-- Google Analytics counter -->
-    <!-- /Google Analytics counter -->
+
     <header>
         <!--left Navigators-->
         <div class="leftnavbar">
@@ -68,8 +48,7 @@
                     <div class="row">
                         <div class="col-md-2 col-sm-3 col-xs-4">
                             <div class="logo_wrap">
-                                <a href="#"><img src="img/logo.png" alt="Sila.FM"></a>
-                                креативное агентство звука
+                                <a href="#"><img src="img/logo.png" alt="Sila.FM"></a> креативное агентство звука
                             </div>
                         </div>
 
@@ -145,50 +124,38 @@
                     </div>
                 </nav>
             </div>
-            <script src="js/cbpHorizontalSlideOutMenu.js"></script>
-            <script>
-                var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
-            </script>
-
         </div>
     </header>
 
     <section id="content">
-         <!--Помощник правый-->
-  <div id="panelr"> ...
-    <div id="helpform">
-      <div class="kate">
-        <video autoplay loop width="200" height="200">
+        <!--Помощник правый-->
+        <div id="panelr"> ...
+            <div id="helpform">
+                <div class="kate">
+                    <video autoplay loop width="200" height="200">
           <source src="video/helper_female.mp4" type="video/mp4"/>
           <img src="video/helper_1.gif" width="200" height="200" /> </video>
-      </div>
-      <div class="kateoff">
-        <video autoplay loop width="200" height="200">
+                </div>
+                <div class="kateoff">
+                    <video autoplay loop width="200" height="200">
           <source src="video/helper_female2.mp4" type="video/mp4"/>
           <img src="video/helper_2.gif" width="200" height="200" /> </video>
-      </div>
-      <form>
-        <div class="form-group">
-          <label for="namecallback">
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="namecallback">
           <p id="katetext">Задайте Кате вопросы</p>
           </label>
-          <input type="name" class="form-control" id="namecallback" placeholder="Ваше имя">
-          <br>
-          <input type="tel" class="form-control" id="telcallback" placeholder="Ваш номер телефона">
+                        <input type="name" class="form-control" id="namecallback" placeholder="Ваше имя">
+                        <br>
+                        <input type="tel" class="form-control" id="telcallback" placeholder="Ваш номер телефона">
+                    </div>
+                    <button type="button" class="btn btn-default" id="telback">Заказать звонок</button>
+                </form>
+            </div>
         </div>
-        <button type="button" class="btn btn-default" id="telback">Заказать звонок</button>
-      </form>
-    </div>
-  </div>
-  <script>
-		$(document).ready(function(){
-           $("#telback").click (function(){
-               $('.kateoff').toggle();
-			   $('.kate').toggle();
-       })
-	 })
- </script>
-  <!--Помощник правый end-->
+
+        <!--Помощник правый end-->
         <div class="container-fluid">
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <!--- Индикаторы слайдов--->
@@ -232,38 +199,39 @@
         <div class="container">
             <div class="miniblock">
                 <div class="serij">
-                    <h3>Онлайн заказ</h3></div>
-              <div class="row">
-           	    <div class="col-md-12">
-           	 	<div role="tabpanel">
-                    	 <ul class="nav nav-tabs nav-tabs-justified" role="tablist">
-                    	     <li role="presentation" class="active"><a href="#home1" data-toggle="tab" role="tab" aria-controls="tab1">Дикторский голос</a></li>
-                    	     <li role="presentation"><a href="#pane1" data-toggle="tab" role="tab" aria-controls="tab2">Сценарий</a></li>
-							 <li role="presentation"><a href="#pane2" data-toggle="tab" role="tab" aria-controls="tab3">Аудиоролики</a></li>
-                 	     	 <li role="presentation"><a href="#pane3" data-toggle="tab" role="tab" aria-controls="tab4">Озвучка видео</a></li>
-                 	     	 <li role="presentation"><a href="#pane4" data-toggle="tab" role="tab" aria-controls="tab4">Музыка в рекламе</a></li>
-                  	     </ul>
-                    	   <div id="tabContent1" class="tab-content">
-                    	     <div role="tabpanel" class="tab-pane fade in active" id="home1">
-                    	      <div class="row">
-                    	      	<div class="col-md-2 col-sm-1"></div>
-                    	      	<div class="col-md-8 col-sm-10 col-xs-12">
-                    	      		<br><br>
-                    	      		<form class="form-horizontal" role="form">
-										  <div class="form-group">
-											<label for="FIO" class="col-md-3 control-label">Диктор</label>
-											<div class="col-md-9">
-											  <input type="name" class="form-control" id="fio" placeholder="Фамилия имя">
-											</div>
-												<div class="checkbox col-md-offset-3 col-md-9">
-												<label>
+                    <h3>Онлайн заказ</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div role="tabpanel">
+                            <ul class="nav nav-tabs nav-tabs-justified" role="tablist">
+                                <li role="presentation" class="active"><a href="#home1" data-toggle="tab" role="tab" aria-controls="tab1">Дикторский голос</a></li>
+                                <li role="presentation"><a href="#pane1" data-toggle="tab" role="tab" aria-controls="tab2">Сценарий</a></li>
+                                <li role="presentation"><a href="#pane2" data-toggle="tab" role="tab" aria-controls="tab3">Аудиоролики</a></li>
+                                <li role="presentation"><a href="#pane3" data-toggle="tab" role="tab" aria-controls="tab4">Озвучка видео</a></li>
+                                <li role="presentation"><a href="#pane4" data-toggle="tab" role="tab" aria-controls="tab4">Музыка в рекламе</a></li>
+                            </ul>
+                            <div id="tabContent1" class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active" id="home1">
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-1"></div>
+                                        <div class="col-md-8 col-sm-10 col-xs-12">
+                                            <br><br>
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <label for="FIO" class="col-md-3 control-label">Диктор</label>
+                                                    <div class="col-md-9">
+                                                        <input type="name" class="form-control" id="fio" placeholder="Фамилия имя">
+                                                    </div>
+                                                    <div class="checkbox col-md-offset-3 col-md-9">
+                                                        <label>
 												  <input type="checkbox" id="activevvod"> <p>На усмотрение студии</p>
 												</label>
-										  		</div>
-										  </div>
-										  	<div class="form-group">
-												<div class="col-md-offset-3 col-md-9">
-												<select class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <select class="form-control">
 												  <option>веселый (мажорный)</option>
 												  <option>грустный (минорный)</option>
 												  <option>лирический</option>
@@ -275,63 +243,64 @@
 												  <option>уверенный (серьезный)</option>
 												  <option>как в примере</option>
 												</select>
-											  </div>
-											</div>
+                                                    </div>
+                                                </div>
 
-										  <div class="form-group">
-										  	<label class="col-md-3 control-label">Текст</label>
-										  	<div class="col-md-9">
-										  	<textarea class="form-control" rows="6"></textarea>
-										  </div>
-										  </div>
-										  <div class="form-group">
-											<label for="time" class="col-md-3 text-right control-label">Хронометраж</label>
-											<div class="col-md-9">
-											  <input type="text" class="form-control" id="time" placeholder="укажите хронометраж или темп начитки (бытро, медленно)">
-											</div>
-										  </div>
-										  <div class="form-group">
-										  <div class="col-md-offset-3 col-md-9">
-											<label>Ваш файл</label>
-											<input type="file">
-											<p class="help-block">Не более 3мб</p>
-											</div></div>
-										  <div class="form-group">
-										  	<label class="col-md-3 control-label">Комментарии</label>
-										  	<div class="col-md-9">
-										  	<textarea class="form-control" rows="3"></textarea>
-										  </div>
-										  </div>
-										  	<div class="form-group">
-												<label for="format" class="col-md-3 control-label">Параметры</label>
-												<div class="col-md-9">
-												<select class="form-control" id="format">
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Текст</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" rows="6"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="time" class="col-md-3 text-right control-label">Хронометраж</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" class="form-control" id="time" placeholder="укажите хронометраж или темп начитки (бытро, медленно)">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <label>Ваш файл</label>
+                                                        <input type="file">
+                                                        <p class="help-block">Не более 3мб</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Комментарии</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="format" class="col-md-3 control-label">Параметры</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control" id="format">
 												  <option>wave, 44kHz, 16bit, mono</option>
 												  <option>Стандарт для видео (wave, 48kHz, 16bit, mono)</option>
 												  <option>Стандарт для видео (wave, 48kHz, 16bit, stereo)</option>
 												  <option>Стандарт для радио (mp3, 44kHz, 160kbps, stereo)</option>
 												  <option>Стандарт для радио (mp3, 44kHz, 320kbps, stereo)</option>
 												</select>
-											  </div>
-											</div>
+                                                    </div>
+                                                </div>
 
-											<div class="form-group">
-											<label for="code" class="col-md-3 control-label">Код</label>
-											<div class="col-md-9">
-											  <input type="text" class="form-control" id="code" placeholder="Код скидки">
-											</div>
-										  </div>
-										  	<div class="form-group">
-											<label for="pochta" class="col-md-3 control-label">Email</label>
-											<div class="col-md-9">
-											  <input type="email" class="form-control" id="pochta" placeholder="почта, куда будет отправлен заказ">
-											</div>
-										  </div>
+                                                <div class="form-group">
+                                                    <label for="code" class="col-md-3 control-label">Код</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" class="form-control" id="code" placeholder="Код скидки">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="pochta" class="col-md-3 control-label">Email</label>
+                                                    <div class="col-md-9">
+                                                        <input type="email" class="form-control" id="pochta" placeholder="почта, куда будет отправлен заказ">
+                                                    </div>
+                                                </div>
 
-										  <div class="form-group">
-												<label for="oplata" class="col-md-3 control-label">Оплата</label>
-												<div class="col-md-9">
-												<select class="form-control" id="oplata">
+                                                <div class="form-group">
+                                                    <label for="oplata" class="col-md-3 control-label">Оплата</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control" id="oplata">
 												  <option>Безналичная оплата (+6%)</option>
 												  <option>Карта Сбербанка</option>
 												  <option>Яндекс-деньги</option>
@@ -341,66 +310,66 @@
 												  <option>WebMoney</option>
 												  <option>PayPal</option>
 												</select>
-											  </div>
-											</div>
-										  <div class="form-group">
-											<div class="col-md-offset-3 col-md-9">
-														<form action="http://www.SnapHost.com/captcha/send.aspx" method="post" id="myform">
-														<input type="hidden" id="skip_WhereToSend" name="skip_WhereToSend"
-														value="info@sila.fm" />
-														<input type="hidden" id="skip_Subject" name="skip_Subject"
-														value="Test inline zakaz" />
-														<input type="hidden" id="skip_WhereToReturn" name="skip_WhereToReturn"
-														value="www.yourdomain.com/thankyou.htm" />
-														<input type="hidden" id="skip_SnapHostID" name="skip_SnapHostID"
-														value="LZR9DPCMJMGW" />
-											 			<table cellspacing="0" border="0" cellpadding="8">
-														<tr valign="bottom">
-														<td>
-														<a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">обновить картинку</span></a><br />
-														<a href="http://www.snaphost.com/captcha/captchaguestbook.aspx"><img id="CaptchaImage"
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <form action="http://www.SnapHost.com/captcha/send.aspx" method="post" id="myform">
+                                                            <input type="hidden" id="skip_WhereToSend" name="skip_WhereToSend" value="info@sila.fm" />
+                                                            <input type="hidden" id="skip_Subject" name="skip_Subject" value="Test inline zakaz" />
+                                                            <input type="hidden" id="skip_WhereToReturn" name="skip_WhereToReturn" value="www.yourdomain.com/thankyou.htm" />
+                                                            <input type="hidden" id="skip_SnapHostID" name="skip_SnapHostID" value="LZR9DPCMJMGW" />
+                                                            <table cellspacing="0" border="0" cellpadding="8">
+                                                                <tr valign="bottom">
+                                                                    <td>
+                                                                        <a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">обновить картинку</span></a><br />
+                                                                        <a href="http://www.snaphost.com/captcha/captchaguestbook.aspx"><img id="CaptchaImage"
 														alt="guestbook ideas" style="border-width:0px;"
 														title="guestbook ideas"
 														src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=LZR9DPCMJMGW" /></a>
-														</td>
-														<td>  <br /><i>Введите код</i><br />
-														<input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text"
-														style="width:130px; height:48px; font-size:38px;" maxlength="6" /><br/>
-														</td>
-														</tr>
-														</table>
-														<script type="text/javascript">
-														function ReloadCaptchaImage(captchaImageId) {
-														var obj = document.getElementById(captchaImageId);
-														var src = obj.src;
-														var date = new Date();
-														var pos = src.indexOf('&rad=');
-														if (pos >= 0) { src = src.substr(0, pos); }
-														obj.src = src + '&rad=' + date.getTime();
-														return false; }
-														</script></form>
-														  <br>
-										  	  <button type="submit" class="btn btn-primary btn-lg">Сделать заказ</button>
-											</div>
-										  </div>
-									</form>
+                                                                    </td>
+                                                                    <td> <br /><i>Введите код</i><br />
+                                                                        <input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text" style="width:130px; height:48px; font-size:38px;" maxlength="6" /><br/>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <script type="text/javascript">
+                                                                function ReloadCaptchaImage(captchaImageId) {
+                                                                    var obj = document.getElementById(captchaImageId);
+                                                                    var src = obj.src;
+                                                                    var date = new Date();
+                                                                    var pos = src.indexOf('&rad=');
+                                                                    if (pos >= 0) {
+                                                                        src = src.substr(0, pos);
+                                                                    }
+                                                                    obj.src = src + '&rad=' + date.getTime();
+                                                                    return false;
+                                                                }
+
+                                                            </script>
+                                                        </form>
+                                                        <br>
+                                                        <button type="submit" class="btn btn-primary btn-lg">Сделать заказ</button>
+                                                    </div>
+                                                </div>
+                                            </form>
 
 
 
-                    	      	</div>
-                    	      	<div class="col-md-2 col-sm-1"></div>
-                    	      </div>
-                  	       </div>
-                    	     <div role="tabpanel" class="tab-pane fade" id="pane1">
-                    	          <div class="row">
-                    	      	<div class="col-md-2 col-sm-1"></div>
-                    	      	<div class="col-md-8 col-sm-10 col-xs-12">
-                    	      		<br><br>
-                    	      		<form class="form-horizontal" role="form">
-                    	      		      <div class="form-group">
-											<label for="kindscript" class="col-md-3 control-label">Тип ролика</label>
-											<div class="col-md-9">
-											 <select class="form-control" id="kindscript">
+                                        </div>
+                                        <div class="col-md-2 col-sm-1"></div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="pane1">
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-1"></div>
+                                        <div class="col-md-8 col-sm-10 col-xs-12">
+                                            <br><br>
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <label for="kindscript" class="col-md-3 control-label">Тип ролика</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control" id="kindscript">
 												  <option>информационная начитка</option>
 												  <option>информационно-музыкальный</option>
 												  <option>имиджевый</option>
@@ -409,110 +378,127 @@
 												  <option>рекламная песня</option>
 												  <option>гимн</option>
 												</select>
-											</div>
-										  </div>
+                                                    </div>
+                                                </div>
 
-										  <div class="form-group">
-											<label for="time2" class="col-md-3 control-label">Хронометраж</label>
-											<div class="col-sm-9">
-											  <input type="text" class="form-control" id="time2" placeholder="укажите хронометраж">
-											<div class="checkbox">
-												<label>
+                                                <div class="form-group">
+                                                    <label for="time2" class="col-md-3 control-label">Хронометраж</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" id="time2" placeholder="укажите хронометраж">
+                                                        <div class="checkbox">
+                                                            <label>
 												  <input type="checkbox" id="freetime"> <p>свободный</p>
 												</label>
-										  	</div>
-											</div>
-										  </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-										  <div class="form-group">
-										  	<label class="col-md-3 control-label">Предмет рекламы</label>
-										  	<div class="col-md-9">
-										  	<textarea class="form-control" rows="5"></textarea>
-										  </div>
-											  <div class="col-md-offset-3 col-md-9"><p>Что мы рекламируем</p></div>
-										  </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Предмет рекламы</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" rows="5"></textarea>
+                                                    </div>
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <p>Что мы рекламируем</p>
+                                                    </div>
+                                                </div>
 
-										  <div class="form-group">
-										  	<label class="col-md-3 control-label">Целевая аудитория</label>
-										  	<div class="col-md-9">
-										  	<textarea class="form-control" rows="5"></textarea>
-										  </div>
-										  <div class="col-md-offset-3 col-md-9"><p>На кого рассчитана реклама (возраст, пол, доход)</p></div>
-										  </div>
-
-
-										  <div class="form-group">
-										  	<label class="col-md-3 control-label">Рекламное сообщение</label>
-										  	<div class="col-md-9">
-										  	<textarea class="form-control" rows="5"></textarea>
-										  </div>
-										  <div class="col-md-offset-3 col-md-9"><p>О чем нужно рассказать потребителю</p></div>
-										  </div>
-
-										  <div class="form-group">
-										  	<label class="col-md-3 control-label">Преимущества</label>
-										  	<div class="col-md-9">
-										  	<textarea class="form-control" rows="5"></textarea>
-										  </div>
-										  <div class="col-md-offset-3 col-md-9"><p>Конкурентные преимущества, на которые нужно сделать акцент</p></div>
-										  </div>
-
-										  <div class="form-group">
-										  	<label class="col-md-3 control-label">Пожелания по голосам</label>
-										  	<div class="col-md-9">
-										  	<textarea class="form-control" rows="5"></textarea>
-										  </div>
-										  <div class="col-md-offset-3 col-md-9"><p>Мужской, женский, детский, кол-во голосов, возраст</p></div>
-										  </div>
-
-										  <div class="form-group">
-										  	<label class="col-md-3 control-label">Должно прозвучать</label>
-										  	<div class="col-md-9">
-										  	<textarea class="form-control" rows="5"></textarea>
-										  </div>
-										  <div class="col-md-offset-3 col-md-9"><p>Адрес, телефон, е-майл, сайт, лицензия</p></div>
-										  </div>
-
-											<div class="form-group">
-										  	<label class="col-md-3 control-label">Корпоративные элементы</label>
-										  	<div class="col-md-9">
-										  	<textarea class="form-control" rows="5"></textarea>
-										  </div>
-										  <div class="col-md-offset-3 col-md-9"><p>Специальные звуки, пекшоты, распевки, сигналы и пр.</p></div>
-										  </div>
-
-										  <div class="form-group">
-										  	<label class="col-md-3 control-label">Комментарии</label>
-										  	<div class="col-md-9">
-										  	<textarea class="form-control" rows="3"></textarea>
-										  </div>
-										  <div class="col-md-offset-3 col-md-9"><p>Дополнительные пожелания</p></div>
-										  </div>
-										   <div class="form-group">
-										  <div class="col-md-offset-3 col-md-9">
-											<label>Прикрепите файл</label>
-											<input type="file">
-											<p class="help-block">Не более 3мб</p>
-											</div></div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Целевая аудитория</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" rows="5"></textarea>
+                                                    </div>
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <p>На кого рассчитана реклама (возраст, пол, доход)</p>
+                                                    </div>
+                                                </div>
 
 
-											<div class="form-group">
-											<label for="code1" class="col-md-3 control-label">Код</label>
-											<div class="col-md-9">
-											  <input type="text" class="form-control" id="code1" placeholder="Код скидки">
-											</div>
-										  </div>
-										  	<div class="form-group">
-											<label for="pochta1" class="col-md-3 control-label">Email</label>
-											<div class="col-md-9">
-											  <input type="email" class="form-control" id="pochta1" placeholder="почта, куда будет отправлен заказ">
-											</div>
-										  </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Рекламное сообщение</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" rows="5"></textarea>
+                                                    </div>
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <p>О чем нужно рассказать потребителю</p>
+                                                    </div>
+                                                </div>
 
-										  <div class="form-group">
-												<label for="oplata1" class="col-md-3 control-label">Оплата</label>
-												<div class="col-md-9">
-												<select class="form-control" id="oplata1">
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Преимущества</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" rows="5"></textarea>
+                                                    </div>
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <p>Конкурентные преимущества, на которые нужно сделать акцент</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Пожелания по голосам</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" rows="5"></textarea>
+                                                    </div>
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <p>Мужской, женский, детский, кол-во голосов, возраст</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Должно прозвучать</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" rows="5"></textarea>
+                                                    </div>
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <p>Адрес, телефон, е-майл, сайт, лицензия</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Корпоративные элементы</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" rows="5"></textarea>
+                                                    </div>
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <p>Специальные звуки, пекшоты, распевки, сигналы и пр.</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Комментарии</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" rows="3"></textarea>
+                                                    </div>
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <p>Дополнительные пожелания</p>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <label>Прикрепите файл</label>
+                                                        <input type="file">
+                                                        <p class="help-block">Не более 3мб</p>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group">
+                                                    <label for="code1" class="col-md-3 control-label">Код</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" class="form-control" id="code1" placeholder="Код скидки">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="pochta1" class="col-md-3 control-label">Email</label>
+                                                    <div class="col-md-9">
+                                                        <input type="email" class="form-control" id="pochta1" placeholder="почта, куда будет отправлен заказ">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="oplata1" class="col-md-3 control-label">Оплата</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control" id="oplata1">
 												  <option>Безналичная оплата (+6%)</option>
 												  <option>Карта Сбербанка</option>
 												  <option>Яндекс-деньги</option>
@@ -522,66 +508,66 @@
 												  <option>WebMoney</option>
 												  <option>PayPal</option>
 												</select>
-											  </div>
-											</div>
-										  <div class="form-group">
-											<div class="col-md-offset-3 col-md-9">
-														<form action="http://www.SnapHost.com/captcha/send.aspx" method="post" id="myform">
-														<input type="hidden" id="skip_WhereToSend" name="skip_WhereToSend"
-														value="info@sila.fm" />
-														<input type="hidden" id="skip_Subject" name="skip_Subject"
-														value="Test inline zakaz" />
-														<input type="hidden" id="skip_WhereToReturn" name="skip_WhereToReturn"
-														value="www.yourdomain.com/thankyou.htm" />
-														<input type="hidden" id="skip_SnapHostID" name="skip_SnapHostID"
-														value="LZR9DPCMJMGW" />
-											 			<table cellspacing="0" border="0" cellpadding="8">
-														<tr valign="bottom">
-														<td>
-														<a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">обновить картинку</span></a><br />
-														<a href="http://www.snaphost.com/captcha/captchaguestbook.aspx"><img id="CaptchaImage"
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <form action="http://www.SnapHost.com/captcha/send.aspx" method="post" id="myform">
+                                                            <input type="hidden" id="skip_WhereToSend" name="skip_WhereToSend" value="info@sila.fm" />
+                                                            <input type="hidden" id="skip_Subject" name="skip_Subject" value="Test inline zakaz" />
+                                                            <input type="hidden" id="skip_WhereToReturn" name="skip_WhereToReturn" value="www.yourdomain.com/thankyou.htm" />
+                                                            <input type="hidden" id="skip_SnapHostID" name="skip_SnapHostID" value="LZR9DPCMJMGW" />
+                                                            <table cellspacing="0" border="0" cellpadding="8">
+                                                                <tr valign="bottom">
+                                                                    <td>
+                                                                        <a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">обновить картинку</span></a><br />
+                                                                        <a href="http://www.snaphost.com/captcha/captchaguestbook.aspx"><img id="CaptchaImage"
 														alt="guestbook ideas" style="border-width:0px;"
 														title="guestbook ideas"
 														src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=LZR9DPCMJMGW" /></a>
-														</td>
-														<td>  <br /><i>Введите код</i><br />
-														<input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text"
-														style="width:130px; height:48px; font-size:38px;" maxlength="6" /><br/>
-														</td>
-														</tr>
-														</table>
-														<script type="text/javascript">
-														function ReloadCaptchaImage(captchaImageId) {
-														var obj = document.getElementById(captchaImageId);
-														var src = obj.src;
-														var date = new Date();
-														var pos = src.indexOf('&rad=');
-														if (pos >= 0) { src = src.substr(0, pos); }
-														obj.src = src + '&rad=' + date.getTime();
-														return false; }
-														</script></form>
-														  <br>
-										  	  <button type="submit" class="btn btn-primary btn-lg">Сделать заказ</button>
-											</div>
-										  </div>
-									</form>
+                                                                    </td>
+                                                                    <td> <br /><i>Введите код</i><br />
+                                                                        <input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text" style="width:130px; height:48px; font-size:38px;" maxlength="6" /><br/>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <script type="text/javascript">
+                                                                function ReloadCaptchaImage(captchaImageId) {
+                                                                    var obj = document.getElementById(captchaImageId);
+                                                                    var src = obj.src;
+                                                                    var date = new Date();
+                                                                    var pos = src.indexOf('&rad=');
+                                                                    if (pos >= 0) {
+                                                                        src = src.substr(0, pos);
+                                                                    }
+                                                                    obj.src = src + '&rad=' + date.getTime();
+                                                                    return false;
+                                                                }
+
+                                                            </script>
+                                                        </form>
+                                                        <br>
+                                                        <button type="submit" class="btn btn-primary btn-lg">Сделать заказ</button>
+                                                    </div>
+                                                </div>
+                                            </form>
 
 
 
-                    	      	</div>
-                    	      	<div class="col-md-2 col-sm-1"></div>
-                    	      </div>
-                  	       </div>
-                  	       <div role="tabpanel" class="tab-pane fade" id="pane2">
-                    	           <div class="row">
-                    	      	<div class="col-md-2 col-sm-1"></div>
-                    	      	<div class="col-md-8 col-sm-10 col-xs-12">
-                    	      		<br><br>
-                    	      		<form class="form-horizontal" role="form">
-                    	      		      <div class="form-group">
-											<label for="kindscript" class="col-md-3 control-label">Тип ролика</label>
-											<div class="col-md-9">
-											 <select class="form-control" id="kindscript">
+                                        </div>
+                                        <div class="col-md-2 col-sm-1"></div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="pane2">
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-1"></div>
+                                        <div class="col-md-8 col-sm-10 col-xs-12">
+                                            <br><br>
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <label for="kindscript" class="col-md-3 control-label">Тип ролика</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control" id="kindscript">
 												  <option>информационная начитка</option>
 												  <option>информационно-музыкальный</option>
 												  <option>имиджевый</option>
@@ -590,14 +576,14 @@
 												  <option>рекламная песня</option>
 												  <option>гимн</option>
 												</select>
-											</div>
-										  </div>
+                                                    </div>
+                                                </div>
 
 
-										  	<div class="form-group">
-										  	<label for="kindscript" class="col-md-3 control-label">Характер</label>
-												<div class="col-md-9">
-												<select class="form-control">
+                                                <div class="form-group">
+                                                    <label for="kindscript" class="col-md-3 control-label">Характер</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control">
 												  <option>веселый (мажорный)</option>
 												  <option>грустный (минорный)</option>
 												  <option>лирический</option>
@@ -609,12 +595,12 @@
 												  <option>уверенный (серьезный)</option>
 												  <option>как в примере</option>
 												</select>
-											  </div>
-											</div>
-											<div class="form-group">
-										  	<label for="kindscript" class="col-md-3 control-label">Стиль</label>
-												<div class="col-md-9">
-												<select class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="kindscript" class="col-md-3 control-label">Стиль</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control">
 												  <option>поп</option>
 												  <option>рок</option>
 												  <option>джаз</option>
@@ -631,89 +617,90 @@
 												    <option>рэп</option>
 												  <option>корпоратив</option>
 												</select>
-											  </div>
-											</div>
+                                                    </div>
+                                                </div>
 
-										  <div class="form-group">
-											<label for="dic2" class="col-md-3 control-label">Кол-во голосов</label>
-											<div class="col-sm-9">
-											  <input type="text" class="form-control" id="dic2" placeholder="сколько дикторов">
-											</div>
-										  </div>
-										   <div class="form-group">
-											<label for="dic1" class="col-md-3 control-label">Диктор</label>
-											<div class="col-sm-9">
-											  <input type="text" class="form-control" id="dic1" placeholder="Фамилия диктора(ов)">
-											  <div class="checkbox">
-												<label>
+                                                <div class="form-group">
+                                                    <label for="dic2" class="col-md-3 control-label">Кол-во голосов</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" id="dic2" placeholder="сколько дикторов">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="dic1" class="col-md-3 control-label">Диктор</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" id="dic1" placeholder="Фамилия диктора(ов)">
+                                                        <div class="checkbox">
+                                                            <label>
 												  <input type="checkbox" id="freetime"> <p>на усмотрение студии</p>
 												</label>
-										  	</div>
-											</div>
-										  </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-			  							<div class="form-group">
-										  	<label class="col-md-3 control-label">Комментарии</label>
-										  	<div class="col-md-9">
-										  	<textarea class="form-control" rows="3"></textarea>
-										  </div>
-										  </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Комментарии</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" rows="3"></textarea>
+                                                    </div>
+                                                </div>
 
-											<div class="form-group">
-										  	<label class="col-md-3 control-label">Текст</label>
-										  	<div class="col-md-9">
-										  	<textarea class="form-control" rows="8"></textarea>
-										  </div>
-										  </div>
-										  <div class="form-group">
-											<label for="time2" class="col-md-3 control-label">Хронометраж</label>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Текст</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" rows="8"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="time2" class="col-md-3 control-label">Хронометраж</label>
 
-											<div class="col-sm-9">
-											 <input type="text" class="form-control" id="time2" placeholder="укажите хронометраж">
-											 <a href="index_hronos.html" target="_blank" class="small">проверить хронометраж <span class="glyphicon glyphicon-time"></span></a>
-											<div class="checkbox">
-												<label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" id="time2" placeholder="укажите хронометраж">
+                                                        <a href="index_hronos.html" target="_blank" class="small">проверить хронометраж <span class="glyphicon glyphicon-time"></span></a>
+                                                        <div class="checkbox">
+                                                            <label>
 												  <input type="checkbox"> <p>свободный</p>
 												</label>
-										  	</div>
-											</div>
-										  </div>
-												<div class="form-group">
-												<label for="format" class="col-md-3 control-label">Параметры</label>
-												<div class="col-md-9">
-												<select class="form-control" id="format">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="format" class="col-md-3 control-label">Параметры</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control" id="format">
 												  <option>Стандарт для радио (mp3, 44kHz, 320kbps, stereo)</option>
 												  <option>Стандарт для радио (wave, 44kHz, 16bit, stereo)</option>
 												  <option>Экономия 1 (mp3, 44kHz, 256kbps, stereo)</option>
 												  <option>Экономия 2 (mp3, 44kHz, 160kbps, stereo)</option>
 												</select>
-											  </div>
-											</div>
-										   <div class="form-group">
-										  <div class="col-md-offset-3 col-md-9">
-											<label>Прикрепите файл</label>
-											<input type="file">
-											<p class="help-block">Не более 3мб</p>
-											</div></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <label>Прикрепите файл</label>
+                                                        <input type="file">
+                                                        <p class="help-block">Не более 3мб</p>
+                                                    </div>
+                                                </div>
 
 
-											<div class="form-group">
-											<label for="code1" class="col-md-3 control-label">Код</label>
-											<div class="col-md-9">
-											  <input type="text" class="form-control" id="code1" placeholder="Код скидки">
-											</div>
-										  </div>
-										  	<div class="form-group">
-											<label for="pochta1" class="col-md-3 control-label">Email</label>
-											<div class="col-md-9">
-											  <input type="email" class="form-control" id="pochta1" placeholder="почта, куда будет отправлен заказ">
-											</div>
-										  </div>
+                                                <div class="form-group">
+                                                    <label for="code1" class="col-md-3 control-label">Код</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" class="form-control" id="code1" placeholder="Код скидки">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="pochta1" class="col-md-3 control-label">Email</label>
+                                                    <div class="col-md-9">
+                                                        <input type="email" class="form-control" id="pochta1" placeholder="почта, куда будет отправлен заказ">
+                                                    </div>
+                                                </div>
 
-										  <div class="form-group">
-												<label for="oplata1" class="col-md-3 control-label">Оплата</label>
-												<div class="col-md-9">
-												<select class="form-control" id="oplata1">
+                                                <div class="form-group">
+                                                    <label for="oplata1" class="col-md-3 control-label">Оплата</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control" id="oplata1">
 												  <option>Безналичная оплата (+6%)</option>
 												  <option>Карта Сбербанка</option>
 												  <option>Яндекс-деньги</option>
@@ -723,64 +710,64 @@
 												  <option>WebMoney</option>
 												  <option>PayPal</option>
 												</select>
-											  </div>
-											</div>
-										  <div class="form-group">
-											<div class="col-md-offset-3 col-md-9">
-														<form action="http://www.SnapHost.com/captcha/send.aspx" method="post" id="myform">
-														<input type="hidden" id="skip_WhereToSend" name="skip_WhereToSend"
-														value="info@sila.fm" />
-														<input type="hidden" id="skip_Subject" name="skip_Subject"
-														value="Test inline zakaz" />
-														<input type="hidden" id="skip_WhereToReturn" name="skip_WhereToReturn"
-														value="www.yourdomain.com/thankyou.htm" />
-														<input type="hidden" id="skip_SnapHostID" name="skip_SnapHostID"
-														value="LZR9DPCMJMGW" />
-											 			<table cellspacing="0" border="0" cellpadding="8">
-														<tr valign="bottom">
-														<td>
-														<a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">обновить картинку</span></a><br />
-														<a href="http://www.snaphost.com/captcha/captchaguestbook.aspx"><img id="CaptchaImage"
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <form action="http://www.SnapHost.com/captcha/send.aspx" method="post" id="myform">
+                                                            <input type="hidden" id="skip_WhereToSend" name="skip_WhereToSend" value="info@sila.fm" />
+                                                            <input type="hidden" id="skip_Subject" name="skip_Subject" value="Test inline zakaz" />
+                                                            <input type="hidden" id="skip_WhereToReturn" name="skip_WhereToReturn" value="www.yourdomain.com/thankyou.htm" />
+                                                            <input type="hidden" id="skip_SnapHostID" name="skip_SnapHostID" value="LZR9DPCMJMGW" />
+                                                            <table cellspacing="0" border="0" cellpadding="8">
+                                                                <tr valign="bottom">
+                                                                    <td>
+                                                                        <a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">обновить картинку</span></a><br />
+                                                                        <a href="http://www.snaphost.com/captcha/captchaguestbook.aspx"><img id="CaptchaImage"
 														alt="guestbook ideas" style="border-width:0px;"
 														title="guestbook ideas"
 														src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=LZR9DPCMJMGW" /></a>
-														</td>
-														<td>  <br /><i>Введите код</i><br />
-														<input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text"
-														style="width:130px; height:48px; font-size:38px;" maxlength="6" /><br/>
-														</td>
-														</tr>
-														</table>
-														<script type="text/javascript">
-														function ReloadCaptchaImage(captchaImageId) {
-														var obj = document.getElementById(captchaImageId);
-														var src = obj.src;
-														var date = new Date();
-														var pos = src.indexOf('&rad=');
-														if (pos >= 0) { src = src.substr(0, pos); }
-														obj.src = src + '&rad=' + date.getTime();
-														return false; }
-														</script></form>
-														  <br>
-										  	  <button type="submit" class="btn btn-primary btn-lg">Сделать заказ</button>
-											</div>
-										  </div>
-									</form>
+                                                                    </td>
+                                                                    <td> <br /><i>Введите код</i><br />
+                                                                        <input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text" style="width:130px; height:48px; font-size:38px;" maxlength="6" /><br/>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <script type="text/javascript">
+                                                                function ReloadCaptchaImage(captchaImageId) {
+                                                                    var obj = document.getElementById(captchaImageId);
+                                                                    var src = obj.src;
+                                                                    var date = new Date();
+                                                                    var pos = src.indexOf('&rad=');
+                                                                    if (pos >= 0) {
+                                                                        src = src.substr(0, pos);
+                                                                    }
+                                                                    obj.src = src + '&rad=' + date.getTime();
+                                                                    return false;
+                                                                }
 
-                    	      	</div>
-                    	      	<div class="col-md-2 col-sm-1"></div>
-                    	      </div>
-                  	       </div>
-                  	       <div role="tabpanel" class="tab-pane fade" id="pane3">
-                    	    	  <div class="row">
-                    	      	<div class="col-md-2 col-sm-1"></div>
-                    	      	<div class="col-md-8 col-sm-10 col-xs-12">
-                    	      		<br><br>
-                    	      		<form class="form-horizontal" role="form">
-                    	      		      <div class="form-group">
-											<label for="kindscript" class="col-md-3 control-label">Вид озвучки</label>
-											<div class="col-md-9">
-											 <select class="form-control" id="kindscript">
+                                                            </script>
+                                                        </form>
+                                                        <br>
+                                                        <button type="submit" class="btn btn-primary btn-lg">Сделать заказ</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                        <div class="col-md-2 col-sm-1"></div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="pane3">
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-1"></div>
+                                        <div class="col-md-8 col-sm-10 col-xs-12">
+                                            <br><br>
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <label for="kindscript" class="col-md-3 control-label">Вид озвучки</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control" id="kindscript">
 												  <option>озвучка видеорекламы</option>
 												  <option>озвучка мультипликации</option>
 												  <option>озвучка документального фильма</option>
@@ -789,29 +776,29 @@
 												  <option>русскоязычная адаптация</option>
 												  <option>другое</option>
 												</select>
-											</div>
-										  </div>
+                                                    </div>
+                                                </div>
 
-												  <div class="form-group">
-													<label for="vol" class="col-md-3 control-label">Объем заказа</label>
-													<div class="col-md-4">
-													<select class="form-control" id="vol">
+                                                <div class="form-group">
+                                                    <label for="vol" class="col-md-3 control-label">Объем заказа</label>
+                                                    <div class="col-md-4">
+                                                        <select class="form-control" id="vol">
 												  <option>секунды</option>
 												  <option>слова</option>
 												  <option>минуты</option>
 												  <option>страницы</option>
 												  <option>часы</option>
 													</select>
-												  </div>
-												  <div class="col-md-4 col-md-offset-1">
-												  <input type="number" class="form-control" id="colpage" placeholder="Количество">
-												  </div>
-											</div>
+                                                    </div>
+                                                    <div class="col-md-4 col-md-offset-1">
+                                                        <input type="number" class="form-control" id="colpage" placeholder="Количество">
+                                                    </div>
+                                                </div>
 
-										  	<div class="form-group">
-										  	<label for="kindscript" class="col-md-3 control-label">Фронт работ</label>
-												<div class="col-md-9">
-												<select class="form-control">
+                                                <div class="form-group">
+                                                    <label for="kindscript" class="col-md-3 control-label">Фронт работ</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control">
 												  <option>только начитка диктора (1-3 варианта)</option>
 												  <option>начитка, простой монтаж и обработка</option>
 												  <option>начитка, монтаж, обработка и музыкальный фон</option>
@@ -820,79 +807,80 @@
 												  <option>другое</option>
 
 												</select>
-											  </div>
-											</div>
+                                                    </div>
+                                                </div>
 
-										  	<div class="form-group">
-											<label for="dic1" class="col-md-3 control-label">Диктор</label>
-											<div class="col-sm-9">
-											  <input type="text" class="form-control" id="dic1" placeholder="Фамилия диктора(ов)">
-											  <div class="checkbox">
-												<label>
+                                                <div class="form-group">
+                                                    <label for="dic1" class="col-md-3 control-label">Диктор</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" id="dic1" placeholder="Фамилия диктора(ов)">
+                                                        <div class="checkbox">
+                                                            <label>
 												  <input type="checkbox" id="freetime"> <p>на усмотрение студии</p>
 												</label>
-										  	</div>
-											</div>
-										  </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-											<div class="form-group">
-										  	<label class="col-md-3 control-label">Текст</label>
-										  	<div class="col-md-9">
-										  	<textarea class="form-control" rows="8"></textarea>
-										  	<a href="index_hronos.html" target="_blank" class="small">хрономер <span class="glyphicon glyphicon-time"></span></a>
-										  	<a href="index_pages.html" target="_blank" class="small">страницемер <span class="glyphicon glyphicon-time"></span></a>
-										  </div>
-										  </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Текст</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" rows="8"></textarea>
+                                                        <a href="index_hronos.html" target="_blank" class="small">хрономер <span class="glyphicon glyphicon-time"></span></a>
+                                                        <a href="index_pages.html" target="_blank" class="small">страницемер <span class="glyphicon glyphicon-time"></span></a>
+                                                    </div>
+                                                </div>
 
-										  <div class="form-group">
-										  	<label class="col-md-3 control-label">Комментарии</label>
-										  	<div class="col-md-9">
-										  	<textarea class="form-control" rows="3"></textarea>
-										  </div>
-										  </div>
-												<div class="form-group">
-												<label for="format" class="col-md-3 control-label">Параметры</label>
-												<div class="col-md-9">
-												<select class="form-control" id="format">
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Комментарии</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" rows="3"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="format" class="col-md-3 control-label">Параметры</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control" id="format">
 												  <option>Стандарт для видео (wave, 48kHz, 16bit, stereo)</option>
 												  <option>Стандарт для видео (wave, 48kHz, 16bit, mono)</option>
 												  <option>Экономия 1 (mp3, 44kHz, 320kbps, stereo)</option>
 												  <option>Экономия 2 (mp3, 44kHz, 320kbps, mono)</option>
 												</select>
-											  </div>
-											</div>
-										   <div class="form-group">
-										  <div class="col-md-offset-3 col-md-9">
-											<label>Прикрепите файл</label>
-											<input type="file">
-											<p class="help-block">Не более 3мб</p>
-											</div></div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <label>Прикрепите файл</label>
+                                                        <input type="file">
+                                                        <p class="help-block">Не более 3мб</p>
+                                                    </div>
+                                                </div>
 
-											<div class="form-group">
-											<label for="code1" class="col-md-3 control-label">Ссылка на видео</label>
-											<div class="col-md-9">
-											  <input type="text" class="form-control" id="code1" placeholder="вставьте вашу ссылку">
-											   <input type="text" class="form-control" id="code1" placeholder="вставьте вашу ссылку">
-											</div>
-										  </div>
+                                                <div class="form-group">
+                                                    <label for="code1" class="col-md-3 control-label">Ссылка на видео</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" class="form-control" id="code1" placeholder="вставьте вашу ссылку">
+                                                        <input type="text" class="form-control" id="code1" placeholder="вставьте вашу ссылку">
+                                                    </div>
+                                                </div>
 
-											<div class="form-group">
-											<label for="code1" class="col-md-3 control-label">Код</label>
-											<div class="col-md-9">
-											  <input type="text" class="form-control" id="code1" placeholder="Код скидки">
-											</div>
-										  </div>
-										  	<div class="form-group">
-											<label for="pochta1" class="col-md-3 control-label">Email</label>
-											<div class="col-md-9">
-											  <input type="email" class="form-control" id="pochta1" placeholder="почта, куда будет отправлен заказ">
-											</div>
-										  </div>
+                                                <div class="form-group">
+                                                    <label for="code1" class="col-md-3 control-label">Код</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" class="form-control" id="code1" placeholder="Код скидки">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="pochta1" class="col-md-3 control-label">Email</label>
+                                                    <div class="col-md-9">
+                                                        <input type="email" class="form-control" id="pochta1" placeholder="почта, куда будет отправлен заказ">
+                                                    </div>
+                                                </div>
 
-										  <div class="form-group">
-												<label for="oplata1" class="col-md-3 control-label">Оплата</label>
-												<div class="col-md-9">
-												<select class="form-control" id="oplata1">
+                                                <div class="form-group">
+                                                    <label for="oplata1" class="col-md-3 control-label">Оплата</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control" id="oplata1">
 												  <option>Безналичная оплата (+6%)</option>
 												  <option>Карта Сбербанка</option>
 												  <option>Яндекс-деньги</option>
@@ -902,64 +890,64 @@
 												  <option>WebMoney</option>
 												  <option>PayPal</option>
 												</select>
-											  </div>
-											</div>
-										  <div class="form-group">
-											<div class="col-md-offset-3 col-md-9">
-														<form action="http://www.SnapHost.com/captcha/send.aspx" method="post" id="myform">
-														<input type="hidden" id="skip_WhereToSend" name="skip_WhereToSend"
-														value="info@sila.fm" />
-														<input type="hidden" id="skip_Subject" name="skip_Subject"
-														value="Test inline zakaz" />
-														<input type="hidden" id="skip_WhereToReturn" name="skip_WhereToReturn"
-														value="www.yourdomain.com/thankyou.htm" />
-														<input type="hidden" id="skip_SnapHostID" name="skip_SnapHostID"
-														value="LZR9DPCMJMGW" />
-											 			<table cellspacing="0" border="0" cellpadding="8">
-														<tr valign="bottom">
-														<td>
-														<a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">обновить картинку</span></a><br />
-														<a href="http://www.snaphost.com/captcha/captchaguestbook.aspx"><img id="CaptchaImage"
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <form action="http://www.SnapHost.com/captcha/send.aspx" method="post" id="myform">
+                                                            <input type="hidden" id="skip_WhereToSend" name="skip_WhereToSend" value="info@sila.fm" />
+                                                            <input type="hidden" id="skip_Subject" name="skip_Subject" value="Test inline zakaz" />
+                                                            <input type="hidden" id="skip_WhereToReturn" name="skip_WhereToReturn" value="www.yourdomain.com/thankyou.htm" />
+                                                            <input type="hidden" id="skip_SnapHostID" name="skip_SnapHostID" value="LZR9DPCMJMGW" />
+                                                            <table cellspacing="0" border="0" cellpadding="8">
+                                                                <tr valign="bottom">
+                                                                    <td>
+                                                                        <a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">обновить картинку</span></a><br />
+                                                                        <a href="http://www.snaphost.com/captcha/captchaguestbook.aspx"><img id="CaptchaImage"
 														alt="guestbook ideas" style="border-width:0px;"
 														title="guestbook ideas"
 														src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=LZR9DPCMJMGW" /></a>
-														</td>
-														<td>  <br /><i>Введите код</i><br />
-														<input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text"
-														style="width:130px; height:48px; font-size:38px;" maxlength="6" /><br/>
-														</td>
-														</tr>
-														</table>
-														<script type="text/javascript">
-														function ReloadCaptchaImage(captchaImageId) {
-														var obj = document.getElementById(captchaImageId);
-														var src = obj.src;
-														var date = new Date();
-														var pos = src.indexOf('&rad=');
-														if (pos >= 0) { src = src.substr(0, pos); }
-														obj.src = src + '&rad=' + date.getTime();
-														return false; }
-														</script></form>
-														  <br>
-										  	  <button type="submit" class="btn btn-primary btn-lg">Сделать заказ</button>
-											</div>
-										  </div>
-									</form>
+                                                                    </td>
+                                                                    <td> <br /><i>Введите код</i><br />
+                                                                        <input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text" style="width:130px; height:48px; font-size:38px;" maxlength="6" /><br/>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <script type="text/javascript">
+                                                                function ReloadCaptchaImage(captchaImageId) {
+                                                                    var obj = document.getElementById(captchaImageId);
+                                                                    var src = obj.src;
+                                                                    var date = new Date();
+                                                                    var pos = src.indexOf('&rad=');
+                                                                    if (pos >= 0) {
+                                                                        src = src.substr(0, pos);
+                                                                    }
+                                                                    obj.src = src + '&rad=' + date.getTime();
+                                                                    return false;
+                                                                }
 
-                    	      	</div>
-                    	      	<div class="col-md-2 col-sm-1"></div>
-                    	      </div>
-                  	       </div>
-                  	       <div role="tabpanel" class="tab-pane fade" id="pane4">
-                    	         <div class="row">
-                    	      	<div class="col-md-2 col-sm-1"></div>
-                    	      	<div class="col-md-8 col-sm-10 col-xs-12">
-                    	      		<br><br>
-                    	      		<form class="form-horizontal" role="form">
-                    	      		      <div class="form-group">
-											<label for="kindscript" class="col-md-3 control-label">Назначение</label>
-											<div class="col-md-9">
-											 <select class="form-control" id="kindscript">
+                                                            </script>
+                                                        </form>
+                                                        <br>
+                                                        <button type="submit" class="btn btn-primary btn-lg">Сделать заказ</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+
+                                        </div>
+                                        <div class="col-md-2 col-sm-1"></div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="pane4">
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-1"></div>
+                                        <div class="col-md-8 col-sm-10 col-xs-12">
+                                            <br><br>
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <label for="kindscript" class="col-md-3 control-label">Назначение</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control" id="kindscript">
 												  <option>радио</option>
 												  <option>телевидение</option>
 												  <option>торговый центр</option>
@@ -969,14 +957,14 @@
 												  <option>песня в подарок </option>
 												  <option>другое</option>
 												</select>
-											</div>
-										  </div>
+                                                    </div>
+                                                </div>
 
 
-										  	<div class="form-group">
-										  	<label for="kindscript" class="col-md-3 control-label">Стиль оформления</label>
-												<div class="col-md-9">
-												<select class="form-control">
+                                                <div class="form-group">
+                                                    <label for="kindscript" class="col-md-3 control-label">Стиль оформления</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control">
 												  <option>поп</option>
 												  <option>рок</option>
 												  <option>джаз</option>
@@ -993,31 +981,31 @@
 												    <option>рэп</option>
 												  <option>корпоратив</option>
 												</select>
-											  </div>
-											</div>
+                                                    </div>
+                                                </div>
 
-										  	<div class="form-group">
-											<label for="dic1" class="col-md-3 control-label">Хронометраж</label>
-											<div class="col-sm-9">
-											  <input type="text" class="form-control" id="dic1" placeholder="(если нужны фрагменты разной продолжительности, укажите)">
-											  <div class="checkbox">
-												<label>
+                                                <div class="form-group">
+                                                    <label for="dic1" class="col-md-3 control-label">Хронометраж</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" id="dic1" placeholder="(если нужны фрагменты разной продолжительности, укажите)">
+                                                        <div class="checkbox">
+                                                            <label>
 												  <input type="checkbox" id="freetime"> <p>на усмотрение студии</p>
 												</label>
-										  	</div>
-											</div>
-										  </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
 
-											<div class="form-group">
-										  	<label class="col-md-3 control-label">Похожие песни (если есть)	</label>
-										  	<div class="col-md-9">
-										  	<textarea class="form-control" rows="4"></textarea>
-										  </div>
-										  </div>
-										  <div class="form-group">
-										  	<label for="kindscript" class="col-md-3 control-label">Характер</label>
-												<div class="col-md-9">
-												<select class="form-control">
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Похожие песни (если есть)	</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" rows="4"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="kindscript" class="col-md-3 control-label">Характер</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control">
 												  <option>веселый (мажорный)</option>
 												  <option>грустный (минорный)</option>
 												  <option>лирический</option>
@@ -1029,23 +1017,23 @@
 												  <option>уверенный (серьезный)</option>
 												  <option>как в примере</option>
 												</select>
-											  </div>
-											</div>
-											<div class="form-group">
-										  	<label for="kindscript" class="col-md-3 control-label">Темп</label>
-												<div class="col-md-9">
-												<select class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="kindscript" class="col-md-3 control-label">Темп</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control">
 												  <option>медленный</option>
 												  <option>умеренный</option>
 												  <option>быстрый</option>
 												  <option>очень быстрый</option>
 												</select>
-											  </div>
-											</div>
-											<div class="form-group">
-										  	<label for="kindscript" class="col-md-3 control-label">Инструменты</label>
-												<div class="col-md-9">
-												<select class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="kindscript" class="col-md-3 control-label">Инструменты</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control">
 												  <option>фортепиано</option>
 												  <option>оркестровка</option>
 												  <option>современные</option>
@@ -1053,52 +1041,53 @@
 												  <option>этнические</option>
 												  <option>как в примере</option>
 												</select>
-											  </div>
-											</div>
-										  <div class="form-group">
-										  	<label class="col-md-3 control-label">Вокальное оформление</label>
-										  	<div class="col-md-9">
-										  	<textarea class="form-control" rows="5"></textarea>
-										  </div>
-										  </div>
-										  <div class="form-group">
-										  	<label class="col-md-3 control-label">Дополнительная информация</label>
-										  	<div class="col-md-9">
-										  	<textarea class="form-control" rows="5"></textarea>
-										  </div>
-										  </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Вокальное оформление</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" rows="5"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Дополнительная информация</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" rows="5"></textarea>
+                                                    </div>
+                                                </div>
 
-											<div class="form-group">
-										  <div class="col-md-offset-3 col-md-9">
-											<label>Прикрепите файл</label>
-											<input type="file">
-											<p class="help-block">Не более 3мб</p>
-											</div></div>
+                                                <div class="form-group">
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <label>Прикрепите файл</label>
+                                                        <input type="file">
+                                                        <p class="help-block">Не более 3мб</p>
+                                                    </div>
+                                                </div>
 
-											<div class="form-group">
-										  	<label class="col-md-3 control-label">Коментарии</label>
-										  	<div class="col-md-9">
-										  	<textarea class="form-control" rows="5"></textarea>
-										  </div>
-										  </div>
+                                                <div class="form-group">
+                                                    <label class="col-md-3 control-label">Коментарии</label>
+                                                    <div class="col-md-9">
+                                                        <textarea class="form-control" rows="5"></textarea>
+                                                    </div>
+                                                </div>
 
-											<div class="form-group">
-											<label for="code1" class="col-md-3 control-label">Код</label>
-											<div class="col-md-9">
-											  <input type="text" class="form-control" id="code1" placeholder="Код скидки">
-											</div>
-										  </div>
-										  	<div class="form-group">
-											<label for="pochta1" class="col-md-3 control-label">Email</label>
-											<div class="col-md-9">
-											  <input type="email" class="form-control" id="pochta1" placeholder="почта, куда будет отправлен заказ">
-											</div>
-										  </div>
+                                                <div class="form-group">
+                                                    <label for="code1" class="col-md-3 control-label">Код</label>
+                                                    <div class="col-md-9">
+                                                        <input type="text" class="form-control" id="code1" placeholder="Код скидки">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="pochta1" class="col-md-3 control-label">Email</label>
+                                                    <div class="col-md-9">
+                                                        <input type="email" class="form-control" id="pochta1" placeholder="почта, куда будет отправлен заказ">
+                                                    </div>
+                                                </div>
 
-										  <div class="form-group">
-												<label for="oplata1" class="col-md-3 control-label">Оплата</label>
-												<div class="col-md-9">
-												<select class="form-control" id="oplata1">
+                                                <div class="form-group">
+                                                    <label for="oplata1" class="col-md-3 control-label">Оплата</label>
+                                                    <div class="col-md-9">
+                                                        <select class="form-control" id="oplata1">
 												  <option>Безналичная оплата (+6%)</option>
 												  <option>Карта Сбербанка</option>
 												  <option>Яндекс-деньги</option>
@@ -1108,65 +1097,65 @@
 												  <option>WebMoney</option>
 												  <option>PayPal</option>
 												</select>
-											  </div>
-											</div>
-										  <div class="form-group">
-											<div class="col-md-offset-3 col-md-9">
-														<form action="http://www.SnapHost.com/captcha/send.aspx" method="post" id="myform">
-														<input type="hidden" id="skip_WhereToSend" name="skip_WhereToSend"
-														value="info@sila.fm" />
-														<input type="hidden" id="skip_Subject" name="skip_Subject"
-														value="Test inline zakaz" />
-														<input type="hidden" id="skip_WhereToReturn" name="skip_WhereToReturn"
-														value="www.yourdomain.com/thankyou.htm" />
-														<input type="hidden" id="skip_SnapHostID" name="skip_SnapHostID"
-														value="LZR9DPCMJMGW" />
-											 			<table cellspacing="0" border="0" cellpadding="8">
-														<tr valign="bottom">
-														<td>
-														<a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">обновить картинку</span></a><br />
-														<a href="http://www.snaphost.com/captcha/captchaguestbook.aspx"><img id="CaptchaImage"
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-offset-3 col-md-9">
+                                                        <form action="http://www.SnapHost.com/captcha/send.aspx" method="post" id="myform">
+                                                            <input type="hidden" id="skip_WhereToSend" name="skip_WhereToSend" value="info@sila.fm" />
+                                                            <input type="hidden" id="skip_Subject" name="skip_Subject" value="Test inline zakaz" />
+                                                            <input type="hidden" id="skip_WhereToReturn" name="skip_WhereToReturn" value="www.yourdomain.com/thankyou.htm" />
+                                                            <input type="hidden" id="skip_SnapHostID" name="skip_SnapHostID" value="LZR9DPCMJMGW" />
+                                                            <table cellspacing="0" border="0" cellpadding="8">
+                                                                <tr valign="bottom">
+                                                                    <td>
+                                                                        <a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">обновить картинку</span></a><br />
+                                                                        <a href="http://www.snaphost.com/captcha/captchaguestbook.aspx"><img id="CaptchaImage"
 														alt="guestbook ideas" style="border-width:0px;"
 														title="guestbook ideas"
 														src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=LZR9DPCMJMGW" /></a>
-														</td>
-														<td>  <br /><i>Введите код</i><br />
-														<input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text"
-														style="width:130px; height:48px; font-size:38px;" maxlength="6" /><br/>
-														</td>
-														</tr>
-														</table>
-														<script type="text/javascript">
-														function ReloadCaptchaImage(captchaImageId) {
-														var obj = document.getElementById(captchaImageId);
-														var src = obj.src;
-														var date = new Date();
-														var pos = src.indexOf('&rad=');
-														if (pos >= 0) { src = src.substr(0, pos); }
-														obj.src = src + '&rad=' + date.getTime();
-														return false; }
-														</script></form>
-														  <br>
-										  	  <button type="submit" class="btn btn-primary btn-lg">Сделать заказ</button>
-											</div>
-										  </div>
-									</form>
+                                                                    </td>
+                                                                    <td> <br /><i>Введите код</i><br />
+                                                                        <input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text" style="width:130px; height:48px; font-size:38px;" maxlength="6" /><br/>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                            <script type="text/javascript">
+                                                                function ReloadCaptchaImage(captchaImageId) {
+                                                                    var obj = document.getElementById(captchaImageId);
+                                                                    var src = obj.src;
+                                                                    var date = new Date();
+                                                                    var pos = src.indexOf('&rad=');
+                                                                    if (pos >= 0) {
+                                                                        src = src.substr(0, pos);
+                                                                    }
+                                                                    obj.src = src + '&rad=' + date.getTime();
+                                                                    return false;
+                                                                }
 
-                    	      	</div>
-                    	      	<div class="col-md-2 col-sm-1"></div>
-                    	      </div>
-                  	       </div>
-                  	     </div>
-           	    </div>
+                                                            </script>
+                                                        </form>
+                                                        <br>
+                                                        <button type="submit" class="btn btn-primary btn-lg">Сделать заказ</button>
+                                                    </div>
+                                                </div>
+                                            </form>
 
-           	    </div>
-           	     </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+                </div>
+            </div>
 
 
 
-	</div>
-    <div id="scrollup"><img alt="Прокрутить вверх" src="img/up.png"></div>
+        </div>
+        <div id="scrollup"><img alt="Прокрутить вверх" src="img/up.png"></div>
     </section>
     <footer id="footer">
         <div class="container">
@@ -1174,73 +1163,47 @@
                 <div class="col-md-5">
                     <h4>НАШИ ПРИНЦИПЫ:</h4>
                     <hr>
-                    <p class="coment">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis qui, dicta, libero pariatur amet error adipisci autem magnam ea, explicabo ipsa quasi porro aspernatur nam dolorum sapiente voluptas eaque deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellendus amet alias."</p>
-                    <br>
-                    <br>
+                    <p class="coment">· Мы самым строгим образом проверяем свои результаты и извлекаем уроки как из успехов, так и из неудач, достигая, тем самым, высокого качества наших услуг. <br> · Мы добились досконального понимания запросов, требований, пожеланий и потребностей наших клиентов.<br> · Мы не нарушаем законы стран, в которых работаем и не озвучиваем материалы, которые сеют вражду или ненависть.<br> · Мы построили деловые отношения с заказчиками, дикторами и партнерами по бизнесу.<br> · Мы уверены, что люди работают лучше, если сотрудничество основано на честности и уважении.</p>
+
                     <hr>
                     <div class="footer_mn">
-
                         <ul>
-                            <li>
-                                <a href="index_01.html">Главная</a>
-                            </li>
-                            <li>
-                                <a href="#">Дикторы</a>
-                            </li>
-                            <li>
-                                <a href="#">Услуги</a>
-                            </li>
-                            <li>
-                                <a href="index_06.html">Оплата</a>
-                            </li>
-                            <li>
-                                <a href="index_07.html">Контакты</a>
-                            </li>
+                            <li> <a href="index.html">Главная</a> </li>
+                            <li> <a href="index_01.html">Дикторы</a> </li>
+                            <li> <a href="index_06.html">Оплата</a> </li>
+                            <li> <a href="index_07.html">Контакты</a> </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-3  col-md-offset-1">
                     <h4>ГРАФИК РАБОТЫ:</h4>
-                    <hr> По будним дням: 09:00 - 23:00
-                    <br> По субботам: 10:00 - 15:00
-                    <br> Выходные: воскресенье.
-                    <h4>ПОЧТОВЫЙ АДРЕС:</h4>
                     <hr>
-                    <p>г. Москва, пер. Электрический д.12 помещение ІІ, комн. 6</p>
-                    <p>г. Киев, пер. Электрический д.12 помещение ІІ, комн. 6</p>
-                </div>
-                <div class="col-md-3">
+                    <p class="font_sm">По будним дням: 09:00 - 23:00 <br> По субботам: 10:00 - 15:00 <br> Выходные: воскресенье</p>
+                    <br>
                     <h4>КОНТАКТЫ:</h4>
                     <hr>
-                    <p><b>e-mail:</b> info@sila.fm
-                        <br><b>В России:</b> (495) 20-435-20
-                        <br><b>В Украине:</b> (044) 545-77-13
-                        <br><b>skype:</b> sila.fm
-                        <br><b>ICQ:</b> 322-653-493</p>
-                    <div class="callz">
-                        <a href="#callback" class="callzakaz fancybox"> Заказать звонок </a>
-                    </div>
+                    <p class="font_sm">
+                        <span class="font_bsm">e-mail: </span>info@sila.fm <br>
+                        <span class="font_bsm">В Москве: </span> +7 (495) 545-45-13 <br>
+                        <span class="font_bsm">В России: </span> +7 (800) 551-0-551 <br>
+                        <span class="font_bsm">В Украине: </span> +3 (044) 545-77-13 <br>
+                        <span class="font_bsm">Viber/Whatsapp: </span>+7 965 316 1080<br>
+                        <span class="font_bsm">skype: </span> sila.fm <br>
+                        <span class="font_bsm">ICQ: </span> 322-653-493
+                    </p>
+
+                </div>
+                <div class="col-md-3">
+                    <h4>ПОЧТОВЫЙ АДРЕС:</h4>
+                    <hr>
+                    <p class="font_sm">г. Москва, пер. Электрический д.12 помещение ІІ, комн. 6<br> г. Киев, ул. Немиовича-Данченко, </p><br>
+                    <h4>СОТРУДНИЧЕСТВО:</h4>
+                    <hr>
+                    <p class="font_sm">По вопросам сотрудничества ждем ваше резюме по <a href="mailto:info@sila.fm">почте</a> или заполните нашу <a href="index_01.html?showModal">анкету</a>. </p>
                 </div>
             </div>
-
         </div>
-
-
-
-        <div class="hidden">
-            <form id="callback" class="pop_form">
-                <h4>Заказать обратный звонок</h4>
-                <input type="text" name="name" size="31" placeholder="Ваше имя..." required />
-                <br>
-                <input type="text" name="phone" size="31" placeholder="Ваш телефон..." required/>
-                <br>
-                <textarea name="text" cols="30" rows="4" placeholder="Коментарии..."></textarea>
-                <br>
-                <button class="callzakaz" type="submit">Заказать</button>
-            </form>
-
-
-        </div>
+        <div id="scrollup"><img alt="Прокрутить вверх" src="img/up.png"></div>
     </footer>
 
     <div class="modal fade" id="modal-1">
@@ -1333,28 +1296,54 @@
             </div>
         </div>
     </div>
+
+    <!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+    <script src="libs/jquery/jquery-3.1.1.min.js"></script>
+    <script src="libs/bootstrap/bootstrap.min.js"></script>
+    <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+    <script src="libs/scrollto/jquery.scrollTo.min.js"></script>
+    <script src="libs/countdown/jquery.plugin.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+    <!--<script src="libs/landing-nav/navigation.js"></script>-->
+    <!-- Add fancyBox -->
+    <script type="text/javascript" src="js/sorttable.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
     <!--появление меню после прокрутки 300 пикселей вниз с фейдом в 400мс -->
     <script>
-        jQuery(function (f) {
+        jQuery(function(f) {
             var element = f('#navigationMenu');
-            f(window).scroll(function () {
+            f(window).scroll(function() {
                 element['fade' + (f(this).scrollTop() > 300 ? 'In' : 'Out')](400);
             });
         });
+
     </script>
-<!--форма поиска -->
+    <!--форма поиска -->
     <script>
-        $(document).ready(function (e) {
+        $(document).ready(function(e) {
             $("input[placeholder]").placeholder();
-            $("#search-block-form .form-item input").focus(function () {
+            $("#search-block-form .form-item input").focus(function() {
                     $("#search-block-form").addClass("focus-active");
                 })
-                .blur(function () {
+                .blur(function() {
                     $("#search-block-form").removeClass("focus-active");
                 });
         });
+
     </script>
 
+    <script src="js/cbpHorizontalSlideOutMenu.js"></script>
+    <script>
+        var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
+
+    </script>
 
 </body>
 

@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" href="libs/BipolarChart/cssBipolarChart VIP.css" />
     <script src="js/modernizr.custom.js"></script>
 </head>
 
@@ -28,15 +29,17 @@
     <header>
         <!--left Navigators-->
         <div class="leftnavbar">
-            <ul id="navigationMenu">
+            <ul id="navigationMenu" style="display:block;">
                 <li><a class="cabinet" href="index_zakaz.html"><span>ONLINE ЗАКАЗ</span></a></li>
-                <li><a class="online_zakaz" href="index_zakaz.html"><span>ЛИЧНЫЙ КАБИНЕТ</span></a></li>
-                <li><a class="hronomer" href="index_hronos.html"><span>ХРОНОМЕР</span></a></li>
-                <li><a class="pagemeter" href="index_pages.html"><span>СТРАНИЦЕМЕР</span></a></li>
-                <li><a class="contact" href="index_07.html"><span>КОНТАКТЫ</span></a></li>
 
+                <li><a class="online_zakaz" href="#"><span>ЛИЧНЫЙ КАБИНЕТ</span></a></li>
+
+                <li><a class="hronomer" href="index_hronos.html"><span>ХРОНОМЕР</span></a></li>
+
+                <li><a class="pagemeter" href="index_pages.html"><span>СТРАНИЦЕМЕР</span></a></li>
+
+                <li><a class="contact" href="#"><span>КОНТАКТЫ</span></a></li>
             </ul>
-            <!--появление меню после прокрутки 300 пикселей вниз с фейдом в 400мс -->
 
         </div>
 
@@ -60,15 +63,12 @@
                                 <a href="#"><i class="fa fa-vk"></i></a>
                                 <a href="#"><i class="fa fa-facebook-square"></i></a>
                                 <a href="#"><i class="fa fa-skype"></i></a>
-                                <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
             <div class="mnu">
                 <nav class="cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
                     <div class="cbp-hsinner">
@@ -111,7 +111,6 @@
                                     <li>
                                         <a href="index_03.html"><img src="img/tv_c.png" alt="img06" /><span>Озвучивание видеороликов</span></a>
                                     </li>
-                                    <li> <a href="index_9quest.html"><img src="img/game.png" alt="img09" /><span>Озвучивание игр, сказок и квестов</span></a> </li>
                                     <li>
                                         <a href="index_04.html"><img src="img/film_c.png" alt="img09" /><span>Создание видеороликов</span></a>
                                     </li>
@@ -121,43 +120,17 @@
                                 </ul>
                             </li>
                             <li><a href="index_06.html">Оплата</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="index_07.html">Контакты</a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
 
+
         </div>
     </header>
-    <section>
-        <!--Помощник правый-->
-        <div id="panelr"> ...
-            <div id="helpform">
-                <div class="kate">
-                    <video autoplay loop width="200" height="200">
-          <source src="video/helper_female.mp4" type="video/mp4"/>
-          <img src="video/helper_1.gif" width="200" height="200" /> </video>
-                </div>
-                <div class="kateoff">
-                    <video autoplay loop width="200" height="200">
-          <source src="video/helper_female2.mp4" type="video/mp4"/>
-          <img src="video/helper_2.gif" width="200" height="200" /> </video>
-                </div>
-                <form>
-                    <div class="form-group">
-                        <label for="namecallback">
-          <p id="katetext">Задайте Кате вопросы</p>
-          </label>
-                        <input type="name" class="form-control" id="namecallback" placeholder="Ваше имя">
-                        <br>
-                        <input type="tel" class="form-control" id="telcallback" placeholder="Ваш номер телефона">
-                    </div>
-                    <button type="button" class="btn btn-default" id="telback">Заказать звонок</button>
-                </form>
-            </div>
-        </div>
-        <!--Помощник правый end-->
 
+    <section id="content">
         <div class="container-fluid">
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <!--- Индикаторы слайдов--->
@@ -173,7 +146,7 @@
                         <div class="carousel-caption">
                             <h3>АУДИОРОЛИКИ</h3>
                             <div class="center_btn">
-                                <button type="button" class="zakaz_btn">СДЕЛАТЬ ЗАКАЗ</button>
+                                <a href="index_zakaz.html"><button type="button" class="zakaz_btn">СДЕЛАТЬ ЗАКАЗ</button></a>
                             </div>
                         </div>
                     </div>
@@ -205,166 +178,58 @@
                 </a>
             </div>
         </div>
-
         <div class="container">
-
-            <div class="fillcontainer">
+            <div class="miniblock">
+                <div class="serij">
+                    <h3>VIP-голоса</h3>
+                </div>
                 <div class="row">
-                    <div class="about">
-                        <div class="col-md-3 col-sm-4">
-                            <h2>Наши контакты</h2>
+                    <div class="col-md-4 col-sm-5">
+                        <div class="leftbar">
+                            <br>
+                            <h3>Специальное предложение</h3>
                             <hr>
-                            <br>
-                            <h4>Москва</h4>
-                            <div class="row">
-                                <div class="col-md-3 col-sm-4 col-xs-6">
-                                    <p class="littext">Телефон:</p>
-                                </div>
-                                <div class="col-md-9 col-sm-8 col-xs-6">
-                                    <p class="littext">8 (495) 545-45-13</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3 col-sm-4 col-xs-6">
-                                    <p class="littext">Телефон:</p>
-                                </div>
-                                <div class="col-md-9 col-sm-8 col-xs-6">
-                                    <p class="littext">8 (965) 316-10-80</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3 col-sm-4 col-xs-6">
-                                    <p class="littext">Адрес:</p>
-                                </div>
-                                <div class="col-md-9 col-sm-8 col-xs-6">
-                                    <p class="littext">пер. Электрический д.12, помещение ІІ, комн. 6</p>
-                                </div>
-                            </div>
-                            <br>
-                            <h4>Киев</h4>
-                            <div class="row">
-                                <div class="col-md-3 col-sm-4 col-xs-6">
-                                    <p class="littext">Телефон:</p>
-                                </div>
-                                <div class="col-md-9 col-sm-8 col-xs-6">
-                                    <p class="littext">+38 (044) 545-77-13</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3 col-sm-4 col-xs-6">
-                                    <p class="littext">Телефон:</p>
-                                </div>
-                                <div class="col-md-9 col-sm-8 col-xs-6">
-                                    <p class="littext">+38 (050) 530-79-75</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3 col-sm-4 col-xs-6">
-                                    <p class="littext">Адрес:</p>
-                                </div>
-                                <div class="col-md-9 col-sm-8 col-xs-6">
-                                    <p class="littext">пер. Электрический д.12, помещение ІІ, комн. 6</p>
-                                </div>
-                            </div>
-                            <br>
-                            <h4>В интернете</h4>
-                            <div class="row">
-                                <div class="col-md-3 col-sm-4 col-xs-6">
-                                    <p class="littext">e-mail:</p>
-                                </div>
-                                <div class="col-md-9 col-sm-8 col-xs-6">
-                                    <p class="littext"><a href="mailto:info@sila.fm" class="link2">info@sila.fm</a></p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3 col-sm-4 col-xs-6">
-                                    <p class="littext">ICQ:</p>
-                                </div>
-                                <div class="col-md-9 col-sm-8 col-xs-6">
-                                    <p class="littext">322-653-493</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3 col-sm-4 col-xs-6">
-                                    <p class="littext">Skype:</p>
-                                </div>
-                                <div class="col-md-9 col-sm-8 col-xs-6">
-                                    <p class="littext">sila.fm</p>
-                                </div>
-                            </div>
-                            <br>
-                            <h4>График работы:</h4>
-                            <p class="littext">По будним дням: 09:00 - 23:00
-                                <br>По субботам: 10:00 - 15:00
-                                <br>Выходные: воскресенье</p><br>
-
-                            <h2>Наши проекты</h2>
-                            <hr>
-                            <p><a href="http://ivr-voice.com/" class="link2">IVR-Voice</a></p>
-                            <p><a href="http://detskie-golosa.ru/" class="link2">Детские голоса</a></p>
-                            <br>
-                            <h2>Наши партнеры</h2>
-                            <hr>
-                            <p><a href="http://www.mango-office.ru/" class="link2">Mango-office</a></p>
-                            <br><br>
-                        </div>
-                        <div class="col-md-9 col-sm-8">
-
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <figure><img src="images/cnt_k_lara.png" alt=""></figure>
-                                </div>
-                                <div class="col-md-9">
-                                    <h4 class="nospace">Лара Ярошенко </h4>
-                                    <p class="cursive">руководитель, администратор</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <figure><img src="images/cnt_k_kuba.png" alt=""></figure>
-                                </div>
-                                <div class="col-md-9">
-                                    <h4 class="nospace">Леонид Алмазов </h4>
-                                    <p class="cursive">креативный директор</p>
-                                    <p class="littext">Пишет сценарии к рекламе с 1905 года. В произведениях Маяковского и Есенина нередко вылавливает свои мысли и идеи. Сделав небольшой перерыв в 1917, в 1991 году с утроенной силой взялся за работу. Опыт и житейская мудрость, несколько с честью пережитых браков, хорошее чувство юмора, выдержанное клиентами, разбросанными по всему миру, сделали Леонида Иосифовича ярким бриллиантом. «Продать – значит подать», – считает Леонид Алмазов… И таки подает!</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <figure><img src="images/cnt_k_katya.png" alt=""></figure>
-                                </div>
-                                <div class="col-md-9">
-                                    <h4 class="nospace">Екатерина Лебедь</h4>
-                                    <p class="cursive">бухгалтер, юрист</p>
-                                    <p class="littext">Одна из самых загадочных и засекреченных фигур. Прежде чем стать бухгалтером и юристом в нашем агентстве, долгое время мечтала работать в суде и получать подарки, но, взвесив все минусы и плюсы, посоветовавшись с бабушкой и совестью, она выбрала «Силу ФМ». Кроме юридического образования, у Екатерины есть домашние животные и подруги, которые не дают ей полностью и бесповоротно кануть в пучине документооборота.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <figure><img src="images/cnt_k_bogdan.png" alt=""></figure>
-                                </div>
-                                <div class="col-md-9">
-                                    <h4 class="nospace">Богдан Скоров</h4>
-                                    <p class="cursive">звукорежиссер, дизайнер, композитор</p>
-                                    <p class="littext">Если вы видели летящего на горном велосипеде задумчивого велосипедиста, то, скорее всего это был Богдан, опаздывающий на запись в студию. "Звукорежиссёрами не рождаются" – любит повторять он. Хотя сам звукорежиссером стал случайно. Постоянное самосовершенствование Богдана не терпит границ, поэтому он периодически выключает телефон, пропадая из зоны досягаемости простыми смертными.</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <figure><img src="images/cnt_k_vadim.png" alt=""></figure>
-                                </div>
-                                <div class="col-md-9">
-                                    <h4 class="nospace">Вадим Кузьмин</h4>
-                                    <p class="cursive">звукорежиссер, аранжировщик</p>
-                                    <p class="littext">Именно труд первого звукорежиссера, по мнению Вадима Кузьмина, сделал из обезьяны человека. Эволюция Вадима вне конкуренции. Ценитель вкуса в рекламных роликах, запаха корпоративных презентаций и цвета документального видео. Знает с чего начинать ролик и чем его заканчивать, почему в этом месте нужна труба, а, вот в этом – молодая девушка. Вадим знает всё о звуке все, кроме одного...сколько еще работы со звуком ему подбросят вечером.</p>
-                                </div>
-                            </div>
+                            <p>Мы предлогаем голоса известных актеров кино, театра и эстрады. Стоимость и сроки выполенния заказа предварительно согласовываются</p>
+                            <img src="images/VIP_SilaFM.png" class="center-block" width="198" height="283" alt="" />
                         </div>
                     </div>
+                    <div class="col-md-8 col-sm-7">
+                        <div class="rightbar">
+                            <br>
+                            <h2>Дмитрий Нагиев</h2>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p class="basictext">Дмитрий Владимирович Нагиев (род. 4 апреля 1967, Ленинград) — советский и российский актёр, музыкант, певец, шоумен, теле- и радиоведущий, диджей. Мы также осуществляем запись дикторов-носителей американского английского, британского английского, немецкого, итальянского, французского, испанского и других языков для аудиорекламы, радиороликов, рекламных песен, озвучивания видеороликов.</p>
+                                </div>
+                                <div class="col-md-4"> <img src="images/nagiev.jpg" class="img-circle img-responsive" alt="Placeholder image"></div>
+                            </div>
+                            <div class="row anketa">
+                                <p style="text-align: center">Характер голоса</p>
+                                <hr>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12"> <br>
+                                    <div id="voiceVIP">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row anketa"><br><br>
+                                <div style="text-align: center">
+                                    <button class="btn btn-success" onclick="wavesurfer.playPause()">
+    <i class="glyphicon glyphicon-play"></i>Прослушать
+	</button>
+                                    <div id="waveform"></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
                 </div>
-
-
             </div>
+
         </div>
     </section>
     <footer id="footer">
@@ -413,8 +278,101 @@
                 </div>
             </div>
         </div>
+
         <div id="scrollup"><img alt="Прокрутить вверх" src="img/up.png"></div>
     </footer>
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">&times;</button>
+                    <h2>Агентство Sila.FM. Online анкета</h2>
+                    <p>Заполните, пожалуйста, все поля формы:</p>
+                </div>
+                <div class="modal-body">
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                        <input type="text" class="form-control" name="name" placeholder="Фамилия Имя Отчество" aria-describedby="basic-addon1" required/>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon2"><i class="fa fa-phone"></i></span>
+                        <input type="text" class="form-control" name="phone" placeholder="Мобильный телефон" aria-describedby="basic-addon2" />
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon3"><i class="fa fa-envelope"></i></span>
+                        <input type="text" class="form-control" placeholder="e-mail" aria-describedby="basic-addon3">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon4"><i class="fa fa-book"></i></span>
+                        <input type="number" class="form-control" placeholder="Возвраст" aria-describedby="basic-addon4">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon5"><i class="fa fa-home"></i></span>
+                        <input type="text" class="form-control" placeholder="Место проживания (страна, город)..." aria-describedby="basic-addon5">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon6"><i class="fa fa-language"></i></span>
+                        <input type="text" class="form-control" id="yazik" placeholder="Какими языками владеете?" aria-describedby="basic-addon6">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon7"><i class="fa fa-briefcase"></i></span>
+                        <input type="text" class="form-control" placeholder="Место работы" aria-describedby="basic-addon7">
+                    </div>
+
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Опыт работы">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="График работы">
+                        </div>
+
+                    </form>
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                <span class="btn btn-primary btn-file">
+                Обзор&hellip; <input type="file" multiple>
+                </span>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Прикрепить порфолио..." readonly>
+                    </div>
+
+                    <h3>Возможность записи начиток:</h3>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="">
+                        <p>На работе</p>
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="">
+                        <p>Дома</p>
+                    </label>
+
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon9"><i class="fa fa-money"></i></span>
+                        <input type="text" class="form-control" id="rolik30" placeholder="Стоимость начитки рекламного текста до 30 сек..." aria-describedby="basic-addon9">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon8"><i class="fa fa-money"></i></span>
+                        <input type="text" class="form-control" id="stranica" placeholder="Стоимость начитки 1 страницы печатного текста..." aria-describedby="basic-addon8">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="anketa_btn" type="submit">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--[if lt IE 9]>
 <script src="libs/html5shiv/es5-shim.min.js"></script>
 <script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -426,9 +384,56 @@
     <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
     <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
     <script src="libs/scrollto/jquery.scrollTo.min.js"></script>
-
     <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+    <!--<script src="libs/landing-nav/navigation.js"></script>-->
+    <!-- Add fancyBox -->
     <script src="js/common.js"></script>
+    <!-- Yandex.Metrika counter -->
+    <!-- /Yandex.Metrika counter -->
+    <!-- Google Analytics counter -->
+    <!-- /Google Analytics counter -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.3.2/wavesurfer.min.js"></script>
+    <script src="libs/BipolarChart/cssBipolarChart VIP.js"></script>
+    <script>
+        var sampleData1 = [
+            ["Низкий темб", "Высокий тембр", 0.66],
+            ["Уверенный", "Мягкий", 0.47],
+            ["Богатый", "Сухой", 0.66],
+            ["Энергический", "Хладнокровный", 0.324],
+            ["Деловой", "Живой", 0.92],
+        ]
+
+        var sampleData2 = [
+            ["Psychology", 0.4022950506000479],
+            ["IT", 0.98803218276815504],
+        ]
+
+        $(document).ready(function() {
+            $("#voiceVIP").drawCSSBipolarChart({
+                data: sampleData1,
+                bipolar: true
+            })
+
+        })
+
+    </script>
+    <script src="js/cbpHorizontalSlideOutMenu.js"></script>
+    <script>
+        var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
+
+    </script>
+    <script>
+        var wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: '#3A5CA4',
+            progressColor: '#5A7CC4',
+            scrollParent: true
+        });
+
+        wavesurfer.load('audio/bel.mp3');
+
+    </script>
+    <!--появление меню после прокрутки 300 пикселей вниз с фейдом в 400мс -->
     <script>
         jQuery(function(f) {
             var element = f('#navigationMenu');
@@ -438,12 +443,6 @@
         });
 
     </script>
-    <script src="js/cbpHorizontalSlideOutMenu.js"></script>
-    <script>
-        var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
-
-    </script>
-
 </body>
 
 </html>

@@ -8,71 +8,33 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Sila.FM</title>
-    <meta name="description" content="" />
+    <title>Аудиоролики | Радиоролики | Аудиореклама | Радиореклама | Озвучка видео | Sila.FM</title>
+    <meta name="description" content="Изготовление аудиороликов и радиороликов, запись радиорекламы и аудиорекламы, запись дикторов. Озвучка видеороликов, озвучание анимации, квестов, озвучение корпоративных и презентационных фильмов. Голосовое приветствие" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Аудиоролики, озвучка видео, радиоролики, озвучка текстов, квестов, иностранные дикторы, радиореклама, квесты, озвучка мультфильмов, аудиореклама, запись диктора, озвучка видеоролика, озвучание фильма, озвучка мультфильмов, голосовое приветствие, голосовое" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="libs/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+    <script src="js/modernizr.custom.js"></script>
 </head>
 
 <body>
-    <!--[if lt IE 9]>
-<script src="libs/html5shiv/es5-shim.min.js"></script>
-<script src="libs/html5shiv/html5shiv.min.js"></script>
-<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-<script src="libs/respond/respond.min.js"></script>
-<![endif]-->
-    <script src="libs/jquery/jquery-2.2.1.js"></script>
-    <script src="libs/bootstrap/bootstrap.min.js"></script>
-    <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-    <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
-    <script src="libs/scrollto/jquery.scrollTo.min.js"></script>
-    <script src="libs/countdown/jquery.plugin.js"></script>
-    <script src="libs/countdown/jquery.countdown.min.js"></script>
-    <script src="libs/countdown/jquery.countdown-ru.js"></script>
-    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
-     <!-- Masonry and imageLoader and initilisation script -->
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/masonry_int.js"></script>
-    <!--<script src="libs/landing-nav/navigation.js"></script>-->
-    <!-- Add fancyBox -->
-    <script type="text/javascript" src="js/sorttable.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/modernizr.custom.js"></script>
-
-
-
     <header>
         <!--left Navigators-->
         <div class="leftnavbar">
             <ul id="navigationMenu" style="display:block;">
-                <li><a class="cabinet" href="#"><span>ONLINE ЗАКАЗ</span></a></li>
-
-                <li><a class="online_zakaz" href="#"><span>ЛИЧНЫЙ КАБИНЕТ</span></a></li>
-
-                <li><a class="hronomer" href="#"><span>ХРОНОМЕР</span></a></li>
-
-                <li><a class="pagemeter" href="#"><span>СТРАНИЦЕМЕР</span></a></li>
-
-                <li><a class="contact" href="#"><span>КОНТАКТЫ</span></a></li>
+                <li><a class="cabinet" href="index_zakaz.html"><span>ONLINE ЗАКАЗ</span></a></li>
+                <li><a class="online_zakaz" href="index_zakaz.html"><span>ЛИЧНЫЙ КАБИНЕТ</span></a></li>
+                <li><a class="hronomer" href="index_hronos.html"><span>ХРОНОМЕР</span></a></li>
+                <li><a class="pagemeter" href="index_pages.html"><span>СТРАНИЦЕМЕР</span></a></li>
+                <li><a class="contact" href="index_07.html"><span>КОНТАКТЫ</span></a></li>
             </ul>
-            <!--появление меню после прокрутки 300 пикселей вниз с фейдом в 400мс -->
-            <script>
-                jQuery(function (f) {
-                    var element = f('#navigationMenu');
-                    f(window).scroll(function () {
-                        element['fade' + (f(this).scrollTop() > 300 ? 'In' : 'Out')](400);
-                    });
-                });
-            </script>
+
         </div>
 
         <div class="top_header">
@@ -81,8 +43,7 @@
                     <div class="row">
                         <div class="col-md-2 col-sm-3 col-xs-4">
                             <div class="logo_wrap">
-                                <a href="#"><img src="img/logo.png" alt="Sila.FM"></a>
-                                креативное агентство звука
+                                <a href="#"><img src="img/logo.png" alt="Sila.FM"></a> креативное агентство звука
                             </div>
                         </div>
 
@@ -111,6 +72,26 @@
                             </li>
                             <li>
                                 <a href="index_01.html">Дикторы</a>
+                                <ul class="cbp-hssubmenu">
+                                    <li>
+                                        <a href="index_01.html#ex1"><img src="img/ruman.png" alt="img07" /><span>дикторы России</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="index_01.html#ex5"><img src="img/uaman.png" alt="img08" /><span>дикторы Украины</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="index_01.html#ex3"><img src="img/foreigner.png" alt="img09" /><span>Иностранные дикторы</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="index_01.html#ex9"><img src="img/songer.png" alt="img10" /><span>Вокалисты</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="index_01.html#ex8"><img src="img/parodies.png" alt="img01" /><span>Пародисты</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="index_01.html#ex7"><img src="img/child.png" alt="img02" /><span>Детские голоса</span></a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="#">Услуги</a>
@@ -121,6 +102,7 @@
                                     <li>
                                         <a href="index_02.html"><img src="img/radio_c.png" alt="img06" /><span>Аудиролики</span></a>
                                     </li>
+                                    <li> <a href="index_9quest.html"><img src="img/game.png" alt="img09" /><span>Озвучивание игр, сказок и квестов</span></a> </li>
                                     <li>
                                         <a href="index_03.html"><img src="img/tv_c.png" alt="img06" /><span>Озвучивание видеороликов</span></a>
                                     </li>
@@ -141,234 +123,272 @@
             <script src="js/cbpHorizontalSlideOutMenu.js"></script>
             <script>
                 var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
+
             </script>
 
         </div>
     </header>
 
- <section id="content">
-    <div class="container">
-        <div class="fillcontainer mascont">
-            <div role="tabpanel">
-
-                <ul class="nav nav-pills nav-justified" role="tablist">
-
-                    <li class="active"><a data-toggle="tab" href="#tab1">Озвучка видео</a></li>
-                    <li> <a role="tab" data-toggle="tab" href="#tab2" aria-controls="tab2">Дубляж</a> </li>
-                    <li> <a role="tab" data-toggle="tab" href="#tab3" aria-controls="tab3">Видеопрезентации</a></li>
-                    <li> <a role="tab" data-toggle="tab" href="#tab4" aria-controls="tab4">Мультипликации</a></li>
-                    <li> <a role="tab" data-toggle="tab" href="#tab5" aria-controls="tab5">Док. фильмы</a></li>
-                    <li> <a role="tab" data-toggle="tab" href="#tab6" aria-controls="tab6">Копроративные</a></li>
-                </ul>
-
-                <div class="tab-content">
-                    <div id="tab1" class="tab-pane fade in active" role="tabpanel">
-                        <div class="row masonry-container">
-                            <div class="grid-item col-xs-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="http://placehold.it/350x230" alt="">
-                                    <div class="caption">
-                                        <h4>Видео ролик: Cinemapark 4DX</h4>
-                                        <p>Озвучка: Дикторы Андреев Е., Володькин Р., Лаупер А.
-                                            <br>Комментарии: озвучивание видеорекламы</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item col-xs-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="http://placehold.it/350x230" alt="">
-                                    <div class="caption">
-                                        <h4>Видео ролик: Молния - Так Просто!</h4>
-                                        <p>Диктор: Чонишвили С.
-                                            <br>Комментарии: озвучивание видеорекламы</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item col-xs-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="http://placehold.it/350x230" alt="">
-                                    <div class="caption">
-                                        <h4>Видео ролик: Castrol Edge - Максимальная эффективность</h4>
-                                        <p>Диктор: Марьин А.
-                                            <br>Комментарии: озвучивание видеорекламы</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item col-xs-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="http://placehold.it/350x230" alt="">
-                                    <div class="caption">
-                                        <h4>Видео ролик: Microsoft Office New</h4>
-                                        <p>Диктор Власова А.
-                                            <br>Комментарии: озвучивание видеорекламы</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item col-xs-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="http://placehold.it/350x230" alt="">
-                                    <div class="caption">
-                                        <h4>Видео ролик: Baxter - игрушечная собачка</h4>
-                                        <p>Озвучка: Диктор Андреев Е.
-                                            <br>Комментарии: озвучивание телевизионной рекламы</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item col-xs-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="http://placehold.it/350x230" alt="">
-                                    <div class="caption">
-                                        <h4>Видео ролик: V-Transport.ru - На расстоянии Клика</h4>
-                                        <p>Диктор: Диктор Суворов А.
-                                            <br>Комментарии: озвучка рекламного видеоролика</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!--end tab1 Озвучка видео-->
-                    <div id="tab2" class="tab-pane fade in" role="tabpanel">
-                        <div class="row masonry-container">
-                            <div class="grid-item col-xs-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="http://placehold.it/350x230" alt="">
-                                    <div class="caption">
-                                        <h4>Видео ролик: Cinemapark 4DX</h4>
-                                        <p>Озвучка: Дикторы Андреев Е., Володькин Р., Лаупер А.
-                                            <br>Комментарии: озвучивание видеорекламы</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item col-xs-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="http://placehold.it/350x230" alt="">
-                                    <div class="caption">
-                                        <h4>Видео ролик: Молния - Так Просто!</h4>
-                                        <p>Диктор: Чонишвили С.
-                                            <br>Комментарии: озвучивание видеорекламы</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item col-xs-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="http://placehold.it/350x230" alt="">
-                                    <div class="caption">
-                                        <h4>Видео ролик: Castrol Edge - Максимальная эффективность</h4>
-                                        <p>Диктор: Марьин А.
-                                            <br>Комментарии: озвучивание видеорекламы</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item col-xs-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="http://placehold.it/350x230" alt="">
-                                    <div class="caption">
-                                        <h4>Видео ролик: Microsoft Office New</h4>
-                                        <p>Диктор Власова А.
-                                            <br>Комментарии: озвучивание видеорекламы</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item col-xs-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="http://placehold.it/350x230" alt="">
-                                    <div class="caption">
-                                        <h4>Видео ролик: Baxter - игрушечная собачка</h4>
-                                        <p>Озвучка: Диктор Андреев Е.
-                                            <br>Комментарии: озвучивание телевизионной рекламы</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-item col-xs-6 col-md-4">
-                                <div class="thumbnail">
-                                    <img src="http://placehold.it/350x230" alt="">
-                                    <div class="caption">
-                                        <h4>Видео ролик: V-Transport.ru - На расстоянии Клика</h4>
-                                        <p>Диктор: Диктор Суворов А.
-                                            <br>Комментарии: озвучка рекламного видеоролика</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!--end tab2 Дубляж-->
+    <section id="content">
+        <!--Помощник правый-->
+        <div id="panelr"> ...
+            <div id="helpform">
+                <div class="kate">
+                    <video autoplay loop width="200" height="200">
+          <source src="video/helper_female.mp4" type="video/mp4"/>
+          <img src="video/helper_1.gif" width="200" height="200" /> </video>
                 </div>
+                <div class="kateoff">
+                    <video autoplay loop width="200" height="200">
+          <source src="video/helper_female2.mp4" type="video/mp4"/>
+          <img src="video/helper_2.gif" width="200" height="200" /> </video>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="namecallback">
+          <p id="katetext">Задайте Кате вопросы</p>
+          </label>
+                        <input type="name" class="form-control" id="namecallback" placeholder="Ваше имя">
+                        <br>
+                        <input type="tel" class="form-control" id="telcallback" placeholder="Ваш номер телефона">
+                    </div>
+                    <button type="button" class="btn btn-default" id="telback">Заказать звонок</button>
+                </form>
             </div>
-
         </div>
-    </div>
-</section>
+
+        <!--Помощник правый end-->
+        <div class="container">
+            <div class="fillcontainer mascont">
+                <div role="tabpanel">
+
+                    <ul class="nav nav-pills nav-justified" role="tablist">
+
+                        <li class="active"><a data-toggle="tab" href="#tab1">Озвучка видео</a></li>
+                        <li> <a role="tab" data-toggle="tab" href="#tab2" aria-controls="tab2">Дубляж</a> </li>
+                        <li> <a role="tab" data-toggle="tab" href="#tab3" aria-controls="tab3">Видеопрезентации</a></li>
+                        <li> <a role="tab" data-toggle="tab" href="#tab4" aria-controls="tab4">Мультипликации</a></li>
+                        <li> <a role="tab" data-toggle="tab" href="#tab5" aria-controls="tab5">Док. фильмы</a></li>
+                        <li> <a role="tab" data-toggle="tab" href="#tab6" aria-controls="tab6">Копроративные</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="tab1" class="tab-pane fade in active" role="tabpanel">
+                            <div class="row masonry-container">
+                                <div class="grid-item col-xs-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="http://tv.adobe.com/embed/1221/24197/"></iframe>
+
+                                        </div>
+                                        <div class="caption">
+                                            <h4>Видео ролик: Cinemapark 4DX</h4>
+                                            <p>Озвучка: Дикторы Андреев Е., Володькин Р., Лаупер А.
+                                                <br>Комментарии: озвучивание видеорекламы</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-xs-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="http://tv.adobe.com/embed/1221/24197/"></iframe> </div>
+                                        <div class="caption">
+                                            <h4>Видео ролик: Молния - Так Просто!</h4>
+                                            <p>Диктор: Чонишвили С.
+                                                <br>Комментарии: озвучивание видеорекламы</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-xs-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="http://tv.adobe.com/embed/1221/24197/"></iframe> </div>
+                                        <div class="caption">
+                                            <h4>Видео ролик: Castrol Edge - Максимальная эффективность</h4>
+                                            <p>Диктор: Марьин А.
+                                                <br>Комментарии: озвучивание видеорекламы</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-xs-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="http://tv.adobe.com/embed/1221/24197/"></iframe> </div>
+                                        <div class="caption">
+                                            <h4>Видео ролик: Microsoft Office New</h4>
+                                            <p>Диктор Власова А.
+                                                <br>Комментарии: озвучивание видеорекламы</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-xs-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="http://tv.adobe.com/embed/1221/24197/"></iframe> </div>
+                                        <div class="caption">
+                                            <h4>Видео ролик: Baxter - игрушечная собачка</h4>
+                                            <p>Озвучка: Диктор Андреев Е.
+                                                <br>Комментарии: озвучивание телевизионной рекламы</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-xs-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="http://tv.adobe.com/embed/1221/24197/"></iframe> </div>
+                                        <div class="caption">
+                                            <h4>Видео ролик: V-Transport.ru - На расстоянии Клика</h4>
+                                            <p>Диктор: Диктор Суворов А.
+                                                <br>Комментарии: озвучка рекламного видеоролика</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end tab1 Озвучка видео-->
+                        <div id="tab2" class="tab-pane fade in" role="tabpanel">
+                            <div class="row masonry-container">
+                                <div class="grid-item col-xs-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="http://tv.adobe.com/embed/1221/24197/"></iframe> </div>
+                                        <div class="caption">
+                                            <h4>Видео ролик: Cinemapark 4DX</h4>
+                                            <p>Озвучка: Дикторы Андреев Е., Володькин Р., Лаупер А.
+                                                <br>Комментарии: озвучивание видеорекламы</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-xs-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="http://tv.adobe.com/embed/1221/24197/"></iframe> </div>
+                                        <div class="caption">
+                                            <h4>Видео ролик: Молния - Так Просто!</h4>
+                                            <p>Диктор: Чонишвили С.
+                                                <br>Комментарии: озвучивание видеорекламы</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-xs-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="http://tv.adobe.com/embed/1221/24197/"></iframe> </div>
+                                        <div class="caption">
+                                            <h4>Видео ролик: Castrol Edge - Максимальная эффективность</h4>
+                                            <p>Диктор: Марьин А.
+                                                <br>Комментарии: озвучивание видеорекламы</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-xs-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="http://tv.adobe.com/embed/1221/24197/"></iframe> </div>
+                                        <div class="caption">
+                                            <h4>Видео ролик: Microsoft Office New</h4>
+                                            <p>Диктор Власова А.
+                                                <br>Комментарии: озвучивание видеорекламы</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-xs-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="http://tv.adobe.com/embed/1221/24197/"></iframe> </div>
+                                        <div class="caption">
+                                            <h4>Видео ролик: Baxter - игрушечная собачка</h4>
+                                            <p>Озвучка: Диктор Андреев Е.
+                                                <br>Комментарии: озвучивание телевизионной рекламы</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-xs-6 col-md-4">
+                                    <div class="thumbnail">
+                                        <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="http://tv.adobe.com/embed/1221/24197/"></iframe> </div>
+                                        <div class="caption">
+                                            <h4>Видео ролик: V-Transport.ru - На расстоянии Клика</h4>
+                                            <p>Диктор: Диктор Суворов А.
+                                                <br>Комментарии: озвучка рекламного видеоролика</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end tab2 Дубляж-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
                     <h4>НАШИ ПРИНЦИПЫ:</h4>
                     <hr>
-                    <p class="coment">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ipsam ipsa asperiores tenetur aliquid facere recusandae corrupti, incidunt quis, earum enim provident. Praesentium magni dolorum, doloremque molestiae, id distinctio incidunt."</p>
-                    <br>
-                    <br>
+                    <p class="coment">· Мы самым строгим образом проверяем свои результаты и извлекаем уроки как из успехов, так и из неудач, достигая, тем самым, высокого качества наших услуг. <br> · Мы добились досконального понимания запросов, требований, пожеланий и потребностей наших клиентов.<br> · Мы не нарушаем законы стран, в которых работаем и не озвучиваем материалы, которые сеют вражду или ненависть.<br> · Мы построили деловые отношения с заказчиками, дикторами и партнерами по бизнесу.<br> · Мы уверены, что люди работают лучше, если сотрудничество основано на честности и уважении.</p>
+
                     <hr>
                     <div class="footer_mn">
-
                         <ul>
-                            <li>
-                                <a href="index_01.html">Главная</a>
-                            </li>
-                            <li>
-                                <a href="#">Дикторы</a>
-                            </li>
-                            <li>
-                                <a href="#">Услуги</a>
-                            </li>
-                            <li>
-                                <a href="index_06.html">Оплата</a>
-                            </li>
-                            <li>
-                                <a href="index_07.html">Контакты</a>
-                            </li>
+                            <li> <a href="index.html">Главная</a> </li>
+                            <li> <a href="index_01.html">Дикторы</a> </li>
+                            <li> <a href="index_06.html">Оплата</a> </li>
+                            <li> <a href="index_07.html">Контакты</a> </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-3  col-md-offset-1">
                     <h4>ГРАФИК РАБОТЫ:</h4>
-                    <hr> По будним дням: 09:00 - 23:00
-                    <br> По субботам: 10:00 - 15:00
-                    <br> Выходные: воскресенье.
-                    <h4>ПОЧТОВЫЙ АДРЕС:</h4>
                     <hr>
-                    <p>г. Москва, пер. Электрический д.12 помещение ІІ, комн. 6</p>
-                    <p>г. Киев, пер. Электрический д.12 помещение ІІ, комн. 6</p>
-                </div>
-                <div class="col-md-3">
+                    <p class="font_sm">По будним дням: 09:00 - 23:00 <br> По субботам: 10:00 - 15:00 <br> Выходные: воскресенье</p>
+                    <br>
                     <h4>КОНТАКТЫ:</h4>
                     <hr>
-                    <p><b>e-mail:</b> info@sila.fm
-                        <br><b>В России:</b> (495) 20-435-20
-                        <br><b>В Украине:</b> (044) 545-77-13
-                        <br><b>skype:</b> sila.fm
-                        <br><b>ICQ:</b> 322-653-493</p>
-                    <div class="callz">
-                        <a href="#callback" class="callzakaz fancybox"> Заказать звонок </a>
-                    </div>
+                    <p class="font_sm">
+                        <span class="font_bsm">e-mail: </span>info@sila.fm <br>
+                        <span class="font_bsm">В Москве: </span> +7 (495) 545-45-13 <br>
+                        <span class="font_bsm">В России: </span> +7 (800) 551-0-551 <br>
+                        <span class="font_bsm">В Украине: </span> +3 (044) 545-77-13 <br>
+                        <span class="font_bsm">Viber/Whatsapp: </span>+7 965 316 1080<br>
+                        <span class="font_bsm">skype: </span> sila.fm <br>
+                        <span class="font_bsm">ICQ: </span> 322-653-493
+                    </p>
+
+                </div>
+                <div class="col-md-3">
+                    <h4>ПОЧТОВЫЙ АДРЕС:</h4>
+                    <hr>
+                    <p class="font_sm">г. Москва, пер. Электрический д.12 помещение ІІ, комн. 6<br> г. Киев, ул. Немиовича-Данченко, </p><br>
+                    <h4>СОТРУДНИЧЕСТВО:</h4>
+                    <hr>
+                    <p class="font_sm">По вопросам сотрудничества ждем ваше резюме по <a href="mailto:info@sila.fm">почте</a> или заполните нашу <a href="index_01.html?showModal">анкету</a>. </p>
                 </div>
             </div>
-
         </div>
-
         <div id="scrollup"><img alt="Прокрутить вверх" src="img/up.png"></div>
-
-
-        <div class="hidden">
-            <form id="callback" class="pop_form">
-                <h4>Заказать обратный звонок</h4>
-                <input type="text" name="name" size="31" placeholder="Ваше имя..." required />
-                <br>
-                <input type="text" name="phone" size="31" placeholder="Ваш телефон..." required/>
-                <br>
-                <textarea name="text" cols="30" rows="4" placeholder="Коментарии..."></textarea>
-                <br>
-                <button class="callzakaz" type="submit">Заказать</button>
-            </form>
-
-        </div>
     </footer>
+    <!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+    <script src="libs/jquery/jquery-3.1.1.min.js"></script>
+    <script src="libs/bootstrap/bootstrap.min.js"></script>
+    <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+    <script src="libs/scrollto/jquery.scrollTo.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+    <!-- Masonry and imageLoader and initilisation script -->
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry_int.js"></script>
+    <!--<script src="libs/landing-nav/navigation.js"></script>-->
+    <script src="js/common.js"></script>
+
+    <!--появление меню после прокрутки 300 пикселей вниз с фейдом в 400мс -->
+    <script>
+        jQuery(function(f) {
+            var element = f('#navigationMenu');
+            f(window).scroll(function() {
+                element['fade' + (f(this).scrollTop() > 300 ? 'In' : 'Out')](400);
+            });
+        });
+
+    </script>
 </body>
+
 </html>

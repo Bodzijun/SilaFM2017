@@ -8,74 +8,38 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Sila.FM</title>
-    <meta name="description" content="" />
+    <title>Аудиоролики | Радиоролики | Аудиореклама | Радиореклама | Озвучка видео | Sila.FM</title>
+    <meta name="description" content="Изготовление аудиороликов и радиороликов, запись радиорекламы и аудиорекламы, запись дикторов. Озвучка видеороликов, озвучание анимации, квестов, озвучение корпоративных и презентационных фильмов. Голосовое приветствие" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="Аудиоролики, озвучка видео, радиоролики, озвучка текстов, квестов, иностранные дикторы, радиореклама, квесты, озвучка мультфильмов, аудиореклама, запись диктора, озвучка видеоролика, озвучание фильма, озвучка мультфильмов, голосовое приветствие, голосовое" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="libs/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap-datetimepicker.min.css" />
     <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
-
+    <script src="js/modernizr.custom.js"></script>
 
 </head>
 
 <body>
-    <!--[if lt IE 9]>
-<script src="libs/html5shiv/es5-shim.min.js"></script>
-<script src="libs/html5shiv/html5shiv.min.js"></script>
-<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-<script src="libs/respond/respond.min.js"></script>
-<![endif]-->
-    <script src="libs/jquery/jquery-2.2.1.js"></script>
-    <script src="libs/bootstrap/bootstrap.min.js"></script>
-    <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-    <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
-    <script src="libs/scrollto/jquery.scrollTo.min.js"></script>
-    <script src="libs/countdown/jquery.plugin.js"></script>
-    <script src="libs/countdown/jquery.countdown.min.js"></script>
-    <script src="libs/countdown/jquery.countdown-ru.js"></script>
-    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
-    <!--<script src="libs/landing-nav/navigation.js"></script>-->
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/masonry_int.js"></script>
-    <!-- Add fancyBox -->
 
-    <script src="js/common.js"></script>
-    <script src="js/modernizr.custom.js"></script>
-    <!-- Yandex.Metrika counter -->
-    <!-- /Yandex.Metrika counter -->
-    <!-- Google Analytics counter -->
-    <!-- /Google Analytics counter -->
     <header>
         <!--left Navigators-->
         <div class="leftnavbar">
             <ul id="navigationMenu">
-                <li><a class="cabinet" href="#"><span>ONLINE ЗАКАЗ</span></a></li>
-
-                <li><a class="online_zakaz" href="#"><span>ЛИЧНЫЙ КАБИНЕТ</span></a></li>
-
-                <li><a class="hronomer" href="#"><span>ХРОНОМЕР</span></a></li>
-
-                <li><a class="pagemeter" href="#"><span>СТРАНИЦЕМЕР</span></a></li>
-
-                <li><a class="contact" href="#"><span>КОНТАКТЫ</span></a></li>
+                <li><a class="cabinet" href="index_zakaz.html"><span>ONLINE ЗАКАЗ</span></a></li>
+                <li><a class="online_zakaz" href="index_zakaz.html"><span>ЛИЧНЫЙ КАБИНЕТ</span></a></li>
+                <li><a class="hronomer" href="index_hronos.html"><span>ХРОНОМЕР</span></a></li>
+                <li><a class="pagemeter" href="index_pages.html"><span>СТРАНИЦЕМЕР</span></a></li>
+                <li><a class="contact" href="index_07.html"><span>КОНТАКТЫ</span></a></li>
 
             </ul>
             <!--появление меню после прокрутки 300 пикселей вниз с фейдом в 400мс -->
-            <script>
-                jQuery(function (f) {
-                    var element = f('#navigationMenu');
-                    f(window).scroll(function () {
-                        element['fade' + (f(this).scrollTop() > 300 ? 'In' : 'Out')](400);
-                    });
-                });
-            </script>
+
 
 
         </div>
@@ -86,8 +50,7 @@
                     <div class="row">
                         <div class="col-md-2 col-sm-3 col-xs-4">
                             <div class="logo_wrap">
-                                <a href="#"><img src="img/logo.png" alt="Sila.FM"></a>
-                                креативное агентство звука
+                                <a href="#"><img src="img/logo.png" alt="Sila.FM"></a> креативное агентство звука
                             </div>
                         </div>
 
@@ -115,15 +78,35 @@
                     <div class="cbp-hsinner">
                         <ul class="cbp-hsmenu">
                             <li>
-                                <a href="#">Главная</a>
+                                <a href="index.html">Главная</a>
                             </li>
                             <li>
                                 <a href="index_01.html">Дикторы</a>
+                                <ul class="cbp-hssubmenu">
+                                    <li>
+                                        <a href="index_01.html#ex1"><img src="img/ruman.png" alt="img07" /><span>дикторы России</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="index_01.html#ex5"><img src="img/uaman.png" alt="img08" /><span>дикторы Украины</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="index_01.html#ex3"><img src="img/foreigner.png" alt="img09" /><span>Иностранные дикторы</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="index_01.html#ex9"><img src="img/songer.png" alt="img10" /><span>Вокалисты</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="index_01.html#ex8"><img src="img/parodies.png" alt="img01" /><span>Пародисты</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="index_01.html#ex7"><img src="img/child.png" alt="img02" /><span>Детские голоса</span></a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
                                 <a href="#">Услуги</a>
                                 <ul class="cbp-hssubmenu">
-                                   <li>
+                                    <li>
                                         <a href="index_08.html"><img src="img/print.png" alt="img06" /><span>Сценарии</span></a>
                                     </li>
                                     <li>
@@ -132,6 +115,7 @@
                                     <li>
                                         <a href="index_03.html"><img src="img/tv_c.png" alt="img06" /><span>Озвучивание видеороликов</span></a>
                                     </li>
+                                    <li> <a href="index_9quest.html"><img src="img/game.png" alt="img09" /><span>Озвучивание игр, сказок и квестов</span></a> </li>
                                     <li>
                                         <a href="index_04.html"><img src="img/film_c.png" alt="img09" /><span>Создание видеороликов</span></a>
                                     </li>
@@ -140,19 +124,44 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="index_06.html">Оплата</a></li>
+                            <li><a href="#">Оплата</a></li>
                             <li><a href="index_07.html">Контакты</a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
-            <script src="js/cbpHorizontalSlideOutMenu.js"></script>
-            <script>
-                var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
-            </script>
+
         </div>
     </header>
     <section>
+        <!--Помощник правый-->
+        <div id="panelr"> ...
+            <div id="helpform">
+                <div class="kate">
+                    <video autoplay loop width="200" height="200">
+          <source src="video/helper_female.mp4" type="video/mp4"/>
+          <img src="video/helper_1.gif" width="200" height="200" /> </video>
+                </div>
+                <div class="kateoff">
+                    <video autoplay loop width="200" height="200">
+          <source src="video/helper_female2.mp4" type="video/mp4"/>
+          <img src="video/helper_2.gif" width="200" height="200" /> </video>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="namecallback">
+          <p id="katetext">Задайте Кате вопросы</p>
+          </label>
+                        <input type="name" class="form-control" id="namecallback" placeholder="Ваше имя">
+                        <br>
+                        <input type="tel" class="form-control" id="telcallback" placeholder="Ваш номер телефона">
+                    </div>
+                    <button type="button" class="btn btn-default" id="telback">Заказать звонок</button>
+                </form>
+            </div>
+        </div>
+
+        <!--Помощник правый end-->
         <div class="container-fluid">
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <!--- Индикаторы слайдов--->
@@ -161,7 +170,7 @@
                     <li data-target="#carousel" data-slide-to="1"></li>
                     <li data-target="#carousel" data-slide-to="2"></li>
                 </ol>
-                <!--- Слайди--->
+                <!--- Слайд--->
                 <div class="carousel-inner">
                     <div class="item active">
                         <img src="img/img1.jpg" alt="">
@@ -205,10 +214,204 @@
 
             <div class="fillcontainer">
                 <div class="row">
+                    <div class="col-md-12">
+                        <div class="ban01">
+                            <h3 class="ban_on">Устали ждать оригиналы документов по почте?</h3>
+                            <a class="tortila" href="#" data-toggle="modal" data-target="#myModal"> </a>
+                            <h4 class="ban_off">Закажите документацию по электронной почте </h4>
+                            <hr>
+
+                            <!-- Модальное окно -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="Docorder" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                                            <h4 class="modal-title" id="Docorder">Заказать документы по электронной почте</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="exampleInputName2">Название организации</label>
+                                                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Введите название компании">
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                                                    <div class="col-sm-10">
+                                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Ваш Email">
+                                                    </div>
+                                                </div>
+
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+                                            <button type="button" class="btn btn-primary">Отправить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="about">
-                        <div class="col-md-4 hidden-sm hidden-xs">
+                        <div class="col-md-4">
                             <div class="circle_wrap">
-                                <a href="#" class="btn_circle">Оплата</a>
+                                <a class="btn_circle" data-toggle="modal" data-target="#beznal"><br><br>Безналичный расчет</a>
+                            </div>
+                        </div>
+
+                        <div id="beznal" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+                                        <h4 class="modal-title">Оплата по безналичному расчету</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group">
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <p>Дата</p>
+                                                </div>
+                                                <div class='col-sm-7'>
+                                                    <div class="form-group">
+                                                        <div class='input-group date' id='datetimepicker2'>
+                                                            <input type='text' class="form-control" />
+                                                            <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <p>Номер счета</p>
+                                                </div>
+                                                <div class="col-sm-7">
+                                                    <div class='input-group'>
+                                                        <input type='text' class="form-control" />
+                                                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-list-alt"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <p>Сумма (Комиссия 9%)</p>
+                                                </div>
+                                                <div class="col-sm-7">
+                                                    <div class='input-group'>
+                                                        <input type='text' class="form-control" />
+                                                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-briefcase"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <p>Валюта</p>
+                                                </div>
+                                                <div class="col-sm-7">
+                                                    <label class="radio-inline">
+                                      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> <p>руб.</p>
+                                    </label>
+                                                    <label class="radio-inline">
+                                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> <p>грн.</p>
+                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <p>Плательщик</p>
+                                                </div>
+                                                <div class="col-sm-7">
+                                                    <div class='input-group'>
+                                                        <input type="text" class="form-control">
+                                                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-user"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <p>Назначение платежа</p>
+                                                </div>
+                                                <div class="col-sm-7">
+                                                    <div class='input-group'>
+                                                        <input type="text" class="form-control">
+                                                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-send"></span>
+                                                        </span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <p>Реквизиты</p>
+                                                </div>
+                                                <div class='input-group'>
+                                                    <div class="col-sm-7">
+                                                        <textarea class="form-control" rows="3"></textarea></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-5">
+                                                    <p>E-mail</p>
+                                                </div>
+                                                <div class="col-sm-7">
+                                                    <div class='input-group'>
+                                                        <input type="text" class="form-control">
+                                                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-envelope"></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label>
+    <input type="checkbox" checked>
+  <p>  Акт и счет</p>
+  </label>
+                                                    </div>
+
+
+                                                    <div class="radio">
+                                                        <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+   <p> Отправить на электронную почту</p>
+  </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+   <p>Открыть и распечатать</p>
+  </label>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button>
+                                        <button class="btn btn-success" type="submit" data-dismiss="modal">Отправить</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-8 col-sm-12">
@@ -218,52 +421,50 @@
                             <div class="righttext">
                                 <p>Мы принимаем платежи как в безнальной так и в электронных формах. Стоимость начитки одного текста от 5 до 45 секунд (не более 90 слов) включает запись голоса диктора (несколько дублей), услуги студии, простой монтаж, режиссуру, отправку файла на электронную почту и в Личный Кабинет. Для определения стоимости озвучки в рос.рублях, гривнах, тенге и др. валютах, отправьте, пожалуйста, <a href="mailto:sila.fm">письмо-запрос</a> с темой «Определить стоимость». В письме укажите фамилию диктора и приложите текст начитки. </p>
                             </div>
-                            </p>
                         </div>
                     </div>
                 </div>
-                </hr>
                 <div class="row">
                     <div class="col-md-4 hidden-sm hidden-xs">
-                       <div class="oprosnik">
-                        <h2>Опрос</h2>
-                        <br>
-                        <h4>Как вы нас нашли?</h4>
-                        <hr>
-                        <form>
-                        <div class="radio">
-                            <label>
+                        <div class="oprosnik">
+                            <h2>Опрос</h2>
+                            <br>
+                            <h4>Как вы нас нашли?</h4>
+                            <hr>
+                            <form>
+                                <div class="radio">
+                                    <label>
                                 <input type="radio" name="gridRadios" id="gridRadios1" value="option1" checked><p>рекомендация коллег</p>
                             </label>
-                        </div>
-                        <div class="radio">
-                            <label>
+                                </div>
+                                <div class="radio">
+                                    <label>
                                 <input type="radio" name="gridRadios" id="gridRadios2" value="option2"><p>ссылки с других сайтов</p>
                             </label>
-                        </div>
-                        <div class="radio">
-                            <label>
+                                </div>
+                                <div class="radio">
+                                    <label>
                                 <input type="radio" name="gridRadios" id="gridRadios3" value="option3"><p>поиск в Google</p>
                             </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="gridRadios" id="gridRadios3" value="option3"><p>поиск в Яндекс</p>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                <input type="radio" name="gridRadios" id="gridRadios4" value="option3"><p>поиск в Яндекс</p>
                             </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="gridRadios" id="gridRadios3" value="option3"><p> поиск в Rambler</p>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                <input type="radio" name="gridRadios" id="gridRadios5" value="option3"><p> узнали  из соц. сетей</p>
                             </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="gridRadios" id="gridRadios3" value="option3"><p> услышали работы</p>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                <input type="radio" name="gridRadios" id="gridRadios6" value="option3"><p> услышали работы</p>
                             </label>
-                       </div>
-                       <button type="submit" class="btn btn-secondary">Ответить</button>
-                       </form>
-                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-secondary">Ответить</button>
+                            </form>
+                        </div>
 
                     </div>
                     <div class="col-md-4">
@@ -335,71 +536,92 @@
                 <div class="col-md-5">
                     <h4>НАШИ ПРИНЦИПЫ:</h4>
                     <hr>
-                    <p class="coment">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis qui, dicta, libero pariatur amet error adipisci autem magnam ea, explicabo ipsa quasi porro aspernatur nam dolorum sapiente voluptas eaque deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae repellendus amet alias."</p>
-                    <br>
-                    <br>
+                    <p class="coment">· Мы самым строгим образом проверяем свои результаты и извлекаем уроки как из успехов, так и из неудач, достигая, тем самым, высокого качества наших услуг. <br> · Мы добились досконального понимания запросов, требований, пожеланий и потребностей наших клиентов.<br> · Мы не нарушаем законы стран, в которых работаем и не озвучиваем материалы, которые сеют вражду или ненависть.<br> · Мы построили деловые отношения с заказчиками, дикторами и партнерами по бизнесу.<br> · Мы уверены, что люди работают лучше, если сотрудничество основано на честности и уважении.</p>
+
                     <hr>
                     <div class="footer_mn">
-
                         <ul>
-                            <li>
-                                <a href="index.html">Главная</a>
-                            </li>
-                            <li>
-                                <a href="index_01.html">Дикторы</a>
-                            </li>
-                            <li>
-                                <a href="#">Услуги</a>
-                            </li>
-                            <li>
-                                <a href="index_06.html">Оплата</a>
-                            </li>
-                            <li>
-                                <a href="index_07.html">Контакты</a>
-                            </li>
+                            <li> <a href="index.html">Главная</a> </li>
+                            <li> <a href="index_01.html">Дикторы</a> </li>
+                            <li> <a href="index_06.html">Оплата</a> </li>
+                            <li> <a href="index_07.html">Контакты</a> </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-3  col-md-offset-1">
                     <h4>ГРАФИК РАБОТЫ:</h4>
-                    <hr> По будним дням: 09:00 - 23:00
-                    <br> По субботам: 10:00 - 15:00
-                    <br> Выходные: воскресенье.
-                    <h4>ПОЧТОВЫЙ АДРЕС:</h4>
                     <hr>
-                    <p>г. Москва, пер. Электрический д.12 помещение ІІ, комн. 6</p>
-                    <p>г. Киев, пер. Электрический д.12 помещение ІІ, комн. 6</p>
-                </div>
-                <div class="col-md-3">
+                    <p class="font_sm">По будним дням: 09:00 - 23:00 <br> По субботам: 10:00 - 15:00 <br> Выходные: воскресенье</p>
+                    <br>
                     <h4>КОНТАКТЫ:</h4>
                     <hr>
-                    <p><b>e-mail:</b> info@sila.fm
-                        <br><b>В России:</b> (495) 20-435-20
-                        <br><b>В Украине:</b> (044) 545-77-13
-                        <br><b>skype:</b> sila.fm
-                        <br><b>ICQ:</b> 322-653-493</p>
-                    <div class="callz">
-                        <a href="#callback" class="callzakaz fancybox"> Заказать звонок </a>
-                    </div>
+                    <p class="font_sm">
+                        <span class="font_bsm">e-mail: </span>info@sila.fm <br>
+                        <span class="font_bsm">В Москве: </span> +7 (495) 545-45-13 <br>
+                        <span class="font_bsm">В России: </span> +7 (800) 551-0-551 <br>
+                        <span class="font_bsm">В Украине: </span> +3 (044) 545-77-13 <br>
+                        <span class="font_bsm">Viber/Whatsapp: </span>+7 965 316 1080<br>
+                        <span class="font_bsm">skype: </span> sila.fm <br>
+                        <span class="font_bsm">ICQ: </span> 322-653-493
+                    </p>
+
+                </div>
+                <div class="col-md-3">
+                    <h4>ПОЧТОВЫЙ АДРЕС:</h4>
+                    <hr>
+                    <p class="font_sm">г. Москва, пер. Электрический д.12 помещение ІІ, комн. 6<br> г. Киев, ул. Немиовича-Данченко, </p><br>
+                    <h4>СОТРУДНИЧЕСТВО:</h4>
+                    <hr>
+                    <p class="font_sm">По вопросам сотрудничества ждем ваше резюме по <a href="mailto:info@sila.fm">почте</a> или заполните нашу <a href="index_01.html?showModal">анкету</a>. </p>
                 </div>
             </div>
-
         </div>
         <div id="scrollup"><img alt="Прокрутить вверх" src="img/up.png"></div>
-
-        <div class="hidden">
-            <form id="callback" class="pop_form">
-                <h4>Заказать обратный звонок</h4>
-                <input type="text" name="name" placeholder="Ваше имя..." required />
-                <br>
-                <input type="text" name="phone" placeholder="Ваш телефон..." required/>
-                <br>
-                <input type="text" name="text" size="40" placeholder="Коментарии..." />
-                <br>
-                <button class="callzakaz" type="submit">Заказать</button>
-            </form>
-        </div>
     </footer>
+    <!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+    <script src="libs/jquery/jquery-3.1.1.min.js"></script>
+    <script src="libs/bootstrap/moment-with-locales.js"></script>
+    <script src="libs/bootstrap/bootstrap.min.js"></script>
+    <script src="libs/bootstrap/bootstrap-datetimepicker.min.js"></script>
+    <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+    <script src="libs/scrollto/jquery.scrollTo.min.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+    <!--<script src="libs/landing-nav/navigation.js"></script>-->
+    <script src="js/common.js"></script>
+    <!-- Masonry and imageLoader and initilisation script -->
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry_int.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#datetimepicker2').datetimepicker({
+                locale: 'ru',
+                format: 'DD.MM.YYYY'
+            });
+        });
+
+    </script>
+    <script>
+        jQuery(function(f) {
+            var element = f('#navigationMenu');
+            f(window).scroll(function() {
+                element['fade' + (f(this).scrollTop() > 300 ? 'In' : 'Out')](400);
+            });
+        });
+
+    </script>
+    <script src="js/cbpHorizontalSlideOutMenu.js"></script>
+    <script>
+        var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
+
+    </script>
+
 </body>
 
 </html>
