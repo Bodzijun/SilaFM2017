@@ -20,53 +20,54 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="libs/dataTables/jquery.dataTables.min.css">
     <script src="js/modernizr.custom.js"></script>
 </head>
 
 <body>
-
     <header>
         <!--left Navigators-->
         <div class="leftnavbar">
-            <ul id="navigationMenu">
+            <ul id="navigationMenu" style="display:block;">
                 <li><a class="cabinet" href="index_zakaz.html"><span>ONLINE ЗАКАЗ</span></a></li>
-                <li><a class="online_zakaz" href="index_zakaz.html"><span>ЛИЧНЫЙ КАБИНЕТ</span></a></li>
-                <li><a class="hronomer" href="index_hronos.html"><span>ХРОНОМЕР</span></a></li>
-                <li><a class="pagemeter" href="index_pages.html"><span>СТРАНИЦЕМЕР</span></a></li>
-                <li><a class="contact" href="index_07.html"><span>КОНТАКТЫ</span></a></li>
 
+                <li><a class="online_zakaz" href="#"><span>ЛИЧНЫЙ КАБИНЕТ</span></a></li>
+
+                <li><a class="hronomer" href="index_hronos.html"><span>ХРОНОМЕР</span></a></li>
+
+                <li><a class="pagemeter" href="index_pages.html"><span>СТРАНИЦЕМЕР</span></a></li>
+
+                <li><a class="contact" href="#"><span>КОНТАКТЫ</span></a></li>
             </ul>
-            <!--появление меню после прокрутки 300 пикселей вниз с фейдом в 400мс -->
+
         </div>
 
         <div class="top_header">
             <div class="header_topline">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-2 col-sm-3 col-xs-4">
-                            <div class="logo_wrap">
-                                <a href="#"><img src="img/logo.png" alt="Sila.FM"></a> креативное агентство звука
+                <div class="header_topline">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-3 col-xs-4">
+                                <div class="logo_wrap"> <a href="#"><img src="img/logo.png" alt="Sila.FM"></a> креативное агентство звука </div>
                             </div>
-                        </div>
-
-                        <div class="col-md-8 hidden-sm hidden-xs">
-                            <div class="top_contact">
-                                <p class="tel"> +7 (800) 55-10-551, +7 (495) 20-43-520, +38 (044) 545-77-13</p>
+                            <div class="col-md-8 hidden-sm hidden-xs">
+                                <div class="top_contact">
+                                    <p class="tel"> +7 (800) 55-10-551, +7 (495) 20-43-520, +38 (044) 545-77-13</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-2 col-sm-9 col-xs-8">
-                            <div class="soc_buttons">
-                                <a title="vkontakte" href="http://vkontakte.ru/share.php?url=http://sila.fm/&title=%D0%90%D1%83%D0%B4%D0%B8%D0%BE%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%B8%20|%20%D0%A0%D0%B0%D0%B4%D0%B8%D0%BE%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%B8%20|%20%D0%90%D1%83%D0%B4%D0%B8%D0%BE%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%B0%20|%20%D0%A0%D0%B0%D0%B4%D0%B8%D0%BE%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%B0%20|%20%D0%9E%D0%B7%D0%B2%D1%83%D1%87%D0%BA%D0%B0%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%20|%20Sila.FM"><i class="fab fa-vk"></i></a>
-                                <a title="facebook" href="http://www.facebook.com/share.php?u=http://sila.fm/"><i class="fab fa-facebook-square"></i></a>
-                                <a title="Skype" href="skype:sila.fm"><i class="fab fa-skype"></i></a>
-                                <a title="Viber" href="viber://add?number=+79653161080"><i class="fab fa-viber"></i></a>
-                                <a title="WhatsApp" href="whatsapp://send?phone=+79653161080"> <i class="fab fa-whatsapp"></i></a>
+                            <div class="col-md-2 col-sm-9 col-xs-8">
+                                <div class="soc_buttons">
+                                    <a title="vkontakte" href="http://vkontakte.ru/share.php?url=http://sila.fm/&title=%D0%90%D1%83%D0%B4%D0%B8%D0%BE%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%B8%20|%20%D0%A0%D0%B0%D0%B4%D0%B8%D0%BE%D1%80%D0%BE%D0%BB%D0%B8%D0%BA%D0%B8%20|%20%D0%90%D1%83%D0%B4%D0%B8%D0%BE%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%B0%20|%20%D0%A0%D0%B0%D0%B4%D0%B8%D0%BE%D1%80%D0%B5%D0%BA%D0%BB%D0%B0%D0%BC%D0%B0%20|%20%D0%9E%D0%B7%D0%B2%D1%83%D1%87%D0%BA%D0%B0%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%20|%20Sila.FM"><i class="fab fa-vk"></i></a>
+                                    <a title="facebook" href="http://www.facebook.com/share.php?u=http://sila.fm/"><i class="fab fa-facebook-square"></i></a>
+                                    <a title="Skype" href="skype:sila.fm"><i class="fab fa-skype"></i></a>
+                                    <a title="Viber" href="viber://add?number=+79653161080"><i class="fab fa-viber"></i></a>
+                                    <a title="WhatsApp" href="whatsapp://send?phone=+79653161080"> <i class="fab fa-whatsapp"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="mnu">
                 <nav class="cbp-hsmenu-wrapper" id="cbp-hsmenu-wrapper">
                     <div class="cbp-hsinner">
@@ -112,10 +113,10 @@
                     </div>
                 </nav>
             </div>
-
         </div>
     </header>
-    <section>
+
+    <section id="content">
         <!--Помощник правый-->
         <div id="panelr"> ...
             <div id="helpform">
@@ -142,84 +143,76 @@
                 </form>
             </div>
         </div>
-        <!--Помощник правый end-->
-        <div class="container-fluid">
-            <div id="carousel" class="carousel slide" data-ride="carousel">
-                <!--- Индикаторы слайдов--->
-                <ol class="carousel-indicators">
-                    <li class="active" data-target="#carousel" data-slide-to="0"></li>
-                    <li data-target="#carousel" data-slide-to="1"></li>
-                    <li data-target="#carousel" data-slide-to="2"></li>
-                </ol>
-                <!--- Слайди--->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="img/img1.jpg" alt="">
-                        <div class="carousel-caption">
-                            <h3>АУДИОРОЛИКИ</h3>
-                            <div class="center_btn">
-                                <button type="button" class="zakaz_btn">СДЕЛАТЬ ЗАКАЗ</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="img/img2.jpg" alt="">
-                        <div class="carousel-caption">
-                            <h3>ОЗВУЧАНИЕ ВИДЕРОЛИКОВ</h3>
-                            <div class="center_btn">
-                                <button type="button" class="zakaz_btn">СДЕЛАТЬ ЗАКАЗ</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="img/img3.jpg" alt="">
-                        <div class="carousel-caption">
-                            <div class="center_btn">
-                                <button type="button" class="zakaz_btn">СДЕЛАТЬ ЗАКАЗ</button>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
-                <!--- Стрелики переключения слайдами--->
-                <a href="#carousel" class="left carousel-control" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a href="#carousel" class="right carousel-control" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
-            </div>
-        </div>
+        <!--Помощник правый end-->
 
         <div class="container">
+            <div class="miniblock">
+                <div class="serij">
+                    <h3>Локализация игр и приложений</h3>
+                </div>
+                <div class="row insideblock">
+                    <div class="col-md-4">
+                        <h3>Озвучание</h3>
+                        <hr>
+                        <p class="basictext">Мы специализируемя на озвучании персонажей игр, квестов, видеообзоров, трейлеров и сказок.</p>
+                        <img src="img/ninja.png" alt="">
+                    </div>
+                    <div class="col-md-8">
 
-            <div class="fillcontainer">
-                <div class="row">
-                    <div class="about">
-                        <div class="col-md-5">
-                            <div class="oprosnik">
-                                <h4>АВТОМОБИЛЬ «ХАММЕР»</h4>
-                                <p class="littext">(мужской голос)<br> Для кого-то, он дикий и необузданный хищник (рык) <br>Кому-то, послушный и ласковый зверь (мур) <br>Каждый найдет в нем что-то свое!<br> Неудержимый характер и сильное сердце под капотом!<br> „Хаммер” – эталон среди внедорожников!<br> Инфо-часть: Дай волю Хаммеру! (звукоэффект)<br> Особый внедорожник от официального дистрибьютера „Дженерал Моторз”. Подробности на сайте ...(пэкшот)<br> Хаммер... укроти его силу!</p>
+                        <h3>Перевод и адаптация</h3>
+                        <hr>
+                        <p class="basictext">
+                            При адаптации игр и приложений всегда возникает вопрос - где и как грамотно перевести и озвучить проект? Вы нашли что искали! Озвучка и монтаж видео и аудиопроектов на любом языке и с любого языка планеты!
+                        </p>
+                        <div class="progressboard">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="moveone">
+                                        <div class="box_blue">
+                                            <a href="index_zakaz.html" class="h1block">
+                                        ШАГ №1
+                                       <h2 class="h2block">Закажите перевод</h2>
+                                        </a>
+                                        </div>
+                                        <div class="rect_blue"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="moveone">
+                                        <div class="box_red">
+                                            <a href="index_ru.html" class="h1block">ШАГ №2<h2 class="h2block">Выберите диктора</h2>
+                </a> </div>
+                                        <div class="rect_red"></div>
+                                        <div class="rect_mid"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="boxend_green">
+                                        <h1 class="h1block"><i class="fa fa-check-square-o"></i> ШАГ №3</h1>
+                                        <h2 class="h2block">Получите готовый проект</h2>
+                                    </div>
+                                    <div class="rect_red"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-7">
-                            <div>
-                                <a class="palitra"><img src="images/palit.png" alt="silafm"> </a>
-                            </div>
-                            <div class="righttext">
-                                <h2>Сценарий</h2>
-                                <hr>
-                                <p>Успех рекламного ролика в первую очередь зависит от правильного и грамотного составленного сценария, а также его оригинальности. Наша компания занимается изготовлением сценариев для аудио- и видеороликов. </p>
-                                <p>
-                                    Выгоды и преимущества оригинальных сценариев агентства: -Создание позитивного образа, а также повышение узнаваемости компании, завоевание доверия к бренду или услугам; -Привлечение новых и удержание настоящих клиентов, создание подсознательных образов и мощных мотивационных посылов; -Улучшение имиджа вашей компании путем использования нетрадиционных, смелых текстовых и игровых решений в аудио и видео роликах. </p>
-                            </div>
-                        </div>
+                        <p class="basictext">
+                            Или просто напишите нам остальное мы сделаем за Вас!
+                        </p>
+
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
-    <footer id="footer">
+
+
+    <footer id="footer" class="mrg20">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
@@ -260,12 +253,102 @@
                     <p class="font_sm">г. Москва, пер. Электрический д.12 помещение ІІ, комн. 6<br> г. Киев, ул. Немиовича-Данченко, </p><br>
                     <h4>СОТРУДНИЧЕСТВО:</h4>
                     <hr>
-                    <p class="font_sm">По вопросам сотрудничества ждем ваше резюме по <a href="mailto:info@sila.fm">почте</a> или заполните нашу <a href="index_01.html?showModal">анкету</a>. </p>
+                    <p class="font_sm">По вопросам сотрудничества ждем ваше резюме по <a href="mailto:info@sila.fm">почте</a> или заполните нашу <a href="#anketa" data-toggle="modal" data-target="#modal-1">анкету</a>. </p>
                 </div>
             </div>
         </div>
         <div id="scrollup"><img alt="Прокрутить вверх" src="img/up.png"></div>
     </footer>
+    <div class="modal fade" id="modal-1" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">&times;</button>
+                    <h2>Агентство Sila.FM. Online анкета</h2>
+                    <p>Заполните, пожалуйста, все поля формы:</p>
+                </div>
+                <div class="modal-body">
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                        <input type="text" class="form-control" name="name" placeholder="Фамилия Имя Отчество" aria-describedby="basic-addon1" required/>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon2"><i class="fa fa-phone"></i></span>
+                        <input type="text" class="form-control" name="phone" placeholder="Мобильный телефон" aria-describedby="basic-addon2" />
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon3"><i class="fa fa-envelope"></i></span>
+                        <input type="text" class="form-control" placeholder="e-mail" aria-describedby="basic-addon3">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon4"><i class="fa fa-book"></i></span>
+                        <input type="number" class="form-control" placeholder="Возвраст" aria-describedby="basic-addon4">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon5"><i class="fa fa-home"></i></span>
+                        <input type="text" class="form-control" placeholder="Место проживания (страна, город)..." aria-describedby="basic-addon5">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon6"><i class="fa fa-language"></i></span>
+                        <input type="text" class="form-control" id="yazik" placeholder="Какими языками владеете?" aria-describedby="basic-addon6">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon7"><i class="fa fa-briefcase"></i></span>
+                        <input type="text" class="form-control" placeholder="Место работы" aria-describedby="basic-addon7">
+                    </div>
+
+                    <form class="form-inline">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Опыт работы">
+                        </div>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="График работы">
+                        </div>
+
+                    </form>
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                <span class="btn btn-primary btn-file">
+                Обзор&hellip; <input type="file" multiple>
+                </span>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Прикрепить порфолио..." readonly>
+                    </div>
+
+                    <h3>Возможность записи начиток:</h3>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="">
+                        <p>На работе</p>
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" value="">
+                        <p>Дома</p>
+                    </label>
+
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon9"><i class="fa fa-money"></i></span>
+                        <input type="text" class="form-control" id="rolik30" placeholder="Стоимость начитки рекламного текста до 30 сек..." aria-describedby="basic-addon9">
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon8"><i class="fa fa-money"></i></span>
+                        <input type="text" class="form-control" id="stranica" placeholder="Стоимость начитки 1 страницы печатного текста..." aria-describedby="basic-addon8">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="anketa_btn" type="submit">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--[if lt IE 9]>
 <script src="libs/html5shiv/es5-shim.min.js"></script>
 <script src="libs/html5shiv/html5shiv.min.js"></script>
@@ -278,7 +361,11 @@
     <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
     <script src="libs/scrollto/jquery.scrollTo.min.js"></script>
     <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" charset="utf8" src="libs/dataTables/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="libs/dataTables/dataTables.bootstrap.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/jquery.placeholder.min.js"></script>
+    <!--появление меню после прокрутки 300 пикселей вниз с фейдом в 400мс -->
     <script>
         jQuery(function(f) {
             var element = f('#navigationMenu');
@@ -288,9 +375,28 @@
         });
 
     </script>
+
     <script src="js/cbpHorizontalSlideOutMenu.js"></script>
     <script>
         var menu = new cbpHorizontalSlideOutMenu(document.getElementById('cbp-hsmenu-wrapper'));
+
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('table.features-table').DataTable({
+                "language": {
+                    "search": "Поиск:",
+                    "zeroRecords": "Ничего не найдено, измените запрос"
+                },
+                "order": [
+                    [0, 'asc'],
+                    [1, 'asc']
+                ],
+                "info": false,
+                "paging": false,
+            });
+        });
 
     </script>
 

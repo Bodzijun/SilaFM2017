@@ -24,7 +24,7 @@ p {
     background-color: #ffffff;
     color: #676767;
     font-size: 12pt;
-    padding: 8px 0;
+    padding: 0;
     -webkit-box-shadow: 0 0 40px rgba(0, 0, 0, 0.3) inset;
     -moz-box-shadow: 0 0 40px rgba(0, 0, 0, 0.3) inset;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.3) inset;
@@ -523,7 +523,7 @@ p {
     border-color: transparent;
     border-radius: 8px;
     color: #ffffff;
-    font-size: 16pt;
+    font-size: 14pt;
     padding: 5px 15px 5px 15px;
     text-decoration: none;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
@@ -690,8 +690,9 @@ p {
     color: #404040;
     font-family: "RobotoLight", sans-serif;
     font-size: 12pt;
-    padding: 26px 10px;
+    padding: 20px 10px;
     text-align: justify;
+    width: 100%;
 
 }
 
@@ -764,7 +765,7 @@ p {
     text-decoration: none;
     -webkit-transform: scale(0.9);
     transform: scale(0.9);
-    cursor: pointer;
+    cursor: default;
 }
 
 .h1block {
@@ -850,6 +851,19 @@ p {
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-top: 20px solid #385aa6;
+    bottom: 1;
+    content: "";
+    height: 0;
+    position: absolute;
+    right: 49%;
+    width: 0;
+    z-index: 12;
+}
+
+.rect_mid {
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 20px solid #a41734;
     bottom: 1;
     content: "";
     height: 0;
@@ -1025,6 +1039,16 @@ p {
 
 .boxend_blue {
     background: #385aa6;
+    border-radius: 0 0 12px 12px;
+    margin: 0 0 40px 0;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    z-index: 8;
+}
+
+.boxend_green {
+    background: #75b94c;
     border-radius: 0 0 12px 12px;
     margin: 0 0 40px 0;
     padding: 20px;
@@ -1236,6 +1260,7 @@ footer a:active {
     margin-bottom: 8px;
     font-size: 11pt;
     font-family: 'RobotoRegular', sans-serif;
+    overflow: x;
 }
 
 .features-table td {
@@ -1302,8 +1327,8 @@ footer a:active {
 /* -------------  --------------------------- */
 
 .leftbar {
-    padding: 0 5px 0 20px;
-    margin-top: 20px;
+    padding: 0px 5px 0px 15px;
+    margin-bottom: 5px;
 }
 
 .leftbar .basictext {
@@ -1356,7 +1381,7 @@ footer a:active {
 }
 
 .rightbar {
-    padding-right: 20px;
+    padding-right: 15px;
 }
 
 .rightbar > .basictext {
@@ -1722,6 +1747,10 @@ footer a:active {
     margin-top: 20px;
 }
 
+.mrg50 {
+    margin-top: 50px;
+}
+
 .font_sm {
     font-family: "RobotoLight", sans-serif;
     font-size: 14px;
@@ -1734,4 +1763,66 @@ footer a:active {
     font-size: 14px;
     color: #e5e5e5;
     text-align: justify;
+}
+
+.tel {
+    text-align: right;
+    font-size: 11pt;
+}
+
+#beznalRU .modal-dialog {
+    z-index: 1050;
+    width: 60% !important;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#beznalUA .modal-dialog {
+    z-index: 1050;
+    width: 60% !important;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn_img {
+    cursor: pointer;
+}
+
+.lenivec {
+    display: block;
+    height: 200px;
+    max-width: 100%;
+}
+
+.rightblck {
+    float: right;
+    margin: 10px 0 10px 20px;
+}
+
+.insideblock {
+    padding: 0 25px;
+    margin: 0 10px;
+}
+
+#player {
+    height: 350px;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.btn-success {
+    background-color: #75b94c;
+}
+
+.help-block {
+    font-size: 10pt;
+}
+
+input {
+    font-size: 10pt;
+    vertical-align: bottom;
+    font-family: 'RobotoLight', sans-serif;
 }
